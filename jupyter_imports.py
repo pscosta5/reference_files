@@ -1,12 +1,12 @@
 # Load with Jupyter magic %load \..\..
 % matplotlib inline
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-from IPython.core.interactiveshell import InteractiveShell
-
-import matplotlib.pyplot as plt
+import plotly.express as px
 import seaborn as sns
+from IPython.core.interactiveshell import InteractiveShell
 
 %config InlineBackend.figure_format = "retina"  # Higher resolution plots
 InteractiveShell.ast_node_interactivity = "all"  # Multiple outputs
