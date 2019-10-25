@@ -1,0 +1,17 @@
+{
+  "python": {
+    "library": "import json\ndef black_reformat(cell_text):\n    import black\n    import re\n    cell_text = re.sub('^%', '#%#', cell_text, flags=re.M)\n    try:\n        reformated_text = black.format_str(cell_text, 88)\n    except TypeError:\n        reformated_text = black.format_str(cell_text, mode=black.FileMode(line_length=88))\n    return re.sub('^#%#', '%', reformated_text, flags=re.M)",
+    "prefix": "print(json.dumps(black_reformat(u",
+    "postfix": ")))"
+  },
+  "r": {
+    "library": "library(formatR)\nlibrary(jsonlite)",
+    "prefix": "cat(toJSON(paste(tidy_source(text=",
+    "postfix": ", output=FALSE)[['text.tidy']], collapse='\n')))"
+  },
+  "javascript": {
+    "library": "jsbeautify = require('js-beautify')",
+    "prefix": "console.log(JSON.stringify(jsbeautify.js_beautify(",
+    "postfix": ")));"
+  }
+}
