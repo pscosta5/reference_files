@@ -22,5 +22,9 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": false
   },
-  "python.dataScience.sendSelectionToInteractiveWindow": true
+  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "editor.rulers": [
+    79,
+    72
+  ]
 }
