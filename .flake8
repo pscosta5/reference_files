@@ -4,3 +4,4 @@ max-line-length = 80
 max-complexity = 18
 docstring-convention = numpy
 select = B,C,E,F,W,T4,B9,D,BLK,I0
+mypy_config = mypy.ini
