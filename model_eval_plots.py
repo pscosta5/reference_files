@@ -154,6 +154,11 @@ def plot_probability_dist(
         The target values the model was trained on.
     predict_proba : Two column np.ndarray
         Probabilities outputted by a model.
+    threshold : float, optional (default=0.5)
+        Determine the probability threshold. If the predicted
+        probability is above the threshold, model will predict 1. By
+        default 0.5. Will plot a vertical line representing the chosen
+        value.
     title : str, optional (default=None)
         The title of the plot. By default will have no title.
 
