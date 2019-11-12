@@ -100,7 +100,6 @@ def plot_confusion(
 def plot_roc(
     y: pd.Series,
     predict_proba: np.ndarray,
-    threshold: float = 0.5,
     title: Optional[str] = None,
 ) -> mpl.axes._axes:
     """
@@ -114,11 +113,6 @@ def plot_roc(
         Probabilities outputted by a model.
     title : str, optional (default=None)
         The title of the plot. By default will have no title.
-    threshold : float, optional (default=0.5)
-        Determine the probability threshold. If the predicted
-        probability is above the threshold, model will predict 1. By
-        default 0.5. Will plot a vertical line representing the chosen
-        value.
     title : str, optional (default=None)
         The title of the plot. By default will have no title.
 
