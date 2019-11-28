@@ -70,6 +70,12 @@ _`jupyter labextension update` to update extensions_
   jupyter labextension install @ijmbarr/jupyterlab_spellchecker
   ```
 
+- [jupyterlab_variableinspector](https://github.com/lckr/jupyterlab-variableInspector)
+
+  ```bash
+  jupyter labextension install @lckr/jupyterlab_variableinspector
+  ```
+
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
   _This does not work with JupyterLab 1.2, wait for update_
   ```bash
