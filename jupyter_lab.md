@@ -60,8 +60,8 @@ _`jupyter labextension update` to update extensions_
   ```
 - [jupyterlab_go_to_definition](jupyter labextension install @krassowski/jupyterlab_go_to_definition)
 
-- [jupyterlab-lsp]()
-
+- [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
+  _This does not work with JupyterLab 1.2, wait for update_
   ```bash
   pip install --pre jupyter-lsp
   jupyter labextension install @krassowski/jupyterlab-lsp
