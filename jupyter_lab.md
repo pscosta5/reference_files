@@ -58,7 +58,11 @@ _`jupyter labextension update` to update extensions_
   jupyter labextension install plotlywidget@1.3.0 --no-build
   jupyter lab build
   ```
-- [jupyterlab_go_to_definition](jupyter labextension install @krassowski/jupyterlab_go_to_definition)
+- [jupyterlab_go_to_definition](https://github.com/krassowski/jupyterlab-go-to-definition)
+
+  ```bash
+  jupyter labextension install @krassowski/jupyterlab_go_to_definition
+  ```
 
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
   _This does not work with JupyterLab 1.2, wait for update_
