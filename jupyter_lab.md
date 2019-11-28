@@ -64,6 +64,12 @@ _`jupyter labextension update` to update extensions_
   jupyter labextension install @krassowski/jupyterlab_go_to_definition
   ```
 
+  - [jupyterlab_spellchecker](https://github.com/ijmbarr/jupyterlab_spellchecker)
+
+  ```bash
+  jupyter labextension install @ijmbarr/jupyterlab_spellchecker
+  ```
+
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
   _This does not work with JupyterLab 1.2, wait for update_
   ```bash
