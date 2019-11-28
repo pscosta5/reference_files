@@ -109,13 +109,23 @@ _Settings -> Advanced Settings Editor_
     "shortcuts": [
       {
         "command": "jupyterlab_code_formatter:black",
-        "keys": ["Ctrl L"],
+        "keys": ["Shift Alt F"],
         "selector": ".jp-Notebook.jp-mod-editMode"
       },
       {
         "command": "jupyterlab_code_formatter:isort",
-        "keys": ["Ctrl I"],
+        "keys": ["Shift Alt I"],
         "selector": ".jp-Notebook.jp-mod-editMode"
+      },
+      {
+        "command": "notebook:move-cell-up",
+        "keys": ["Alt ArrowUp"],
+        "selector": ".jp-Notebook:focus"
+      },
+      {
+        "command": "notebook:move-cell-down",
+        "keys": ["Alt ArrowDown"],
+        "selector": ".jp-Notebook:focus"
       }
     ]
   }
