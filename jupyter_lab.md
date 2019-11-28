@@ -1,10 +1,10 @@
-# Jupyter lab
+# Jupyter Lab
 
 _Extensions and configs for Jupyter lab_
 
 [Good reference at Awesome Jupyter](https://github.com/mauhai/awesome-jupyterlab)
 
-## Settings
+## Command Palette
 
 - Enable Extension Manager
 
