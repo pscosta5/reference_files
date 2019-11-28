@@ -13,10 +13,15 @@ _Extensions and configs for Jupyter lab_
 _`jupyter labextension update` to update extensions_
 
 - [collapsible_headings](https://github.com/aquirdTurtle/Collapsible_Headings)
-    ```bash
-    jupyter labextension install @aquirdturtle/collapsible_headings
-    ```
+  ```bash
+  jupyter labextension install @aquirdturtle/collapsible_headings
+  ```
 - [jupyterlab-jupytext](https://github.com/mwouts/jupyterlab-jupytext)
+
+  ```bash
+  conda install -c conda-forge jupytext
+  ```
+
 - [@jupyterlab/git](https://github.com/jupyterlab/jupyterlab-git)
   - Might need to do extension manager install as well as
     ```bash
@@ -25,7 +30,15 @@ _`jupyter labextension update` to update extensions_
     jupyter serverextension enable --py jupyterlab_git
     ```
 - [@jupyterlab/github](https://github.com/jupyterlab/jupyterlab-github)
+
+  ```bash
+  jupyter labextension install @jupyterlab/github
+  ```
+
 - [@jupyerlab/toc](https://github.com/jupyterlab/jupyterlab-toc)
+  ```bash
+  jupyter labextension install @jupyterlab/toc
+  ```
 - [jupyerlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter)
   ```bash
   jupyter labextension install @ryantam626/jupyterlab_code_formatter
@@ -52,7 +65,7 @@ _`jupyter labextension update` to update extensions_
   ```bash
   pip install --pre jupyter-lsp
   jupyter labextension install @krassowski/jupyterlab-lsp
-
+  conda install -c conda-forge python-language-server
   ```
 
 ## Settings
@@ -98,7 +111,12 @@ _Settings -> Advanced Settings Editor_
   }
   ```
 
-- go-to-definition
+- Go-to-definition
+  ```json
+  {
+    "modifier": "Meta"
+  }
+  ```
 
 ## Theme
 
