@@ -1,3 +1,4 @@
 set mouse
+set nowrap
 
 include /Users/pcosta/.nano/nanorc/*.nanorc
