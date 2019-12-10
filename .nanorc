@@ -1,0 +1,3 @@
+set mouse
+
+include /Users/pcosta/.nano/nanorc/*.nanorc
