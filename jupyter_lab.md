@@ -75,6 +75,12 @@ _`jupyter labextension update` to update extensions_
   ```bash
   jupyter labextension install @lckr/jupyterlab_variableinspector
   ```
+  
+- [jupyterlab flake8](https://github.com/mlshapiro/jupyterlab-flake8)
+  _Untested—but looks cool!_
+  ```bash
+  jupyter labextension install jupyterlab-flake8
+  ```
 
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
   _This does not work with JupyterLab 1.2, wait for update_
