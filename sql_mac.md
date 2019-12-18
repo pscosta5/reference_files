@@ -121,3 +121,30 @@ conn.close()
 ```
 
 Congrats! That was terrible, wasn't it!?
+
+## Running SQL queries using VS Code
+
+If we want a dedicated editor, we can download [VS Code](https://code.visualstudio.com/) and install the [SQL Server extension](https://marketplace.visualstudio.com/items?itemName=ms-mssql.mssql). We can now add a connection though the new connections icon on the activity bar on the left, or simply by modifying VS Code's `settings.json`.
+
+You can either add a specific database or an entire server. This is the settings required to add both the database and server we worked with in this example.
+
+```json
+{
+  "mssql.connections": [
+    {
+      "server": "ZC1Q2PSQLGE1V.corp.companyname.com",
+      "database": "quantdb",
+      "authenticationType": "Integrated",
+      "profileName": "QuantDB",
+      "password": ""
+    },
+    {
+      "server": "ZC1Q2PSQLGE1V.corp.compnayname.com",
+      "database": "",
+      "authenticationType": "Integrated",
+      "profileName": "2016",
+      "password": ""
+    }
+  ]
+}
+```
