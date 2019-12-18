@@ -23,8 +23,31 @@
     "source.organizeImports": false
   },
   "python.dataScience.sendSelectionToInteractiveWindow": true,
-  "editor.rulers": [
-    79,
-    72
+  "editor.rulers": [79, 72],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "mssql.connections": [
+    {
+      "server": "ZC1Q2PSQLGE1V.corp.companyname.com",
+      "database": "quantdb",
+      "authenticationType": "Integrated",
+      "profileName": "QuantDB",
+      "password": ""
+    },
+    {
+      "server": "ZC1Q2PSQLGE1V.corp.companyname.com",
+      "database": "",
+      "authenticationType": "Integrated",
+      "profileName": "2016",
+      "password": ""
+    },
+    {
+      "server": "Zdbedcisandbox.corp.companyname.com",
+      "database": "",
+      "authenticationType": "Integrated",
+      "profileName": "Sandbox",
+      "password": ""
+    }
   ]
 }
