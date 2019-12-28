@@ -27,6 +27,7 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "terminal.integrated.shell.osx": "/bin/zsh",
   "mssql.connections": [
     {
       "server": "ZC1Q2PSQLGE1V.corp.companyname.com",
