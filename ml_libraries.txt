@@ -11,3 +11,4 @@ featuretools
 imbalanced-learn
 great-expectations
 streamlit
+snorkel
