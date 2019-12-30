@@ -77,7 +77,6 @@ _`jupyter labextension update` to update extensions_
   ```
   
 - [jupyterlab flake8](https://github.com/mlshapiro/jupyterlab-flake8)
-  _Untested—but looks cool!_
   ```bash
   jupyter labextension install jupyterlab-flake8
   ```
@@ -147,6 +146,21 @@ _Settings -> Advanced Settings Editor_
   ```json
   {
     "modifier": "Meta"
+  }
+  ```
+  
+- Jupyterlab-Flake8
+  ```json
+  {
+    // Jupyterlab-Flake8
+    // jupyterlab-flake8:plugins
+    // Linter settings
+    // *************************
+
+    // [missing schema title]
+    // Persistent internal terminal name. This is set automatically on each run
+    "conda_env": "notebook_env",
+    "terminal_name": "1"
   }
   ```
 
