@@ -19,3 +19,4 @@ _A list of extensions I use with VS code._
 - SQLTools - Database tools
 - Todo Tree
 - YAML
+- Better TOML
