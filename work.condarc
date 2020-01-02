@@ -1,0 +1,9 @@
+ssl_verify: false
+channels:
+  - plotly
+  - conda-forge
+  - defaults
+proxy_servers:
+  http: http://pcosta:p@$$w0rd@webproxyfrb.iglobal.companyname.com:8080
+  https: http://pcosta:p@$$w0rd@webproxyfrb.iglobal.companyname.com:8080
+auto_activate_base: false
