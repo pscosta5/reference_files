@@ -1,4 +1,6 @@
 channel_priority: strict
 channels:
+  - plotly
   - conda-forge
   - defaults
+auto_activate_base: false
