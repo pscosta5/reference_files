@@ -180,3 +180,23 @@ source /Users/paulo/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Poetry autocomplete
 # https://python-poetry.org/docs/
+
+# Brew build packages
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib $LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include $CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig $PKG_CONFIG_PATH"
+export LDFLAGS="-L/usr/local/opt/readline/lib $LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/readline/include $CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig $PKG_CONFIG_PATH"
+export LDFLAGS="-L/usr/local/opt/sqlite/lib $LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/sqlite/include $CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig $PKG_CONFIG_PATH"
+export LDFLAGS="-L/usr/local/opt/zlib/lib $LDFLAGS"
+export CPPFLAGS="-I/usr/local/opt/zlib/include $CPPFLAGS"
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
+
+# Pyenv
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+# Need to add pyenv autocomplete
