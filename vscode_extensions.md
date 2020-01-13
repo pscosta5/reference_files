@@ -20,3 +20,4 @@ _A list of extensions I use with VS code._
 - Todo Tree
 - YAML
 - Better TOML
+- markdownlint
