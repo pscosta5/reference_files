@@ -1,20 +1,14 @@
 """How to query Snowflake given that it lives in https://companyname.snowflakecomputing.com/."""
-import snowflake.connector
 import os
 
+import pandas as pd
+import snowflake.connector
 
-ctx = snowflake.connector.connect(
+with snowflake.connector.connect(
     provider="snowflake",
-    user=os.environ["SNOWFLAKEUSERNAME"],
-    password=os.environ["SNOWFLAKEPASSWORD"],
+    user=os.environ["SNOWFLAKE_USERNAME"],
+    password=os.environ["SNOWFLAKE_PASSWORD"],
     database="database_name",
-    account='companyname',
-)
-cs = ctx.cursor()
-try:
-    cs.execute("SELECT current_version()")
-    one_row = cs.fetchone()
-    print(one_row[0])
-finally:
-    cs.close()
-ctx.close()
+    account="companyname",
+) as ctx:
+    print(pd.read_sql("SELECT current_version()", con=ctx))
