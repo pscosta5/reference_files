@@ -53,5 +53,8 @@
       "profileName": "Sandbox",
       "password": ""
     }
-  ]
+  ],
+  // If issues with conda environments, turn off
+  "terminal.integrated.inheritEnv": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
 }
