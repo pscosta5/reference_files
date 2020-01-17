@@ -182,3 +182,12 @@ In conda environment
 ```bash
 conda install ipykernel
 ```
+
+## Virtual environment integration
+
+In venv/virtualenv
+
+```zsh
+pip install ipykernel
+python -m ipykernel install --user --name=mykernelname
+```
