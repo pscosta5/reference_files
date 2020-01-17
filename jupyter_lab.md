@@ -150,7 +150,7 @@ _Settings -> Advanced Settings Editor_
   ```
   
 - Jupyterlab-Flake8
-  ```json
+  ```jsons
   {
     // Jupyterlab-Flake8
     // jupyterlab-flake8:plugins
