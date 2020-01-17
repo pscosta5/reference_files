@@ -80,6 +80,14 @@ _`jupyter labextension update` to update extensions_
   ```bash
   jupyter labextension install jupyterlab-flake8
   ```
+  
+- [jupyterlab-widgets](https://ipywidgets.readthedocs.io/en/latest/user_install.html)
+  Need to run `conda isntall -c conda-forge ipywidgets` in virtual environment
+  ```zsh
+  conda install -c conda-forge widgetsnbextension
+  conda install -c conda-forge nodejs
+  jupyter labextension install @jupyter-widgets/jupyterlab-manager
+  ```
 
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
   _This does not work with JupyterLab 1.2, wait for update_
