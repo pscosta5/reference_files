@@ -234,6 +234,11 @@ export LDFLAGS="-L/Users/pcosta/homebrew/opt/unixodbc/lib $LDFLAGS"
 export CPPFLAGS="-I/Users/pcosta/homebrew/opt/unixodbc/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/Users/pcosta/homebrew/opt/unixodbc/lib/pkgconfig $PKG_CONFIG_PATH"
 
+# csvkit
+# ``brew install pipx``
+# ``pipx install csvkit``
+export PATH="/Users/pcosta/.local/bin:$PATH"
+
 # Pyenv
 # https://github.com/pyenv/pyenv#installation
 # ``brew install pyenv``
