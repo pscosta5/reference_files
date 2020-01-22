@@ -1,0 +1,5 @@
+# Place this in ~/.ssh/config
+# https://stackoverflow.com/questions/38979625/git-osxkeychain-credential-helper-silently-fails-to-remember-username-password
+# Used if having toubles with macOS remembering GitHub password
+Host *
+    UseKeychain yes
