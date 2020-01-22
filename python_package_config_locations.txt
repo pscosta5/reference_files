@@ -1,0 +1,2 @@
+~/.condarc
+/Users/pcosta/.config/pip/pip.conf
