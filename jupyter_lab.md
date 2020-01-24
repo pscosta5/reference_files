@@ -177,7 +177,9 @@ _Settings -> Advanced Settings Editor_
 - [Atom dark](https://github.com/BurglarBenson/Jupyter-Atom-Dark-Theme)
 - Settings -> Text Editor Theme -> material
 
-## Conda environment integration
+## Kernels
+
+### Conda environment integration
 
 In notebook environment
 
@@ -191,11 +193,17 @@ In conda environment
 conda install ipykernel
 ```
 
-## Virtual environment integration
+### Virtual environment integration
 
 In venv/virtualenv
 
 ```zsh
 pip install ipykernel
 python -m ipykernel install --user --name=mykernelname
+```
+
+### Remove kernels
+
+```zsh
+jupyter kernelspec uninstall unwanted-kernel
 ```
