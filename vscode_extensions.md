@@ -21,3 +21,4 @@ _A list of extensions I use with VS code._
 - YAML
 - Better TOML
 - markdownlint
+- GitHub Pull Requests
