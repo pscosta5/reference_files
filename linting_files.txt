@@ -9,3 +9,4 @@ flake8-rst-docstrings
 pandas-vet
 pep8-naming
 pytest
+black
