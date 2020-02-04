@@ -22,3 +22,4 @@ _A list of extensions I use with VS code._
 - Better TOML
 - markdownlint
 - GitHub Pull Requests
+- Sort lines
