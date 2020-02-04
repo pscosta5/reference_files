@@ -6,7 +6,7 @@ Place options in `~/.config/flake8`. Change path for `mypy.ini` to absolute path
 
 ## Mypy
 
-Place in `~/.config/mypy.ini`. Change path in `~/.config/flake8` to point to absolute path. This location could be anywhere, this just seems like a nice place to store it.
+Place in `~/.config/mypy/config`. Change path in `~/.config/flake8` to point to absolute path.
 
 ## isort
 
