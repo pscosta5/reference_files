@@ -10,3 +10,11 @@ pandas-vet
 pep8-naming
 pytest
 black
+isort
+ipykernel
+sphinx
+coverage
+pre-commit
+sphinx-theme-material
+rope
+nox
