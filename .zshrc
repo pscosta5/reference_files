@@ -82,7 +82,7 @@ plugins=(
 # ``brew update```
 # ``brew doctor```
 # https://stackoverflow.com/questions/35775102/how-to-install-homebrew-packages-locally
-export PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
+PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
 # Homebrew autocompletion
 # https://docs.brew.sh/Shell-Completion
 # This is pretty slow right now
@@ -134,19 +134,7 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # Add Visual Studio Code (code)
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-# Proxy
-function setproxy {
-	proxy='http://pcosta:p@$$w0rd(with%escapesforspecialsymbols)@webproxyfrb.iglobal.firstrepublic.com:8080'
-	export HTTPS_PROXY=$proxy
-	export HTTP_PROXY=$proxy
-}
-
-function unsetproxy {
-	unset HTTPS_PROXY
-	unset HTTP_PROXY
-}
+PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # ODBC directory
 # export ODBCINI=/Users/pcosta/miniconda3/envs/ds/etc/odbc.ini
@@ -161,14 +149,13 @@ export SQLUSERNAME=$SQL_USERNAME
 export SQLPASSWORD=$SQL_PASSWORD
 
 # Snowflake
-export SNOWFLAKE_USERNAME=hivariava
+export SNOWFLAKE_USERNAME=pcosta
 export SNOWFLAKE_PASSWORD=p@44w0rd
 export SNOWFLAKEUSERNAME=$SNOWFLAKE_USERNAME
 export SNOWFLAKEPASSWORD=$SNOWFLAKE_PASSWORD
 
 # PYTHONPATH
-PYTHONPATH=/Users/pcosta/Documents/pyfrb/:$PYTHONPATH
-# PYTHONPATH=/Users/pcosta/Documents/ds/frbtools/:$PYTHONPATH
+PYTHONPATH=/Users/pcosta/Documents/pyfrb_projects/pyfrb/:$PYTHONPATH
 PYTHONPATH=/Users/pcosta/Documents/ds/sqltools/:$PYTHONPATH
 export PYTHONPATH
 
@@ -196,6 +183,8 @@ autoload -U compinit && compinit
 export PATH="$HOME/.poetry/bin:$PATH"
 
 # Compile Python
+# We could use $(brew --prefix openssl) to get the paths here, but it's
+# slightly too slow
 
 # Homebrew openssl
 # brew install openssl
@@ -223,9 +212,9 @@ PKG_CONFIG_PATH="/Users/pcosta/homebrew/opt/sqlite/lib/pkgconfig $PKG_CONFIG_PAT
 
 # Homebrew zlib
 # brew install zlib
-export LDFLAGS="-L/Users/pcosta/homebrew/opt/zlib/lib $LDFLAGS"
-export CPPFLAGS="-I/Users/pcosta/homebrew/opt/zlib/include $CPPFLAGS"
-export PKG_CONFIG_PATH="/Users/pcosta/homebrew/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
+LDFLAGS="-L/Users/pcosta/homebrew/opt/zlib/lib $LDFLAGS"
+CPPFLAGS="-I/Users/pcosta/homebrew/opt/zlib/include $CPPFLAGS"
+PKG_CONFIG_PATH="/Users/pcosta/homebrew/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
 
 # Homebrew unixodbc
 # Mostly for building pyodbc
@@ -248,3 +237,43 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 source /Users/pcosta/homebrew/opt/pyenv/completions/pyenv.zsh
+
+# Functions
+
+# Set proxy
+function set_proxy {
+	proxy='http://pcosta:p@$$w0rd@webproxyfrb.iglobal.firstrepublic.com:8080'
+	export HTTPS_PROXY=$proxy
+	export HTTP_PROXY=$proxy
+}
+
+function unset_proxy {
+	unset HTTPS_PROXY
+	unset HTTP_PROXY
+}
+
+# Make a new Python project
+function new_python {
+    pyenv shell $2
+    poetry new $1
+    cd $1
+    # Change this when poetry updates to markdown
+    mv README.rst README.md
+    echo "# $1" > README.md
+    pyenv local $2
+    set_proxy
+    poetry install
+    poetry add -D mypy flake8 flake8-mypy flake8-isort flake8-bugbear flake8-docstrings flake8-black flake8-rst-docstrings pandas-vet pep8-naming black isort ipykernel sphinx coverage pre-commit sphinx-theme-material rope nox
+    # Taking first 6 lines of flake8 file for now and add new line to
+    # re-rout mypy.ini file
+    head -6 ~/.config/flake8 > .flake8
+    echo "mypy_config = mypy.ini" >> .flake8
+    cp ~/.config/mypy/config mypy.ini
+    cp ~/.isort.cfg .isort.cfg
+    cp ~/.config/python.gitignore .gitignore
+    git init
+    git add .
+    git commit -m "Basic project structure"
+    poetry shell
+    python -m ipykernel install --user --name=$1
+}
