@@ -1,2 +1,4 @@
 csvkit
 pre-commit
+nox
+tox
