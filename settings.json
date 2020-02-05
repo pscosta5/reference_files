@@ -57,16 +57,18 @@
   // If issues with conda environments, turn off
   "terminal.integrated.inheritEnv": true,
   "python.terminal.activateEnvInCurrentTerminal": true,
-  // If issues with conda environments, turn off
-  "terminal.integrated.inheritEnv": true,
-  "python.terminal.activateEnvInCurrentTerminal": true,
   // For connecting to enterprise GitHub
   // https://github.com/microsoft/vscode-pull-request-github/issues/1251#issuecomment-519725879
-  // This section seems to dissappear after successful sign on
+  // This section seems to disappear after successful sign on
   "githubPullRequests.hosts": [
     {
       "host": "https://github.companyname.com/",
       "token": "my-token-here"
     }
-  ]
+  ],
+  "prettier.printWidth": 88,
+  "prettier.proseWrap": "always",
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
