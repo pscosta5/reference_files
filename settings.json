@@ -70,5 +70,6 @@
   "prettier.proseWrap": "always",
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "python.linting.mypyEnabled": true
 }
