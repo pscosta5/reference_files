@@ -18,3 +18,4 @@ pre-commit
 sphinx-theme-material
 rope
 nox
+recommonmark
