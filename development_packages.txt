@@ -14,8 +14,9 @@ isort
 ipykernel
 sphinx
 coverage
-pre-commit
+pre-commit (global)
 sphinx-theme-material
 rope
-nox
+nox (global)
+tox (global)
 recommonmark
