@@ -263,7 +263,7 @@ function new_python {
     pyenv local $2
     set_proxy
     poetry install
-    poetry add -D mypy flake8 flake8-mypy flake8-isort flake8-bugbear flake8-docstrings flake8-black flake8-rst-docstrings pandas-vet pep8-naming black isort ipykernel sphinx coverage pre-commit sphinx-theme-material rope nox recommonmark
+    poetry add -D mypy flake8 flake8-mypy flake8-isort flake8-bugbear flake8-docstrings flake8-black flake8-rst-docstrings pandas-vet pep8-naming black isort ipykernel sphinx coverage pre-commit sphinx-theme-material rope recommonmark
     # Taking first 6 lines of flake8 file for now and add new line to
     # re-rout mypy.ini file
     head -6 ~/.config/flake8 > .flake8
