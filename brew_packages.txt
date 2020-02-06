@@ -18,3 +18,4 @@ xz
 bfg
 htop
 git
+micro
