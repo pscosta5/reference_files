@@ -24,4 +24,4 @@
 	changed = green
 	untracked = cyan
 [core]
-	editor = nano
+	editor = micro
