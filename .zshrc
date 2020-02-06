@@ -178,6 +178,13 @@ source /Users/pcosta/miniconda3/share/zsh/zsh-syntax-highlighting/zsh-syntax-hig
 # https://github.com/esc/conda-zsh-completion/blob/master/_conda
 autoload -U compinit && compinit
 
+# Pipx completion
+# ``brew install pipx``
+# https://github.com/pipxproject/pipx
+autoload -U bashcompinit
+bashcompinit
+eval "$(register-python-argcomplete pipx)"
+
 # Poetry
 # https://python-poetry.org/docs/
 export PATH="$HOME/.poetry/bin:$PATH"
