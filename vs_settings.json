@@ -71,5 +71,6 @@
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.linting.mypyEnabled": true
+  "python.linting.mypyEnabled": true,
+  "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs"
 }
