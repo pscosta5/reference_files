@@ -233,14 +233,13 @@ export PKG_CONFIG_PATH="/Users/pcosta/homebrew/opt/unixodbc/lib/pkgconfig $PKG_C
 # csvkit
 # ``brew install pipx``
 # ``pipx install csvkit``
-PATH="/Users/pcosta/.local/bin:$PATH"
+export PATH="/Users/pcosta/.local/bin:$PATH"
 
 # Pyenv
 # https://github.com/pyenv/pyenv#installation
 # ``brew install pyenv``
 # ``brew install readline sqlite3 xz zlib``
 # This should be last to overide conda paths
-export PATH="~/.pyenv/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
