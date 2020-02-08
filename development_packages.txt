@@ -13,7 +13,8 @@ black
 isort
 ipykernel
 sphinx
-coverage
+coverage[toml]
+pytest-cov
 pre-commit
 sphinx-theme-material
 rope
