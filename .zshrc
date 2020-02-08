@@ -240,7 +240,7 @@ PATH="/Users/pcosta/.local/bin:$PATH"
 # ``brew install pyenv``
 # ``brew install readline sqlite3 xz zlib``
 # This should be last to overide conda paths
-export PATH = "/.pyenv/bin:$PATH"
+export PATH="~/.pyenv/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
