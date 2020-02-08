@@ -15,6 +15,7 @@ ipykernel
 sphinx
 coverage[toml]
 pytest-cov
+pytest-mock
 pre-commit
 sphinx-theme-material
 rope
