@@ -2,3 +2,4 @@ csvkit
 pre-commit
 nox
 tox
+invoke
