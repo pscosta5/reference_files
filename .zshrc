@@ -185,6 +185,12 @@ autoload -U bashcompinit
 bashcompinit
 eval "$(register-python-argcomplete pipx)"
 
+# Nox completion
+# ``pipx install nox``
+# Like pipx, needs bashcompinit enabled
+# https://github.com/theacodes/nox
+eval "$(register-python-argcomplete nox)"
+
 # Poetry
 # https://python-poetry.org/docs/
 export PATH="$HOME/.poetry/bin:$PATH"
