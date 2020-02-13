@@ -19,3 +19,4 @@ bfg
 htop
 git
 micro
+github/gh/gh
