@@ -243,11 +243,14 @@ export PATH="/Users/pcosta/.local/bin:$PATH"
 
 # Pyenv
 # https://github.com/pyenv/pyenv#installation
+# https://github.com/pyenv/pyenv-virtualenv
 # ``brew install pyenv``
 # ``brew install readline sqlite3 xz zlib``
+# ``brew install pyenv-virtualenv``
 # This should be last to overide conda paths
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
 source /Users/pcosta/homebrew/opt/pyenv/completions/pyenv.zsh
 
