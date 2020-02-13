@@ -207,3 +207,12 @@ python -m ipykernel install --user --name=mykernelname
 ```zsh
 jupyter kernelspec uninstall unwanted-kernel
 ```
+
+## Debugging
+
+```python
+from IPython.core.debugger import set_trace
+set_trace()
+```
+
+or `%debug` after exception occurs.
