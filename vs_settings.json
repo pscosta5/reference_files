@@ -30,6 +30,9 @@
   "[makefile]": {
     "editor.insertSpaces": false
   },
+  "[restructuredtext]": {
+    "editor.tabSize": 3
+  },
   "terminal.integrated.shell.osx": "/bin/zsh",
   "mssql.connections": [
     {
