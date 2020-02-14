@@ -25,3 +25,15 @@ upgrade-all
 ```zsh
 poetry self update
 ```
+
+## Pip
+
+```zsh
+pip install --upgrade pip
+```
+
+## Conda
+
+```zsh
+conda update conda
+```
