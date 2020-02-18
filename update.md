@@ -37,3 +37,9 @@ pip install --upgrade pip
 ```zsh
 conda update conda
 ```
+
+## Oh My Zsh
+
+```zsh
+upgrade_oh_my_zsh
+```
