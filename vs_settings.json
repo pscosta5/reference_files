@@ -33,6 +33,9 @@
   "[restructuredtext]": {
     "editor.tabSize": 3
   },
+  "[json]": {
+    "editor.tabSize": 2
+  },
   "terminal.integrated.shell.osx": "/bin/zsh",
   "mssql.connections": [
     {
