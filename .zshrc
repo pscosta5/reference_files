@@ -75,6 +75,8 @@ plugins=(
     pip
     conda-zsh-completion
     poetry
+    docker
+    docker-compose
 )
 
 # Homebrew with non admin
