@@ -12,6 +12,7 @@ jupyter labextension update
 
 ```zsh
 brew update
+brew upgrade
 ```
 
 ## Pipx
