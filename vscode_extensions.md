@@ -26,3 +26,4 @@ _A list of extensions I use with VS code._
 - Gist
 - Docker
 - Git Graph
+- Rainbow CSV
