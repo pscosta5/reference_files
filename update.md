@@ -17,7 +17,7 @@ brew update
 ## Pipx
 
 ```zsh
-upgrade-all
+pipx upgrade-all
 ```
 
 ## Poetry
