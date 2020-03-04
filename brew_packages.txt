@@ -21,3 +21,4 @@ git
 micro
 github/gh/gh
 pyenv-virtualenv
+pandoc
