@@ -17,7 +17,8 @@
   "autoDocstring.startOnNewLine": true,
   "python.testing.pytestEnabled": true,
   "[sql]": {
-    "editor.defaultFormatter": "mtxr.sqltools"
+    "editor.defaultFormatter": "mtxr.sqltools",
+    "editor.tabSize": 2
   },
   "editor.codeActionsOnSave": {
     "source.organizeImports": false
