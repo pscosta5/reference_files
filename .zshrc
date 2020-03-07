@@ -182,10 +182,12 @@ autoload -U compinit && compinit
 
 # Pipx completion
 # ``brew install pipx``
+# ``pipx ensurepath``
 # https://github.com/pipxproject/pipx
 autoload -U bashcompinit
 bashcompinit
 eval "$(register-python-argcomplete pipx)"
+export PATH="/Users/pcosta/.local/bin:$PATH"
 
 # Nox completion
 # ``pipx install nox``
@@ -237,11 +239,6 @@ PKG_CONFIG_PATH="/Users/pcosta/homebrew/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
 export LDFLAGS="-L/Users/pcosta/homebrew/opt/unixodbc/lib $LDFLAGS"
 export CPPFLAGS="-I/Users/pcosta/homebrew/opt/unixodbc/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/Users/pcosta/homebrew/opt/unixodbc/lib/pkgconfig $PKG_CONFIG_PATH"
-
-# csvkit
-# ``brew install pipx``
-# ``pipx install csvkit``
-export PATH="/Users/pcosta/.local/bin:$PATH"
 
 # Pyenv
 # https://github.com/pyenv/pyenv#installation
