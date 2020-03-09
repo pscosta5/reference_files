@@ -76,6 +76,9 @@ export ZSH=$HOME/.oh-my-zsh
 # Conda
 # ``git clone https://github.com/esc/conda-zsh-completion ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/conda-zsh-completion``
 # And init step below
+
+# zsh-autosuggestions
+# ``git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions``
 plugins=(
     git
     osx
@@ -85,6 +88,7 @@ plugins=(
     poetry
     docker
     docker-compose
+    zsh-autosuggestions
 )
 
 # Homebrew with non admin
