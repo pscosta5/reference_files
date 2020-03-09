@@ -68,6 +68,14 @@ export ZSH=$HOME/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+# Poetry
+# ``mkdir $ZSH/plugins/poetry``
+# ``poetry completions zsh > $ZSH/plugins/poetry/_poetry``
+
+# Conda
+# ``git clone https://github.com/esc/conda-zsh-completion ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/conda-zsh-completion``
+# And init step below
 plugins=(
     git
     osx
