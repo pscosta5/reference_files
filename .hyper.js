@@ -32,7 +32,7 @@ module.exports = {
 
     // font family with optional fallbacks
     fontFamily:
-      '"Roboto Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+      '"RobotoMono Nerd Font", "Roboto Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: "normal",
