@@ -252,7 +252,7 @@ export LDFLAGS="-L/Users/pcosta/homebrew/opt/unixodbc/lib $LDFLAGS"
 export CPPFLAGS="-I/Users/pcosta/homebrew/opt/unixodbc/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/Users/pcosta/homebrew/opt/unixodbc/lib/pkgconfig $PKG_CONFIG_PATH"
 
-# Pyenv
+# pyenv
 # https://github.com/pyenv/pyenv#installation
 # https://github.com/pyenv/pyenv-virtualenv
 # ``brew install pyenv``
@@ -266,6 +266,25 @@ if which pyenv-virtualenv-init > /dev/null; then
     eval "$(pyenv virtualenv-init -)";
 fi
 source /Users/pcosta/homebrew/opt/pyenv/completions/pyenv.zsh
+
+# rbenv
+# https://github.com/rbenv/rbenv
+# ``brew install rbenv``
+if command -v rbenv 1>/dev/null 2>&1; then
+  eval "$(rbenv init -)"
+fi
+
+# Colorls
+# https://github.com/athityakumar/colorls
+# ``rbenv install 2.7.0``
+# ``rbenv global 2.7.0``
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Bold/complete/Roboto%20Mono%20Bold%20Nerd%20Font%20Complete.ttf
+# ``gem install colorls
+# ``cp $(dirname $(gem which colorls))/yaml/dark_colors.yaml ~/.config/colorls/dark_colors.yaml``
+# Put ``dark_colors.yaml`` in ``~/.config/colorls/``
+alias lc='colorls -lA --sd'
+source $(dirname $(gem which colorls))/tab_complete.sh
 
 # Functions
 
