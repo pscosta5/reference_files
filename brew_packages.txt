@@ -22,3 +22,5 @@ micro
 github/gh/gh
 pyenv-virtualenv
 pandoc
+libomp
+cmake
