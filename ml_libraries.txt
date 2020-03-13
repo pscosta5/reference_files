@@ -13,3 +13,4 @@ great-expectations
 streamlit
 snorkel
 dtale
+category_encoders
