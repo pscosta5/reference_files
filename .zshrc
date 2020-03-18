@@ -91,19 +91,6 @@ plugins=(
     zsh-autosuggestions
 )
 
-# Homebrew with non admin
-# ``git clone --depth=1 https://github.com/Homebrew/brew ~/homebrew``
-# ``brew update```
-# ``brew doctor```
-# https://stackoverflow.com/questions/35775102/how-to-install-homebrew-packages-locally
-PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
-# Homebrew autocompletion
-# https://docs.brew.sh/Shell-Completion
-# This is pretty slow right now
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
-
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -131,6 +118,20 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Homebrew with non admin
+# ``git clone --depth=1 https://github.com/Homebrew/brew ~/homebrew``
+# ``brew update```
+# ``brew doctor```
+# https://stackoverflow.com/questions/35775102/how-to-install-homebrew-packages-locally
+PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
+# Homebrew autocompletion
+# https://docs.brew.sh/Shell-Completion
+# This is pretty slow right now
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
