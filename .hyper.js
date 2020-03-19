@@ -23,6 +23,16 @@ module.exports = {
       vibrancy: "dark"
     },
 
+    hyperTabs: {
+      // The height(unit px) of zone over tabs to drag the window
+      navMoveable: 0,
+      // The hotkeys of move tabs
+      hotkeys: {
+        moveLeft: 'command+[',
+        moveRight: ['command+]', 'r i g h t']
+      }
+    },
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: "stable",
@@ -172,7 +182,8 @@ module.exports = {
     "hyperlinks",
     "hyper-alt-click",
     "hyper-statusline",
-    "hypercwd"
+    "hypercwd",
+    "hyper-reorderable-tabs"
   ],
 
   // in development, you can create a directory under
