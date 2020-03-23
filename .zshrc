@@ -231,6 +231,27 @@ zstyle :prompt:pure:prompt:success color 13
 zstyle :prompt:pure:prompt:continuation color 248
 zstyle :prompt:pure:user color 248
 zstyle :prompt:pure:virtualenv color 248
+# Other colors
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=9,bold'
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=11'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=10,underline'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=10,underline'
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=12'
+ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=12'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=13'
+ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=13'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=13'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=11'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=11'
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=11'
+ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=14'
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=14'
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=14'
+ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=14'
+ZSH_HIGHLIGHT_STYLES[comment]='fg=8,bold'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=10'
 
 # Syntax highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting.git
