@@ -91,6 +91,24 @@ plugins=(
     zsh-autosuggestions
 )
 
+# Homebrew with non admin
+# This needs to come before oh-my-zsh.sh is called
+# ``git clone --depth=1 https://github.com/Homebrew/brew ~/homebrew``
+# ``brew update```
+# ``brew doctor```
+# https://stackoverflow.com/questions/35775102/how-to-install-homebrew-packages-locally
+PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
+
+# Homebrew autocompletion
+# https://docs.brew.sh/Shell-Completion
+# This is pretty slow right now
+# Also works for git and the_silver_searcher
+# ``brew install git``
+# ``brew install the_silver_searcher``
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+fi
+
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -118,19 +136,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Homebrew with non admin
-# ``git clone --depth=1 https://github.com/Homebrew/brew ~/homebrew``
-# ``brew update```
-# ``brew doctor```
-# https://stackoverflow.com/questions/35775102/how-to-install-homebrew-packages-locally
-PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
-# Homebrew autocompletion
-# https://docs.brew.sh/Shell-Completion
-# This is pretty slow right now
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-fi
 
 # tldr bash
 # https://github.com/raylee/tldr
