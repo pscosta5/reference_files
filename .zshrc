@@ -224,6 +224,8 @@ eval "$(register-python-argcomplete nox)"
 # https://python-poetry.org/docs/
 export PATH="$HOME/.poetry/bin:$PATH"
 
+# Pytest
+eval "$(register-python-argcomplete pytest)"
 
 # Invoke
 # http://www.pyinvoke.org/

@@ -23,6 +23,16 @@ module.exports = {
       vibrancy: "dark"
     },
 
+    hyperTabs: {
+      // The height(unit px) of zone over tabs to drag the window
+      navMoveable: 0,
+      // The hotkeys of move tabs
+      hotkeys: {
+        moveLeft: 'command+[',
+        moveRight: ['command+]', 'r i g h t']
+      }
+    },
+
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: "stable",
@@ -166,7 +176,15 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-search", "hyper-material-theme", "hyperlinks", "hyper-alt-click"],
+  plugins: [
+    "hyper-search",
+    "hyper-material-theme",
+    "hyperlinks",
+    "hyper-alt-click",
+    "hyper-statusline",
+    "hypercwd",
+    "hyper-reorderable-tabs"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
