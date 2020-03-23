@@ -197,6 +197,40 @@ fpath+=('$PWD/functions')
 fpath+=('/Users/pcosta/miniconda3/lib/node_modules/pure-prompt/functions')
 autoload -U promptinit; promptinit
 prompt pure
+# Change pure colors
+# https://github.com/sindresorhus/pure/issues/501#issuecomment-541693938
+# https://github.com/sindresorhus/pure#colors
+# Numbers are based on this ordering:
+# 0. black
+# 1. red
+# 2. green
+# 3. yellow
+# 4. blue
+# 5. magenta
+# 6. cyan
+# 7. white
+# 8. lightBlack
+# 9. lightRed
+# 10. lightGreen
+# 11. lightYellow
+# 12. lightBlue
+# 13. lightMagenta
+# 14. lightCyan
+# 15. lightWhite
+zstyle :prompt:pure:execution_time color 11
+zstyle :prompt:pure:git:arrow color 14
+zstyle :prompt:pure:git:stash color 14
+zstyle :prompt:pure:git:branch color 248
+zstyle :prompt:pure:git:branch:cached color 9
+zstyle :prompt:pure:git:action color 248
+zstyle :prompt:pure:git:dirty color 13
+zstyle :prompt:pure:host color 248
+zstyle :prompt:pure:path color 12
+zstyle :prompt:pure:prompt:error color 9
+zstyle :prompt:pure:prompt:success color 13
+zstyle :prompt:pure:prompt:continuation color 248
+zstyle :prompt:pure:user color 248
+zstyle :prompt:pure:virtualenv color 248
 
 # Syntax highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting.git
