@@ -1,44 +1,44 @@
 # Main Colors
-unrecognized_file: red
+unrecognized_file: lightcoral
 recognized_file: white
-dir: cyan
+dir: lightsteelblue
 
 # Link
-dead_link: red
-link: cyan
+dead_link: lightcoral
+link: lightsteelblue
 
 # special files
-socket: green
-blockdev: green
-chardev: green
+socket: lightseagreen
+blockdev: lightseagreen
+chardev: lightseagreen
 
 # Access Modes
-write: yellow
-read: green
-exec: red
-no_access: red
+write: lightgoldenrod
+read: lightseagreen
+exec: lightcoral
+no_access: lightcoral
 
 # Age
-day_old: yellow
-hour_old: green
-no_modifier: white
+day_old: lightseagreen
+hour_old: lightblue
+no_modifier: lightslategray
 
 # File Size
 file_large: magenta
-file_medium: yellow
+file_medium: lightgoldenrod
 file_small: white
 
 # Random
 report: white
 user: white
-tree: cyan
-empty: blue
-error: red
-normal: blue
+tree: lightsteelblue
+empty: lightskyblue
+error: lightcoral
+normal: lightskyblue
 
 # Git
-addition: green
-modification: yellow
-deletion: red
+addition: lightseagreen
+modification: lightgoldenrod
+deletion: lightcoral
 untracked: magenta
 unchanged: white
