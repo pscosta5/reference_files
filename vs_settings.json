@@ -1,7 +1,8 @@
 {
   "workbench.colorTheme": "Material Theme",
   "workbench.iconTheme": "eq-material-theme-icons",
-  "editor.fontFamily": "Fira Code",
+  // https://www.nerdfonts.com/font-downloads
+  "editor.fontFamily": "FiraCode Nerd Font",
   "editor.lineHeight": 24,
   "editor.fontLigatures": true,
   "explorer.decorations.badges": false,
@@ -83,7 +84,5 @@
   "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs",
   // Avoid debugger conflict with coverage
   // https://code.visualstudio.com/docs/python/testing
-  "python.testing.pytestArgs": [
-    "--no-cov"
-  ]
+  "python.testing.pytestArgs": ["--no-cov"]
 }
