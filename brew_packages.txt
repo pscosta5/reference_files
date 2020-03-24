@@ -24,4 +24,4 @@ pyenv-virtualenv
 pandoc
 libomp
 cmake
-the_silver_searcher
+ripgrep
