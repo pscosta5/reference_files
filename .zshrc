@@ -254,6 +254,12 @@ ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=14'
 ZSH_HIGHLIGHT_STYLES[comment]='fg=8,bold'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=10'
 
+# Bat
+# https://github.com/sharkdp/bat
+# ``brew install bat``
+export BAT_THEME="OneHalfDark"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
+
 # Syntax highlighting
 # https://github.com/zsh-users/zsh-syntax-highlighting.git
 source /Users/pcosta/miniconda3/share/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

@@ -26,3 +26,4 @@ libomp
 cmake
 ripgrep
 diff-so-fancy
+bat
