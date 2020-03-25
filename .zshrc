@@ -293,6 +293,11 @@ export PATH="/Users/pcosta/.local/bin:$PATH"
 # https://github.com/theacodes/nox
 eval "$(register-python-argcomplete nox)"
 
+# Dephell
+# ``https://github.com/dephell/dephell``
+# dephell self autocomplete
+source "/Users/pcosta/.local/share/dephell/_dephell_zsh_autocomplete"
+
 # Poetry
 # https://python-poetry.org/docs/
 export PATH="$HOME/.poetry/bin:$PATH"
