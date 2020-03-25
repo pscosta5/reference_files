@@ -1,3 +1,6 @@
+# https://github.com/athityakumar/colorls
+# Place in ~/.config/colorls/dark_colors.yaml after installing colorls
+
 # Main Colors
 unrecognized_file: lightcoral
 recognized_file: ghostwhite
