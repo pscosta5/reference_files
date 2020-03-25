@@ -111,10 +111,6 @@ PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
-# ``brew install fzf``
-# https://github.com/junegunn/fzf
-# ``$(brew --prefix)/opt/fzf/install``
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $ZSH/oh-my-zsh.sh
 
@@ -428,3 +424,11 @@ function unset_proxy {
 	unset HTTPS_PROXY
 	unset HTTP_PROXY
 }
+
+
+# fzf key bindings and autocomplete
+# ``brew install fzf``
+# https://github.com/junegunn/fzf
+# ``$(brew --prefix)/opt/fzf/install``
+# CTRL-R does not seem to work unless this is placed towards the end
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
