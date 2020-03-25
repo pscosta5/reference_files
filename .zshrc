@@ -432,3 +432,9 @@ function unset_proxy {
 # ``$(brew --prefix)/opt/fzf/install``
 # CTRL-R does not seem to work unless this is placed towards the end
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# bat integration
+export FZF_DEFAULT_COMMAND='fd --type file --follow --hidden --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
+# This line apparently slows down fzf, so use with caution
+export FZF_DEFAULT_OPTS="--ansi"
