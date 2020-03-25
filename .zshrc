@@ -111,6 +111,9 @@ PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
+# ``brew install fzf``
+# https://github.com/junegunn/fzf
+$(brew --prefix)/opt/fzf/install
 
 source $ZSH/oh-my-zsh.sh
 
