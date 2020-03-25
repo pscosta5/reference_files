@@ -32,3 +32,4 @@ fd
 fzf
 thefuck
 prettyping
+ncdu
