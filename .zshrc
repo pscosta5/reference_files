@@ -113,7 +113,8 @@ if type brew &>/dev/null; then
 fi
 # ``brew install fzf``
 # https://github.com/junegunn/fzf
-$(brew --prefix)/opt/fzf/install
+# ``$(brew --prefix)/opt/fzf/install``
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source $ZSH/oh-my-zsh.sh
 
