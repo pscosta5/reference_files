@@ -25,3 +25,4 @@ pandoc
 libomp
 cmake
 ripgrep
+diff-so-fancy
