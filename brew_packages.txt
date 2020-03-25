@@ -29,3 +29,4 @@ diff-so-fancy
 bat
 exa
 fd
+fzf
