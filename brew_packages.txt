@@ -28,3 +28,4 @@ ripgrep
 diff-so-fancy
 bat
 exa
+fd
