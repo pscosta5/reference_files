@@ -440,3 +440,8 @@ export FZF_DEFAULT_COMMAND="fd --type file --color=always"
 export FZF_DEFAULT_OPTS="--ansi"
 # bat integration
 alias prev='fzf --preview="bat {} --color=always"'
+
+# thefuck
+# ``brew install thefuck``
+# https://github.com/nvbn/thefuck
+alias f=fuck
