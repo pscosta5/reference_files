@@ -444,4 +444,5 @@ alias prev='fzf --preview="bat {} --color=always"'
 # thefuck
 # ``brew install thefuck``
 # https://github.com/nvbn/thefuck
+eval $(thefuck --alias)
 alias f=fuck
