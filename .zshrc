@@ -427,8 +427,8 @@ function unset_proxy {
 
 
 # fzf key bindings and autocomplete
-# ``brew install fzf``
 # https://github.com/junegunn/fzf
+# ``brew install fzf``
 # ``$(brew --prefix)/opt/fzf/install``
 # CTRL-R does not seem to work unless this is placed towards the end
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
