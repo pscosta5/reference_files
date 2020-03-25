@@ -1,3 +1,6 @@
+; Assumes micro and diff-so-fancy are installed (brew is easy way)
+; https://github.com/zyedidia/micro
+; https://github.com/so-fancy/diff-so-fancy
 ; Place in ~/.gitconfig
 [credential]
 	helper = osxkeychain
