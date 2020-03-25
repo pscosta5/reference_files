@@ -41,6 +41,8 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
+    // https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
+    // https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Bold/complete/Roboto%20Mono%20Bold%20Nerd%20Font%20Complete.ttf
     fontFamily:
       '"RobotoMono Nerd Font", "Roboto Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
