@@ -7,3 +7,4 @@ cookiecutter
 git-filter-repo
 kaggle
 youtube_dl
+dephell[full]
