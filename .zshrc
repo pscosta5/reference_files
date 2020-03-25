@@ -106,6 +106,8 @@ PATH="$HOME/homebrew/bin:$HOME/homebrew/sbin:$PATH"
 # ``brew install git``
 # ``brew install the_silver_searcher``
 # ``brew install ripgrep``
+# ``brew install exa``
+# ``brew install fd``
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
 fi
