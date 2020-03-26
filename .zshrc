@@ -426,7 +426,7 @@ export FZF_DEFAULT_COMMAND="fd --type file --color=always"
 # This line apparently slows down fzf, so use with caution
 export FZF_DEFAULT_OPTS="--ansi"
 # bat integration
-alias prev='fzf --preview="bat {} --color=always"'
+alias prev='fzf --preview "bat --style=numbers --color=always {} | head -500"'
 
 # thefuck
 # ``brew install thefuck``
