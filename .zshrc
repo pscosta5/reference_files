@@ -140,19 +140,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# tldr bash
-# https://github.com/raylee/tldr
-# ``mkdir -p ~/bin``
-# ``curl -o ~/bin/tldr https://raw.githubusercontent.com/raylee/tldr/master/tldr``
-# ``chmod +x ~/bin/tldr``
-PATH=$PATH:~/bin
-complete -W "$(tldr 2>/dev/null --list)" tldr
-export TLDR_HEADER='magenta bold underline'
-export TLDR_QUOTE='italic'
-export TLDR_DESCRIPTION='green'
-export TLDR_CODE='red'
-export TLDR_PARAM='blue'
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/pcosta/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"

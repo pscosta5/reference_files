@@ -33,3 +33,4 @@ fzf
 thefuck
 prettyping
 ncdu
+tealdeer
