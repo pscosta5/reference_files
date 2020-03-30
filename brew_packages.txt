@@ -34,3 +34,4 @@ thefuck
 prettyping
 ncdu
 tealdeer
+wget
