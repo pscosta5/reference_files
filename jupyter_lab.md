@@ -89,6 +89,13 @@ _`jupyter labextension update` to update extensions_
   jupyter labextension install @jupyter-widgets/jupyterlab-manager
   ```
 
+- [jupyterlab debugger](https://github.com/jupyterlab/debugger)
+
+  ```sh
+  conda install xeus-python -c conda-forge
+  jupyter labextension intsall @jupyterlab/debugger
+  ```
+
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
   _This does not work with JupyterLab 1.2, wait for update_
   ```bash
