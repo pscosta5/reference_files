@@ -27,7 +27,8 @@
   "python.dataScience.sendSelectionToInteractiveWindow": true,
   "editor.rulers": [79, 72],
   "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
   },
   "[makefile]": {
     "editor.insertSpaces": false
