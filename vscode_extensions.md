@@ -27,3 +27,6 @@ _A list of extensions I use with VS code._
 - Docker
 - Git Graph
 - Rainbow CSV
+- Table Formatter
+- Remote Develoment
+
