@@ -29,4 +29,4 @@ _A list of extensions I use with VS code._
 - Rainbow CSV
 - Table Formatter
 - Remote Develoment
-
+- Search Editor: Apply Changes
