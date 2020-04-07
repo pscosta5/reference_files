@@ -156,7 +156,8 @@ unset __conda_setup
 # <<< conda initialize <<<
 
 # Add Visual Studio Code (code)
-PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+# Run ``Shell Command: Instal 'code' in PATH`` in Visual Studio Code
+export PATH="$PATH:$HOME/Documents/apps/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # ODBC directory
 # export ODBCINI=/Users/pcosta/miniconda3/envs/ds/etc/odbc.ini
