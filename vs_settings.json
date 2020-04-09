@@ -88,5 +88,7 @@
   "python.testing.pytestArgs": ["--no-cov"],
   "files.associations": {
     "flake8": "ini"
-  }
+  },
+  // Don't show welcome sceen
+  "workbench.startupEditor": "newUntitledFile"
 }
