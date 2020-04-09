@@ -1,7 +1,7 @@
+# Place in ~/.config/flake8
+# Assumes flake8-bugbear is installed
 [flake8]
 ignore = E203, E266, E501, W503
 max-line-length = 80
 max-complexity = 18
-docstring-convention = numpy
-select = B,C,E,F,W,T4,B9,D,BLK,I0,RST,PD,N8
-mypy_config = /Users/pcosta/.config/mypy/config
+select = B,C,E,F,W,B9
