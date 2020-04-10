@@ -30,3 +30,4 @@ _A list of extensions I use with VS code._
 - Table Formatter
 - Remote Develoment
 - Search Editor: Apply Changes
+- tl;dr pages
