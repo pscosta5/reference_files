@@ -396,7 +396,7 @@ fi
 # ``gem install colorls
 # ``cp $(dirname $(gem which colorls))/yaml/dark_colors.yaml ~/.config/colorls/dark_colors.yaml``
 # Put ``dark_colors.yaml`` in ``~/.config/colorls/``
-alias lc='colorls -lA --sd'
+alias lc='colorls -lAt --sd --gs'
 source $(dirname $(gem which colorls))/tab_complete.sh
 
 # Functions
