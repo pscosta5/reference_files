@@ -90,5 +90,6 @@
     "flake8": "ini"
   },
   // Don't show welcome sceen
-  "workbench.startupEditor": "newUntitledFile"
+  "workbench.startupEditor": "newUntitledFile",
+  "rewrap.wrappingColumn": 72
 }
