@@ -31,3 +31,4 @@ _A list of extensions I use with VS code._
 - Remote Develoment
 - Search Editor: Apply Changes
 - tl;dr pages
+- Rewrap
