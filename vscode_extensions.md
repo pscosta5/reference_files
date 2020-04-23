@@ -32,3 +32,4 @@ _A list of extensions I use with VS code._
 - Search Editor: Apply Changes
 - tl;dr pages
 - Rewrap
+- Pyright
