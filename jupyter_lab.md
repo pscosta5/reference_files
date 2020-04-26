@@ -140,7 +140,7 @@ _Settings -> Advanced Settings Editor_
       },
       {
         "command": "jupyterlab_code_formatter:isort",
-        "keys": ["Shift Alt I"],
+        "keys": ["Shift Alt O"],
         "selector": ".jp-Notebook.jp-mod-editMode"
       },
       {
