@@ -223,3 +223,20 @@ set_trace()
 ```
 
 or `%debug` after exception occurs.
+
+## Alert boxes
+
+Create colored boxes by using some HTML.
+
+```html
+<div class="alert alert-block alert-info">
+    <b>Techniques of note</b>
+    <br><br>
+    <li><code>MultiIndex.level</code> for grabbing specific indexes from a MultiIndex</li>
+    <li><code>Index.difference</code> for finding indexes that exist in one set but not the other</li>
+    <li><code>^</code> for symmetric differences</li>
+</div>
+```
+
+The above results in a blue box. Can also use `class="alert alert-block alert-warning"` for yellow box, `class="alert alert-block alert-success"` for green, or `class="alert alert-block alert-danger"` for red.
+ 
