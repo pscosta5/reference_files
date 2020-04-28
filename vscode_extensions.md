@@ -34,3 +34,4 @@ _A list of extensions I use with VS code._
 - Rewrap
 - Pyright
 - Jira and Bitbucket (Official)
+- Importmagic
