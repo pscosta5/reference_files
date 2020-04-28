@@ -36,3 +36,4 @@ _A list of extensions I use with VS code._
 - Jira and Bitbucket (Official)
 - Importmagic
 - Path Intellisense
+- Path Autocomplete
