@@ -35,3 +35,4 @@ _A list of extensions I use with VS code._
 - Pyright
 - Jira and Bitbucket (Official)
 - Importmagic
+- Path Intellisense
