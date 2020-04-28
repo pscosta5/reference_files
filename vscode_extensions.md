@@ -37,3 +37,4 @@ _A list of extensions I use with VS code._
 - Importmagic
 - Path Intellisense
 - Path Autocomplete
+- Markdown PDF
