@@ -33,3 +33,4 @@ _A list of extensions I use with VS code._
 - tl;dr pages
 - Rewrap
 - Pyright
+- Jira and Bitbucket (Official)
