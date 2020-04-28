@@ -38,3 +38,5 @@ _A list of extensions I use with VS code._
 - Path Intellisense
 - Path Autocomplete
 - Markdown PDF
+- Markdown Emoji
+- Markdown Checkboxes
