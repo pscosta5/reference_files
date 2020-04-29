@@ -1,6 +1,7 @@
 # Fonts
 
 # If font issues, check out paths in ~/.matplotlib/fontlist-v310.json
+# Can also manually remove ~/.matplotlib/tex.cache
 
 # Rebuild font cache
 
