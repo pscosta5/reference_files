@@ -380,22 +380,18 @@ if which pyenv-virtualenv-init > /dev/null; then
 fi
 source /Users/pcosta/homebrew/opt/pyenv/completions/pyenv.zsh
 
-# rbenv
-# https://github.com/rbenv/rbenv
-# ``brew install rbenv``
-if command -v rbenv 1>/dev/null 2>&1; then
-  eval "$(rbenv init -)"
-fi
+# Ruby
+# ``brew install ruby``
+PATH="/Users/pcosta/homebrew/opt/ruby/bin:$PATH"
 
 # Colorls
 # https://github.com/athityakumar/colorls
-# ``rbenv install 2.7.0``
-# ``rbenv global 2.7.0``
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Bold/complete/Roboto%20Mono%20Bold%20Nerd%20Font%20Complete.ttf
 # ``gem install colorls
 # ``cp $(dirname $(gem which colorls))/yaml/dark_colors.yaml ~/.config/colorls/dark_colors.yaml``
 # Put ``dark_colors.yaml`` in ``~/.config/colorls/``
+PATH="/Users/pcosta/homebrew/lib/ruby/gems/2.7.0/bin:$PATH"
 alias lc='colorls -lAt --sd --gs'
 source $(dirname $(gem which colorls))/tab_complete.sh
 
