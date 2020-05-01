@@ -1,0 +1,43 @@
+# VS Code extensions
+
+_A list of extensions I use with VS code._
+
+- Anaconda Extension Pack
+- Better TOML
+- Code Spell Checker
+- Docker
+- Excel Viewer
+- Gist
+- Git Graph
+- Git History
+- GitHub Pull Requests
+- GitLens
+- HTML Preview
+- Importmagic
+- Jira and Bitbucket (Official)
+- Live Share Extension Pack
+- Markdown Checkboxes
+- Markdown Emoji
+- Markdown PDF
+- Material Theme
+- Material Theme Icons
+- Path Autocomplete
+- Path Intellisense
+- Prettier - Code formatter
+- Pyright
+- Python
+- Rainbow CSV
+- Remote Develoment
+- Rewrap
+- SQL Server (mssql)
+- SQLTools - Database tools
+- Search Editor: Apply Changes
+- Sort lines
+- Table Formatter
+- Todo Tree
+- YAML
+- autoDocstring
+- markdownlint
+- python-string-sql
+- reStructuredText
+- tl;dr pages
