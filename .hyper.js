@@ -21,7 +21,7 @@ module.exports = {
       // [Optional] Mac Only. Need restart. Enable the vibrance and blurred background
       // OPTIONS: 'dark', 'ultra-dark', 'bright'
       // NOTE: The backgroundOpacity should be between 0.1 and 0.9 to see the effect.
-      vibrancy: "dark"
+      vibrancy: "dark",
     },
 
     hyperTabs: {
@@ -29,9 +29,9 @@ module.exports = {
       navMoveable: 0,
       // The hotkeys of move tabs
       hotkeys: {
-        moveLeft: 'command+[',
-        moveRight: ['command+]', 'r i g h t']
-      }
+        moveLeft: "command+[",
+        moveRight: ["command+]", "r i g h t"],
+      },
     },
 
     // choose either `'stable'` for receiving highly polished,
@@ -72,7 +72,7 @@ module.exports = {
     cursorBlink: false,
 
     // color of the text
-    foregroundColor: "",
+    foregroundColor: "#fff",
 
     // terminal background color
     // opacity is only supported on macOS
@@ -121,7 +121,7 @@ module.exports = {
       lightBlue: "#6A76FB",
       lightMagenta: "#FD7CFC",
       lightCyan: "#68FDFE",
-      lightWhite: "#FFFFFF"
+      lightWhite: "#FFFFFF",
     },
 
     // the shell to run when spawning a new session (i.e. /usr/local/bin/fish)
@@ -168,7 +168,7 @@ module.exports = {
 
     // Whether to use the WebGL renderer. Set it to false to use canvas-based
     // rendering (slower, but supports transparent backgrounds)
-    webGLRenderer: true
+    webGLRenderer: true,
 
     // for advanced config flags please refer to https://hyper.is/#cfg
   },
@@ -186,7 +186,7 @@ module.exports = {
     "hyper-alt-click",
     "hyper-statusline",
     "hypercwd",
-    "hyper-reorderable-tabs"
+    "hyper-reorderable-tabs",
   ],
 
   // in development, you can create a directory under
@@ -197,5 +197,5 @@ module.exports = {
   keymaps: {
     // Example
     // 'window:devtools': 'cmd+alt+o',
-  }
+  },
 };
