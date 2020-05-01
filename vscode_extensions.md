@@ -40,3 +40,4 @@ _A list of extensions I use with VS code._
 - Markdown PDF
 - Markdown Emoji
 - Markdown Checkboxes
+- Live Share Extension Pack
