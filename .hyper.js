@@ -188,13 +188,13 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyperlinks",
-    "hypercwd",
-    "hyper-statusline",
-    "hyper-search",
-    "hyper-reorderable-tabs",
-    "hyper-material-theme",
     "hyper-alt-click",
+    "hyper-material-theme",
+    "hyper-reorderable-tabs",
+    "hyper-search",
+    "hyper-statusline",
+    "hypercwd",
+    "hyperlinks",
   ],
 
   // in development, you can create a directory under
