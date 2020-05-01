@@ -75,8 +75,6 @@
       "token": "my-token-here"
     }
   ],
-  "prettier.printWidth": 88,
-  "prettier.proseWrap": "always",
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
