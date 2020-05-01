@@ -5,7 +5,7 @@
 ```zsh
 conda activate notebook_env
 conda update jupyterlab
-jupyter labextension update
+jupyter labextension update --all
 ```
 
 ## Homebrew
