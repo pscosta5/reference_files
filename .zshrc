@@ -1,3 +1,4 @@
+# Place in ~/.zshrc
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -68,13 +69,34 @@ export ZSH=$HOME/.oh-my-zsh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+
+# Poetry
+# https://github.com/python-poetry/poetry
+# ``curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python``
+# ``mkdir $ZSH/plugins/poetry``
+# ``poetry completions zsh > $ZSH/plugins/poetry/_poetry``
+
+# Conda
+# https://github.com/conda/conda
+# ``git clone https://github.com/esc/conda-zsh-completion ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/conda-zsh-completion``
+# And init step below
+
+# zsh-autosuggestion
+# https://github.com/zsh-users/zsh-autosuggestions
+# ``git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions``
+
 plugins=(
+    brew
+    conda-zsh-completion
+    docker
+    docker-compose
     git
     osx
-    python
     pip
-    conda-zsh-completion
     poetry
+    python
+    z
+    zsh-autosuggestions
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -106,6 +128,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # >>> conda initialize >>>
+# https://docs.conda.io/en/latest/miniconda.html
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/paulo/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
@@ -120,83 +143,222 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# Conda completion
+# https://github.com/esc/conda-zsh-completion/blob/master/_conda
+# Should come after ``source $ZSH/oh-my-zsh.sh`` line
+autoload -U compinit && compinit
+
 # Add Visual Studio Code (code)
 # https://code.visualstudio.com/
 export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Poetry
 # https://python-poetry.org/docs/
+# ``curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python``
 export PATH="$HOME/.poetry/bin:$PATH"
-
-# Proxy
-function setproxy {
-	proxy='http://pcosta:p@$$w0rd@webproxyfrb.iglobal.companyname.com:8080'
-	export https_proxy=$proxy
-	export http_proxy=$proxy
-}
-
-function unsetproxy {
-	unset https_proxy
-	unset http_proxy
-}
-
-# ODBC directory
-export ODBCINI=/Users/pcosta/miniconda3/envs/ds/etc/odbc.ini
-export ODBCSYSINI=/Users/pcosta/miniconda3/envs/ds/etc
-
-# DB passwords
-
-# SQL server
-export SQLUSERNAME=FRB\\pcosta
-export SQLPASSWORD=p@$$w0rd
-
-# Snowflake
-export SNOWFLAKEUSERNAME=pcosta
-export SNOWFLAKEPASSWORD=p@$$w0rd
-
-# PYTHONPATH
-# PYTHONPATH=/Users/pcosta/Documents/pyfrb/:$PYTHONPATH
-# # PYTHONPATH=/Users/pcosta/Documents/ds/frbtools/:$PYTHONPATH
-# PYTHONPATH=/Users/pcosta/Documents/ds/sqltools/:$PYTHONPATH
-export PYTHONPATH
 
 # Pure theme
 # https://github.com/sindresorhus/pure
+# ``mkdir -p "$HOME/.zsh"``
+# ``git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"``
 fpath+=("$HOME/.zsh/pure")
 autoload -U promptinit; promptinit
 prompt pure
+# https://github.com/sindresorhus/pure/issues/501#issuecomment-541693938
+# https://github.com/sindresorhus/pure#colors
+# Numbers are based on this ordering:
+# 0. black
+# 1. red
+# 2. green
+# 3. yellow
+# 4. blue
+# 5. magenta
+# 6. cyan
+# 7. white
+# 8. lightBlack
+# 9. lightRed
+# 10. lightGreen
+# 11. lightYellow
+# 12. lightBlue
+# 13. lightMagenta
+# 14. lightCyan
+# 15. lightWhite
+zstyle :prompt:pure:execution_time color 11
+zstyle :prompt:pure:git:arrow color 14
+zstyle :prompt:pure:git:stash color 14
+zstyle :prompt:pure:git:branch color 248
+zstyle :prompt:pure:git:branch:cached color 9
+zstyle :prompt:pure:git:action color 248
+zstyle :prompt:pure:git:dirty color 13
+zstyle :prompt:pure:host color 248
+zstyle :prompt:pure:path color 12
+zstyle :prompt:pure:prompt:error color 9
+zstyle :prompt:pure:prompt:success color 13
+zstyle :prompt:pure:prompt:continuation color 248
+zstyle :prompt:pure:user color 248
+zstyle :prompt:pure:virtualenv color 248
 
-# Allow the use of the z plugin to easily navigate directories
-# https://github.com/rupa/z/blob/master/z.sh
-. /Users/paulo/.zsh/z.sh
+# Zsh coloring
+# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
+typeset -A ZSH_HIGHLIGHT_STYLES
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=9,bold'
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=11'
+ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=10,underline'
+ZSH_HIGHLIGHT_STYLES[precommand]='fg=10,underline'
+ZSH_HIGHLIGHT_STYLES[globbing]='fg=12'
+ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=12'
+ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=13'
+ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=13'
+ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=13'
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=11'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=11'
+ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=11'
+ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=14'
+ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=14'
+ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=14'
+ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=14'
+ZSH_HIGHLIGHT_STYLES[comment]='fg=8,bold'
+ZSH_HIGHLIGHT_STYLES[arg0]='fg=10'
 
-# Conda completion
-# https://github.com/esc/conda-zsh-completion/blob/master/_conda
-autoload -U compinit && compinit
+# Bat
+# https://github.com/sharkdp/bat
+# ``brew install bat``
+export BAT_THEME="OneHalfDark"
+export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
-# Syntax highlighting
-# https://github.com/zsh-users/zsh-syntax-highlighting.git
-source /Users/paulo/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# zsh-syntax-highlighting
+# ``brew install zsh-syntax-highlighting``
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Poetry autocomplete
-# https://python-poetry.org/docs/
+# Pipx
+# https://github.com/pipxproject/pipx
+# ``brew install pipx``
+# ``pipx ensurepath``
+# ``pipx completions``
+autoload -U bashcompinit
+bashcompinit
 
-# Brew build packages
-export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib $LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include $CPPFLAGS"
-export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig $PKG_CONFIG_PATH"
-export LDFLAGS="-L/usr/local/opt/readline/lib $LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/readline/include $CPPFLAGS"
-export PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig $PKG_CONFIG_PATH"
-export LDFLAGS="-L/usr/local/opt/sqlite/lib $LDFLAGS"
-export CPPFLAGS="-I/usr/local/opt/sqlite/include $CPPFLAGS"
-export PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig $PKG_CONFIG_PATH"
+# Nox
+# https://github.com/theacodes/nox
+# ``pipx install nox``
+# Like pipx, needs bashcompinit enabled
+eval "$(register-python-argcomplete nox)"
+
+# Dephell
+# https://github.com/dephell/dephell
+# ``pipx install "dephell[all]"
+# ``dephell self autocomplete```
+source "$HOME/.local/share/dephell/_dephell_zsh_autocomplete"
+
+# Invoke
+# http://www.pyinvoke.org/
+# ``pipx install invoke``
+# ``invoke --print-completion-script zsh``
+# Invoke tab-completion script to be sourced with the Z shell.
+# Known to work on zsh 5.0.x, probably works on later 4.x releases as well (as
+# it uses the older compctl completion system).
+_complete_invoke() {
+    # `words` contains the entire command string up til now (including
+    # program name).
+    #
+    # We hand it to Invoke so it can figure out the current context: spit back
+    # core options, task names, the current task's options, or some combo.
+    #
+    # Before doing so, we attempt to tease out any collection flag+arg so we
+    # can ensure it is applied correctly.
+    collection_arg=''
+    if [[ "${words}" =~ "(-c|--collection) [^ ]+" ]]; then
+        collection_arg=$MATCH
+    fi
+    # `reply` is the array of valid completions handed back to `compctl`.
+    # Use ${=...} to force whitespace splitting in expansion of
+    # $collection_arg
+    reply=( $(invoke ${=collection_arg} --complete -- ${words}) )
+}
+# Tell shell builtin to use the above for completing our given binary name(s).
+# * -K: use given function name to generate completions.
+# * +: specifies 'alternative' completion, where options after the '+' are only
+#   used if the completion from the options before the '+' result in no matches.
+# * -f: when function generates no results, use filenames.
+# * positional args: program names to complete for.
+compctl -K _complete_invoke + -f invoke inv
+# vim: set ft=sh :
+
+# Brew build packages for Python
+# openssl
+# ``brew install openssl```
+LDFLAGS="-L/usr/local/opt/openssl@1.1/lib $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/openssl@1.1/include $CPPFLAGS"
+PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig $PKG_CONFIG_PATH"
+# readline
+# ``brew install readline```
+LDFLAGS="-L/usr/local/opt/readline/lib $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/readline/include $CPPFLAGS"
+PKG_CONFIG_PATH="/usr/local/opt/readline/lib/pkgconfig $PKG_CONFIG_PATH"
+# sqlite3
+# ``brew install sqlite3```
+LDFLAGS="-L/usr/local/opt/sqlite/lib $LDFLAGS"
+CPPFLAGS="-I/usr/local/opt/sqlite/include $CPPFLAGS"
+PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig $PKG_CONFIG_PATH"
+# zlib
+# ``brew install zlib``
 export LDFLAGS="-L/usr/local/opt/zlib/lib $LDFLAGS"
 export CPPFLAGS="-I/usr/local/opt/zlib/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
 
-# Pyenv
+# pyenv
+# https://github.com/pyenv/pyenv#installation
+# https://github.com/pyenv/pyenv-virtualenv
+# ``brew install pyenv``
+# ``brew install openssl readline sqlite3 zlib
+# ``brew install pyenv-virtualenv
+# This should be last to overide conda paths
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
-# Need to add pyenv autocomplete
+# if which pyenv-virtualenv-init > /dev/null; then
+#     eval "$(pyenv virtualenv-init -)";
+# fi
+
+# Ruby
+# ``brew install ruby``
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+
+# Colorls
+# https://github.com/athityakumar/colorls
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Bold/complete/Roboto%20Mono%20Bold%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Bold-Italic/complete/Roboto%20Mono%20Bold%20Italic%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Italic/complete/Roboto%20Mono%20Italic%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Light-Italic/complete/Roboto%20Mono%20Light%20Italic%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Light/complete/Roboto%20Mono%20Light%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Medium-Italic/complete/Roboto%20Mono%20Medium%20Italic%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Medium/complete/Roboto%20Mono%20Medium%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Thin-Italic/complete/Roboto%20Mono%20Thin%20Italic%20Nerd%20Font%20Complete.ttf
+# https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Thin/complete/Roboto%20Mono%20Thin%20Nerd%20Font%20Complete.ttf
+# ``gem install colorls``
+# ``mkdir ~/.config/colorls``
+# Place colors in ~/.config/colorls/dark_colors.yml
+PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
+alias lc='colorls -lAt --sd --gs'
+source $(dirname $(gem which colorls))/tab_complete.sh
+
+# fzf
+# https://github.com/junegunn/fzf
+# ``brew install fzf``
+# ``$(brew --prefix)/opt/fzf/install``
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# fd integration
+export FZF_DEFAULT_COMMAND='fd --type file --follow --hidden --exclude .git'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_COMMAND="fd --type file --color=always"
+# This line apparently slows down fzf, so use with caution
+export FZF_DEFAULT_OPTS="--ansi"
+# bat integration
+alias prev='fzf --preview "bat --style=numbers --color=always {} | head -500"'
+
+# thefuck
+# https://github.com/nvbn/thefuck
+# ``brew install thefuck``
+eval $(thefuck --alias)
+alias f=fuck
