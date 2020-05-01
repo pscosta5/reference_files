@@ -2,10 +2,10 @@
 ## ***************************************************************************
 ## * LINES                                                                   *
 ## ***************************************************************************
-lines.linewidth : 2.5
-lines.dash_joinstyle : round
+lines.linewidth       : 2.5
+lines.dash_joinstyle  : round
 lines.solid_joinstyle : round
-lines.solid_capstyle: round
+lines.solid_capstyle  : round
 
 
 ## ***************************************************************************
@@ -17,7 +17,7 @@ patch.edgecolor       : C0
 ## ***************************************************************************
 ## * HATCHES                                                                 *
 ## ***************************************************************************
-hatch.color     : ffffff
+hatch.color      : ffffff
 hatch.linewidth  : 2.5
 
 
@@ -145,5 +145,5 @@ figure.edgecolor   : FFFFFF
 ## ***************************************************************************
 ## * SAVING FIGURES                                                          *
 ## ***************************************************************************
-savefig.facecolor: FFFFFF
-savefig.edgecolor: FFFFFF
+savefig.facecolor  : FFFFFF
+savefig.edgecolor  : FFFFFF
