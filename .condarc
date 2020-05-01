@@ -1,3 +1,4 @@
+# Place in ~/.condarc
 channel_priority: strict
 channels:
   - plotly
