@@ -1,26 +1,30 @@
-bat
-bfg
-cmake
-diff-so-fancy
-exa
-fd
-freetds
-fzf
-git
-github/gh/gh
-htop
-micro
-nano
-ncdu
-pandoc
-pipx
-prettyping
-pyenv
-pyenv-virtualenv
-ripgrep
-ruby
-tealdeer
-thefuck
-wget
-zlib
-zsh-syntax-highlighting
+# Homebrew
+ 
+- bat
+- bfg
+- cmake
+- diff-so-fancy
+- exa
+- fd
+- freetds
+- fzf
+- git
+- github/gh/gh
+- htop
+- make
+- micro
+- nano
+- ncdu
+- pandoc
+- pipx
+- prettyping
+- pyenv
+- pyenv-virtualenv
+- ripgrep
+- ruby
+- stow
+- tealdeer
+- thefuck
+- wget
+- zlib
+- zsh-syntax-highlighting
