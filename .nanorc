@@ -1,5 +1,6 @@
+# Place in ~/.nanorc
+# ``https://github.com/scopatz/nanorc``
+# ``curl https://raw.githubusercontent.com/scopatz/nanorc/master/install.sh | sh``
 set mouse
 set nowrap
 set linenumbers
-
-include /Users/pcosta/.nano/nanorc/*.nanorc
