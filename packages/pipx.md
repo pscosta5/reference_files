@@ -1,10 +1,12 @@
-csvkit
-pre-commit
-nox
-tox
-invoke
-cookiecutter
-git-filter-repo
-kaggle
-youtube_dl
-dephell[full]
+# Pipx
+
+- cookiecutter
+- csvkit
+- dephell[full]
+- git-filter-repo
+- invoke
+- kaggle
+- nox
+- pre-commit
+- tox
+- youtube_dl
