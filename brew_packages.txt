@@ -35,3 +35,4 @@ prettyping
 ncdu
 tealdeer
 wget
+ruby
