@@ -1,45 +1,45 @@
 // Place in ~Library/Application Support/Code/User/settings.json
 {
-  "workbench.startupEditor": "newUntitledFile", // Don't show welcome screen
-  "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.colorTheme": "Material Theme",
-  "terminal.integrated.shell.osx": "/bin/zsh",
-  "terminal.integrated.inheritEnv": true, // If issues with conda environments, turn off
-  "rewrap.wrappingColumn": 72,
-  "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs",
-  "python.testing.pytestEnabled": true,
-  "python.testing.pytestArgs": ["--no-cov"], // Avoid debugger conflict with coverage https://code.visualstudio.com/docs/python/testing
-  "python.terminal.activateEnvInCurrentTerminal": true, // If issues with conda environments, turn off
-  "python.linting.pylintEnabled": false,
-  "python.linting.mypyEnabled": true,
-  "python.linting.flake8Enabled": true,
-  "python.formatting.provider": "black",
-  "python.dataScience.sendSelectionToInteractiveWindow": true,
-  "git.autofetch": true,
-  "files.autoSave": "afterDelay",
-  "files.associations": { "flake8": "ini" },
-  "explorer.decorations.badges": false,
-  "editor.rulers": [79, 72],
-  "editor.lineHeight": 24,
-  "editor.formatOnType": true,
-  "editor.formatOnSave": true,
-  "editor.formatOnPaste": true,
-  "editor.fontLigatures": true,
-  "editor.fontFamily": "FiraCode Nerd Font", // https://www.nerdfonts.com/font-downloads
-  "editor.codeActionsOnSave": { "source.organizeImports": false },
-  "autoDocstring.startOnNewLine": true,
-  "autoDocstring.docstringFormat": "numpy",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2
+  },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
+  "[json]": { "editor.tabSize": 2 },
+  "[makefile]": { "editor.insertSpaces": false },
+  "[restructuredtext]": { "editor.tabSize": 3 },
+  "[sql]": { "editor.defaultFormatter": "mtxr.sqltools", "editor.tabSize": 2 },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
-  "[sql]": { "editor.defaultFormatter": "mtxr.sqltools", "editor.tabSize": 2 },
-  "[restructuredtext]": { "editor.tabSize": 3 },
-  "[makefile]": { "editor.insertSpaces": false },
-  "[json]": { "editor.tabSize": 2 },
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.tabSize": 2
-  }
+  "autoDocstring.docstringFormat": "numpy",
+  "autoDocstring.startOnNewLine": true,
+  "editor.codeActionsOnSave": { "source.organizeImports": false },
+  "editor.fontFamily": "FiraCode Nerd Font", // https://www.nerdfonts.com/font-downloads
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "editor.lineHeight": 24,
+  "editor.rulers": [79, 72],
+  "explorer.decorations.badges": false,
+  "files.associations": { "flake8": "ini" },
+  "files.autoSave": "afterDelay",
+  "git.autofetch": true,
+  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  "python.formatting.provider": "black",
+  "python.linting.flake8Enabled": true,
+  "python.linting.mypyEnabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.terminal.activateEnvInCurrentTerminal": true, // If issues with conda environments, turn off
+  "python.testing.pytestArgs": ["--no-cov"], // Avoid debugger conflict with coverage https://code.visualstudio.com/docs/python/testing
+  "python.testing.pytestEnabled": true,
+  "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs",
+  "rewrap.wrappingColumn": 72,
+  "terminal.integrated.inheritEnv": true, // If issues with conda environments, turn off
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "workbench.colorTheme": "Material Theme",
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "workbench.startupEditor": "newUntitledFile" // Don't show welcome screen
 }
