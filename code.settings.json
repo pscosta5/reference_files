@@ -21,6 +21,7 @@
     "editor.defaultFormatter": "mtxr.sqltools",
     "editor.tabSize": 2
   },
+  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
   "editor.codeActionsOnSave": {
     "source.organizeImports": false
   },
