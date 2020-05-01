@@ -1,3 +1,4 @@
+// Place in ~Library/Application Support/Code/User/settings.json
 {
   "workbench.colorTheme": "Material Theme",
   "workbench.iconTheme": "eq-material-theme-icons",
