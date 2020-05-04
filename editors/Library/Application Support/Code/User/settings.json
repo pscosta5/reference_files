@@ -4,36 +4,60 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
-  "[javascript]": { "editor.defaultFormatter": "esbenp.prettier-vscode" },
-  "[json]": { "editor.tabSize": 2 },
-  "[makefile]": { "editor.insertSpaces": false },
-  "[restructuredtext]": { "editor.tabSize": 3 },
-  "[sql]": { "editor.defaultFormatter": "mtxr.sqltools", "editor.tabSize": 2 },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.tabSize": 2
+  },
+  "[makefile]": {
+    "editor.insertSpaces": false
+  },
+  "[markdown]": {
+    "editor.tabSize": 2
+  },
+  "[restructuredtext]": {
+    "editor.tabSize": 3
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "mtxr.sqltools",
+    "editor.tabSize": 2
+  },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.tabSize": 2
   },
   "autoDocstring.docstringFormat": "numpy",
   "autoDocstring.startOnNewLine": true,
-  "editor.codeActionsOnSave": { "source.organizeImports": false },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": false
+  },
   "editor.fontFamily": "FiraCode Nerd Font", // https://www.nerdfonts.com/font-downloads
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
   "editor.lineHeight": 24,
-  "editor.rulers": [79, 72],
+  "editor.rulers": [
+    79,
+    72
+  ],
   "explorer.decorations.badges": false,
-  "files.associations": { "flake8": "ini" },
+  "files.associations": {
+    "flake8": "ini"
+  },
   "files.autoSave": "afterDelay",
   "git.autofetch": true,
+  "markdown.extension.toc.githubCompatibility": true,
   "python.dataScience.sendSelectionToInteractiveWindow": true,
   "python.formatting.provider": "black",
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
   "python.linting.pylintEnabled": false,
   "python.terminal.activateEnvInCurrentTerminal": true, // If issues with conda environments, turn off
-  "python.testing.pytestArgs": ["--no-cov"], // Avoid debugger conflict with coverage https://code.visualstudio.com/docs/python/testing
+  "python.testing.pytestArgs": [
+    "--no-cov"
+  ], // Avoid debugger conflict with coverage https://code.visualstudio.com/docs/python/testing
   "python.testing.pytestEnabled": true,
   "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs",
   "rewrap.wrappingColumn": 72,

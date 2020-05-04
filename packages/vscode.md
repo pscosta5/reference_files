@@ -16,10 +16,9 @@ _A list of extensions I use with VS code._
 - Importmagic
 - Jira and Bitbucket (Official)
 - Live Share Extension Pack
+- Markdown All in One
 - Markdown Checkboxes
 - Markdown Emoji
-- Markdown PDF
-- Markdown TOC
 - Markdown Preview Mermaid Support
 - Material Theme
 - Material Theme Icons
