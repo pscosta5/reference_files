@@ -130,14 +130,14 @@ source $ZSH/oh-my-zsh.sh
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/paulo/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('$HOME/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/Users/paulo/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/Users/paulo/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "$HOME/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/opt/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/Users/paulo/miniconda3/bin:$PATH"
+        export PATH="$HOME/opt/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
