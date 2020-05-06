@@ -1,5 +1,12 @@
 # JupyterLab
 
+Install [miniconda](https://docs.conda.io/en/latest/miniconda.html) and run.
+
+```shell
+conda install -c conda-forge nodejs
+conda install -c conda-forge jupyterlab
+```
+
 _Extensions and configs for Jupyter lab_
 
 [Good reference at Awesome Jupyter](https://github.com/mauhai/awesome-jupyterlab)
