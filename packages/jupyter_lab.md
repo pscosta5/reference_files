@@ -42,9 +42,13 @@ _`jupyter labextension update` to update extensions_
 
 - [@jupyterlab/github](https://github.com/jupyterlab/jupyterlab-github)
 
+  A bit involved, see [installation instructions](jupyter labextension install @jupyterlab/github)
+
   ```bash
   jupyter labextension install @jupyterlab/github
   ```
+
+  Add `c.GitHubConfig.access_token = "my-GitHub-token"` to `~/.jupyter/jupyter_notebook_config.py`. 
 
 - [@jupyerlab/toc](https://github.com/jupyterlab/jupyterlab-toc)
 
