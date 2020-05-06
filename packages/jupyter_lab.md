@@ -37,9 +37,7 @@ _`jupyter labextension update` to update extensions_
   - Might need to do extension manager install as well as
 
     ```bash
-    jupyter labextension install @jupyterlab/git
-    pip install jupyterlab-git
-    jupyter serverextension enable --py jupyterlab_git
+    conda install -c conda-forge jupyterlab-git
     ```
 
 - [@jupyterlab/github](https://github.com/jupyterlab/jupyterlab-github)
