@@ -190,7 +190,7 @@ _Settings -> Advanced Settings Editor_
   
 - Jupyterlab-Flake8
 
-  ```jsons
+  ```json
   {
     // Jupyterlab-Flake8
     // jupyterlab-flake8:plugins
@@ -199,7 +199,7 @@ _Settings -> Advanced Settings Editor_
 
     // [missing schema title]
     // Persistent internal terminal name. This is set automatically on each run
-    "conda_env": "notebook_env",
+    "conda_env": "notebook",
     "terminal_name": "1"
   }
   ```
