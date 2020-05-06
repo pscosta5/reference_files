@@ -111,7 +111,7 @@ _`jupyter labextension update` to update extensions_
 - [jupyterlab debugger](https://github.com/jupyterlab/debugger)
 
   ```sh
-  conda install xeus-python -c conda-forge
+  conda install -c conda-forge xeus-python ptvsd
   jupyter labextension intsall @jupyterlab/debugger
   ```
 
