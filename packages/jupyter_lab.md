@@ -117,10 +117,8 @@ _`jupyter labextension update` to update extensions_
 
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
 
-  _This does not work with JupyterLab 1.2, wait for update_
-
   ```bash
-  pip install --pre jupyter-lsp
+  pip install jupyter-lsp
   jupyter labextension install @krassowski/jupyterlab-lsp
   conda install -c conda-forge python-language-server
   ```
