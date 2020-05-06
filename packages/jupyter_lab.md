@@ -65,13 +65,6 @@ _`jupyter labextension update` to update extensions_
   jupyter serverextension enable --py jupyterlab_code_formatter
   ```
 
-  also
-
-  ```bash
-  pip install black
-  pip install isort
-  ```
-
 - [Plotly](https://plot.ly/python/getting-started/)
 
   ```bash
