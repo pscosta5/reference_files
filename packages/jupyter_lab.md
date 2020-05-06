@@ -23,6 +23,7 @@ _`jupyter labextension update` to update extensions_
 
   ```bash
   jupyter labextension install @aquirdturtle/collapsible_headings
+  pip install jupyterlab_github
   ```
 
 - [jupyterlab-jupytext](https://github.com/mwouts/jupyterlab-jupytext)
