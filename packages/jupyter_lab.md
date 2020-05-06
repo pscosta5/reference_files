@@ -27,6 +27,7 @@ _`jupyter labextension update` to update extensions_
 - [@jupyterlab/git](https://github.com/jupyterlab/jupyterlab-git)
 
   - Might need to do extension manager install as well as
+
     ```bash
     jupyter labextension install @jupyterlab/git
     pip install jupyterlab-git
