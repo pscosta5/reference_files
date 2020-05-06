@@ -59,8 +59,9 @@ _`jupyter labextension update` to update extensions_
 - [jupyerlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter)
 
   ```bash
+  conda install -c conda-forge black isort
   jupyter labextension install @ryantam626/jupyterlab_code_formatter
-  pip install jupyterlab_code_formatter
+  conda install -c conda-forge jupyterlab_code_formatter
   jupyter serverextension enable --py jupyterlab_code_formatter
   ```
 
