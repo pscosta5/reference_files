@@ -1,4 +1,4 @@
-# Jupyter Lab
+# JupyterLab
 
 _Extensions and configs for Jupyter lab_
 
