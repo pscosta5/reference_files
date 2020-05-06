@@ -13,9 +13,11 @@ _Extensions and configs for Jupyter lab_
 _`jupyter labextension update` to update extensions_
 
 - [collapsible_headings](https://github.com/aquirdTurtle/Collapsible_Headings)
+
   ```bash
   jupyter labextension install @aquirdturtle/collapsible_headings
   ```
+
 - [jupyterlab-jupytext](https://github.com/mwouts/jupyterlab-jupytext)
 
   ```bash
@@ -23,12 +25,14 @@ _`jupyter labextension update` to update extensions_
   ```
 
 - [@jupyterlab/git](https://github.com/jupyterlab/jupyterlab-git)
+
   - Might need to do extension manager install as well as
     ```bash
     jupyter labextension install @jupyterlab/git
     pip install jupyterlab-git
     jupyter serverextension enable --py jupyterlab_git
     ```
+
 - [@jupyterlab/github](https://github.com/jupyterlab/jupyterlab-github)
 
   ```bash
@@ -36,21 +40,28 @@ _`jupyter labextension update` to update extensions_
   ```
 
 - [@jupyerlab/toc](https://github.com/jupyterlab/jupyterlab-toc)
+
   ```bash
   jupyter labextension install @jupyterlab/toc
   ```
+
 - [jupyerlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter)
+
   ```bash
   jupyter labextension install @ryantam626/jupyterlab_code_formatter
   pip install jupyterlab_code_formatter
   jupyter serverextension enable --py jupyterlab_code_formatter
   ```
+
   also
+
   ```bash
   pip install black
   pip install isort
   ```
+
 - [Plotly](https://plot.ly/python/getting-started/)
+
   ```bash
   conda install ipywidgets
   jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.1 --no-build
@@ -58,6 +69,7 @@ _`jupyter labextension update` to update extensions_
   jupyter labextension install plotlywidget@1.3.0 --no-build
   jupyter lab build
   ```
+
 - [jupyterlab_go_to_definition](https://github.com/krassowski/jupyterlab-go-to-definition)
 
   ```bash
@@ -77,12 +89,15 @@ _`jupyter labextension update` to update extensions_
   ```
   
 - [jupyterlab flake8](https://github.com/mlshapiro/jupyterlab-flake8)
+
   ```bash
   jupyter labextension install jupyterlab-flake8
   ```
   
 - [jupyterlab-widgets](https://ipywidgets.readthedocs.io/en/latest/user_install.html)
+
   Need to run `conda isntall -c conda-forge ipywidgets` in virtual environment
+
   ```zsh
   conda install -c conda-forge widgetsnbextension
   conda install -c conda-forge nodejs
@@ -97,7 +112,9 @@ _`jupyter labextension update` to update extensions_
   ```
 
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
+
   _This does not work with JupyterLab 1.2, wait for update_
+
   ```bash
   pip install --pre jupyter-lsp
   jupyter labextension install @krassowski/jupyterlab-lsp
@@ -117,6 +134,7 @@ _Settings -> Advanced Settings Editor_
   }
   ```
 - Jupyterlab Code Formatter
+
   ```json
   {
     "isort": {
@@ -128,6 +146,7 @@ _Settings -> Advanced Settings Editor_
     }
   }
   ```
+
 - Keyboard Shortcuts
 
   ```json
@@ -158,6 +177,7 @@ _Settings -> Advanced Settings Editor_
   ```
 
 - Go-to-definition
+
   ```json
   {
     "modifier": "Meta"
@@ -165,6 +185,7 @@ _Settings -> Advanced Settings Editor_
   ```
   
 - Jupyterlab-Flake8
+
   ```jsons
   {
     // Jupyterlab-Flake8
