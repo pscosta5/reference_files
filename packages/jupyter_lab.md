@@ -105,7 +105,6 @@ _`jupyter labextension update` to update extensions_
 
   ```zsh
   conda install -c conda-forge widgetsnbextension
-  conda install -c conda-forge nodejs
   jupyter labextension install @jupyter-widgets/jupyterlab-manager
   ```
 
