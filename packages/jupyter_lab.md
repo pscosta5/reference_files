@@ -127,6 +127,7 @@ _`jupyter labextension update` to update extensions_
 _Settings -> Advanced Settings Editor_
 
 - Notebook
+
   ```json
   {
     "codeCellConfig": {
@@ -134,6 +135,7 @@ _Settings -> Advanced Settings Editor_
     }
   }
   ```
+
 - Jupyterlab Code Formatter
 
   ```json
@@ -261,4 +263,3 @@ Create colored boxes by using some HTML.
 ```
 
 The above results in a blue box. Can also use `class="alert alert-block alert-warning"` for yellow box, `class="alert alert-block alert-success"` for green, or `class="alert alert-block alert-danger"` for red.
- 
