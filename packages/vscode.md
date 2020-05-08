@@ -10,7 +10,7 @@ _A list of extensions I use with VS code._
 - Gist
 - Git Graph
 - Git History
-- GitHub Pull Requests
+- GitHub Pull Requests and Issues
 - GitLens
 - HTML Preview
 - Importmagic
