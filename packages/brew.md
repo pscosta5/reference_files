@@ -1,5 +1,5 @@
 # Homebrew
- 
+
 - bat
 - bfg
 - cmake
