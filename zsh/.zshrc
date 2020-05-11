@@ -362,3 +362,6 @@ alias prev='fzf --preview "bat --style=numbers --color=always {} | head -500"'
 # ``brew install thefuck``
 eval $(thefuck --alias)
 alias f=fuck
+
+# Functions
+source "$HOME/.functions.sh"
