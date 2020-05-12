@@ -44,8 +44,8 @@ make_venv () {
     # Make a new Python venv
     # Assumes Python is installed
     # Args:
-    #    prompt name (optional)
-    #    directory name (optional)
+    #    prompt name (optional) By default left blank
+    #    directory name (optional) By default set to ".venv"
     if [ "$#" -gt 2 ]; then
         echo "Too many paremeters"
         echo "Expected 2 parameters -- the prompt name and directory name"
