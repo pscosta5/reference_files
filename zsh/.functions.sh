@@ -5,14 +5,14 @@ add_kernel () {
     # Assumes python and ipykernel is installed
     # Args: kernel_name
     if [ "$#" -ne 1 ]; then
-        echo "Illegal number of parameters"
+        echo "❓ Illegal number of parameters"
         echo "Expected 1 parameter -- the kernel name"
         return 1
     fi
     KERNEL_NAME=$1
     python -m ipykernel install --user --name="${KERNEL_NAME}"
     if [ "$?" -eq "0" ]; then
-        echo "Kernel ${KERNEL_NAME} created"
+        echo "🌽 Kernel ${KERNEL_NAME} created"
         return 0
     else
         echo "Kernel creation failed"
@@ -25,17 +25,17 @@ del_kernel () {
     # Assumes python and jupyterlab is installed
     # Args: kernel_name
     if [ "$#" -ne 1 ]; then
-        echo "Illegal number of parameters"
+        echo "❓ Illegal number of parameters"
         echo "Expected 1 parameter -- the kernel name"
         return 1
     fi
     KERNEL_NAME=$1
     jupyter kernelspec uninstall "${KERNEL_NAME}"
     if [ "$?" -eq "0" ]; then
-        echo "Kernel ${KERNEL_NAME} removed"
+        echo "🗑 Kernel ${KERNEL_NAME} removed"
         return 0
     else
-        echo "Kernel removal failed"
+        echo "❌ Kernel removal failed"
         return 1
     fi
 }
@@ -58,10 +58,10 @@ make_venv () {
         python -m venv .venv
     fi
     if [ "$?" -eq "0" ]; then
-        echo "venv created"
+        echo "📦 `python --version` virtual environment created in `pwd`/${DIRECTORY}"
         return 0
     else
-        echo "venv creation failed"
+        echo "❌ Virtual environment creation failed"
         return 1
     fi
 }
