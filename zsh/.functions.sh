@@ -47,16 +47,13 @@ make_venv () {
     #    prompt name (optional) By default left blank
     #    directory name (optional) By default set to ".venv"
     if [ "$#" -gt 2 ]; then
-        echo "Too many paremeters"
-        echo "Expected 2 parameters -- the prompt name and directory name"
+        echo "❓ Too many paremeters"
+        echo "Expected 2 optional parameters -- the prompt and directory name"
         return 1
-    elif [ "$#" -eq 2 ]; then
-        PROMPT_NAME=$1
-        DIRECTORY=$2
-        python -m venv --prompt "${PROMPT_NAME}" "${DIRECTORY}"
-    elif [ "$#" -eq 1 ]; then
-        PROMPT=$1
-        python -m venv --prompt "S{PROMPT_NAME}" .venv
+    elif [ "$#" -gt 0 ]; then
+        local PROMPT_NAME="$1"
+        local DIRECTORY="${2:-.venv}"
+        python -m venv --prompt="${PROMPT_NAME}" "${DIRECTORY}"
     else
         python -m venv .venv
     fi
