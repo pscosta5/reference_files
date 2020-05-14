@@ -98,14 +98,52 @@ loop() {
     done
 }
 
+header() {
+    # Print out an underlined header
+    local TITLE="$@"
+    echo
+    echo
+    echo "${TITLE}"
+    echo "------------------------------------------"
+}
+
+status() {
+    # Check if command succeeds
+    local NAME="$1"
+    header "$NAME"
+    "$@"
+    if [ "$?" -eq 0 ]; then
+        echo
+        echo "${NAME} PASS"
+    else
+        echo
+        echo "${NAME} FAIL"
+    fi
+}
+
 upgrade() {
     # Update packages
-    brew upgrade
-    pipx upgrade-all
-    poetry self update
-    pip install --upgrade pip
-    conda update conda
-    upgrade_oh_my_zsh
+    echo "Upgrading Homebrew"
+    local BREW="$(status brew upgrade)"
+    echo "Upgrading pipx"
+    local PIPX="$(status pipx upgrade-all)"
+    echo "Upgrading poetry"
+    local POETRY="$(status poetry self update)"
+    echo "Upgrading pip"
+    local PIP="$(status pip install --upgrade pip)"
+    echo "Upgrading conda"
+    local CONDA="$(status conda update -y conda)"
+    echo "Upgrading Oh My Zsh"
+    local OMZ="$(status upgrade_oh_my_zsh)"
+    echo
+    echo
+    echo "Status"
+    echo "=============================================="
+    for i in $BREW $PIPX $POETRY $PIP $CONDA $OMZ; do
+        echo
+        echo
+        echo "$i"
+    done
 }
 
 # Pip uninstall all packages
