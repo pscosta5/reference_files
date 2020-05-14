@@ -83,3 +83,17 @@ activate_venv() {
         return 1
     fi
 }
+
+write() {
+    # Run one or more bash commands, pipe to file, and open it
+    "$@" | tee /temp/textme.text
+    code /tmp/textme.txt
+}
+
+repeat() {
+    # Run a command every second until canceled
+    while :; do
+        "$@"
+        sleep 1
+    done
+}
