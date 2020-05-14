@@ -139,10 +139,10 @@ upgrade() {
     echo
     echo "Status"
     echo "=============================================="
-    for i in $BREW $PIPX $POETRY $PIP $CONDA $OMZ; do
+    for output in $BREW $PIPX $POETRY $PIP $CONDA $OMZ; do
         echo
         echo
-        echo "$i"
+        echo "$output"
     done
 }
 
