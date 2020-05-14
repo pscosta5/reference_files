@@ -6,6 +6,7 @@
 - diff-so-fancy
 - exa
 - fd
+- ffmpeg
 - freetds
 - fzf
 - git
