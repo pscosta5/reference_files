@@ -9,4 +9,5 @@
 - nox
 - pre-commit
 - tox
+- virtualenv
 - youtube_dl
