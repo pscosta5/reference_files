@@ -86,8 +86,8 @@ activate_venv() {
 
 write() {
     # Run one or more bash commands, pipe to file, and open it
-    "$@" | tee /temp/textme.text
-    code /tmp/textme.txt
+    "$@" | tee /temp/write.text
+    code /tmp/write.txt
 }
 
 repeat() {
