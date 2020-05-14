@@ -23,6 +23,7 @@
 - pyenv-virtualenv
 - ripgrep
 - ruby
+- shellcheck
 - stow
 - tealdeer
 - thefuck

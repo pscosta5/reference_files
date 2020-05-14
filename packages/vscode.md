@@ -31,6 +31,7 @@ _A list of extensions I use with VS code._
 - Remote Develoment
 - Rewrap
 - shell-format
+- shellcheck
 - SQL Server (mssql)
 - SQLTools - Database tools
 - Search Editor: Apply Changes
