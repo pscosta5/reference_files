@@ -30,6 +30,7 @@ _A list of extensions I use with VS code._
 - Rainbow CSV
 - Remote Develoment
 - Rewrap
+- shell-format
 - SQL Server (mssql)
 - SQLTools - Database tools
 - Search Editor: Apply Changes
