@@ -10,8 +10,7 @@ add_kernel() {
         return 1
     fi
     local KERNEL_NAME="$1"
-    python -m ipykernel install --user --name="${KERNEL_NAME}"
-    if [ "$?" -eq "0" ]; then
+    if python -m ipykernel install --user --name="${KERNEL_NAME}"; then
         echo "🌽 Kernel ${KERNEL_NAME} created"
         return 0
     else
@@ -30,8 +29,7 @@ del_kernel() {
         return 1
     fi
     local KERNEL_NAME="$1"
-    jupyter kernelspec uninstall "${KERNEL_NAME}"
-    if [ "$?" -eq "0" ]; then
+    if jupyter kernelspec uninstall "${KERNEL_NAME}"; then
         echo "🗑 Kernel ${KERNEL_NAME} removed"
         return 0
     else
