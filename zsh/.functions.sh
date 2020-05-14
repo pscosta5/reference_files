@@ -98,5 +98,15 @@ loop() {
     done
 }
 
+upgrade() {
+    # Update packages
+    brew upgrade
+    pipx upgrade-all
+    poetry self update
+    pip install --upgrade pip
+    conda update conda
+    upgrade_oh_my_zsh
+}
+
 # Pip uninstall all packages
 alias pip_uninstall_all="pip freeze --local | xargs pip uninstall -y"
