@@ -90,7 +90,7 @@ write() {
     code /tmp/write.txt
 }
 
-repeat() {
+loop() {
     # Run a command every second until canceled
     while :; do
         "$@"
