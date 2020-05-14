@@ -82,12 +82,16 @@ activate_venv() {
 
 write() {
     # Run one or more bash commands, pipe to file, and open it
+    # Args:
+    #   COMMAND: The command whose output will be piped to the file
     "$@" | tee /temp/write.text
     code /tmp/write.txt
 }
 
 loop() {
     # Run a command every second until canceled
+    # Args:
+    #   COMMAND: The command which will be repeated
     while :; do
         "$@"
         sleep 1
@@ -96,6 +100,8 @@ loop() {
 
 header() {
     # Print out an underlined header
+    # Args:
+    #   TITLE: The title of the header
     local TITLE="$@"
     echo
     echo
