@@ -109,12 +109,27 @@ header() {
     echo "------------------------------------------"
 }
 
+upgrade_announcement() {
+    # Print out an announcement that the package manager is upgrading
+    # Args:
+    #   NAME: The name of the package manager updating its packages
+    #   ICON (optional): An emoji to symbolize the package manager
+    local NAME="$1"
+    local ICON="$2"
+    echo
+    echo "${ICON} Upgrading ${NAME} packages"
+}
+
 status() {
     # Check if command succeeds
+    # Args:
+    #   NAME: The name of the package manager updating its packages
+    #   ICON (optional): An emoji to symbolize the package manager
     local NAME="$1"
-    header "$NAME"
-    "$@"
-    if [ "$?" -eq 0 ]; then
+    echo
+    echo "$NAME"
+    echo "--------"
+    if "$@"; then
         echo
         echo "${NAME} PASS"
     else
@@ -125,24 +140,23 @@ status() {
 
 upgrade() {
     # Update packages
-    echo "Upgrading Homebrew"
+    upgrade_announcement "Homebrew" "🍺"
     local BREW="$(status brew upgrade)"
-    echo "Upgrading pipx"
+    upgrade_announcement "pipx" "🆇"
     local PIPX="$(status pipx upgrade-all)"
-    echo "Upgrading poetry"
+    upgrade_announcement "poetry" "📝"
     local POETRY="$(status poetry self update)"
-    echo "Upgrading pip"
+    upgrade_announcement "pip" "📦"
     local PIP="$(status pip install --upgrade pip)"
-    echo "Upgrading conda"
+    upgrade_announcement "conda" "🐍"
     local CONDA="$(status conda update -y conda)"
-    echo "Upgrading Oh My Zsh"
+    upgrade_announcement "Oh My Zsh" "🅉"
     local OMZ="$(status upgrade_oh_my_zsh)"
     echo
     echo
     echo "Status"
     echo "=============================================="
     for output in $BREW $PIPX $POETRY $PIP $CONDA $OMZ; do
-        echo
         echo
         echo "$output"
     done
