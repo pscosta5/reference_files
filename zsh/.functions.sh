@@ -40,7 +40,7 @@ del_kernel() {
 
 make_venv() {
     # Make a new Python venv
-    # Assumes Python is installed
+    # Assumes Python, virtualenv, and pyenv are installed
     # Args:
     #    prompt name (optional) By default left blank
     #    directory name (optional) By default set to ".venv"
@@ -48,14 +48,11 @@ make_venv() {
         echo "❓ Too many paremeters"
         echo "Expected 2 optional parameters -- the prompt and directory name"
         return 1
-    elif [ "$#" -gt 0 ]; then
-        local PROMPT_NAME="$1"
-        local DIRECTORY="${2:-.venv}"
-        python -m venv --prompt="${PROMPT_NAME}" "${DIRECTORY}"
     else
-        python -m venv .venv
+        local PROMPT_NAME="${1:-.venv}"
+        local DIRECTORY="${2:-.venv}"
     fi
-    if [ "$?" -eq "0" ]; then
+    if virtualenv --python="$(pyenv which python)" --prompt="${PROMPT_NAME}" "${DIRECTORY}"; then
         echo "📦 $(python --version) virtual environment created in $(pwd)/${DIRECTORY}"
         return 0
     else
@@ -74,8 +71,7 @@ activate_venv() {
         return 1
     fi
     local DIRECTORY="${1:-.venv}"
-    source "${DIRECTORY}/bin/activate"
-    if [ "$?" -eq "0" ]; then
+    if source "${DIRECTORY}/bin/activate"; then
         echo "📦 $(python --version) virtual environment in $(pwd)/${DIRECTORY} activated"
         return 0
     else
