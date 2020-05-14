@@ -97,3 +97,6 @@ loop() {
         sleep 1
     done
 }
+
+# Pip uninstall all packages
+alias pip_uninstall_all="pip freeze --local | xargs pip uninstall -y"
