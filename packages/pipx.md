@@ -9,6 +9,7 @@
 - git-filter-repo
 - invoke
 - kaggle
+- mypy
 - nox
 - pre-commit
 - tox
