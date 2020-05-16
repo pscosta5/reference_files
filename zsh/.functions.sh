@@ -162,5 +162,11 @@ upgrade() {
     done
 }
 
+fix_pipx() {
+    # Fix pipx if it breaks during an upgrade
+    rm -rf ~/.local/pipx/shared
+    pipx reinstall-all
+}
+
 # Pip uninstall all packages
 alias pip_uninstall_all="pip freeze --local | xargs pip uninstall -y"
