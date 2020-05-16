@@ -2,6 +2,7 @@
 
 - black
 - cookiecutter
+- cupper
 - csvkit
 - flake8
 - dephell[full]
