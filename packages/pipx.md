@@ -12,6 +12,7 @@
 - mypy
 - nox
 - pre-commit
+- pytest
 - tox
 - virtualenv
 - youtube_dl
@@ -25,3 +26,4 @@ Run
 ```
 
 - **flake8**: flake8-bugbear
+- **pytest**: pytest-cov
