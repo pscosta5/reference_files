@@ -9,5 +9,5 @@ To install, run
 
 ❯ git clone https://github.com/pscosta5/dotfiles.git ~/.dotfiles
 
-❯ stow -v --dir ~/.dotfiles --target ~ git
+❯ stow -vR --dir ~/.dotfiles --target ~ git
 ```
