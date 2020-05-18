@@ -11,3 +11,10 @@ To install, run
 
 ❯ stow -vR --dir ~/.dotfiles --target ~ git
 ```
+
+Alternatively,
+can use the function `sync_dot`
+
+```sh
+❯ sync_dot git
+```
