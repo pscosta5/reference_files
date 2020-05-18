@@ -159,9 +159,8 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 # Pure theme
 # https://github.com/sindresorhus/pure
-# ``mkdir -p "$HOME/.zsh"``
-# ``git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"``
-fpath+=("$HOME/.zsh/pure")
+# ``git clone https://github.com/sindresorhus/pure.git "$HOME/.config/zsh/pure"``
+fpath+=("$HOME/.config/zsh/pure")
 autoload -U promptinit; promptinit
 prompt pure
 # https://github.com/sindresorhus/pure/issues/501#issuecomment-541693938
@@ -364,4 +363,5 @@ eval $(thefuck --alias)
 alias f=fuck
 
 # Functions
-source "$HOME/.functions.sh"
+fpath+=("$HOME/.config/zsh/functions")
+autoload -U $HOME/.config/zsh/functions/*(.:t)
