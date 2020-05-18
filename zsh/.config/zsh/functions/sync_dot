@@ -1,0 +1,12 @@
+# Sync dotfiles
+# Args
+#   TYPE: The package type whose dotfiles will be synched, this should
+#       match one of the top level directories in ~/.dotfiles/
+if [ "$#" -lt 1 ]; then
+    echo "❓ Illegal number of parameters"
+    echo "Expected 1 parameter -- the package type name"
+    return 1
+else
+    local TYPE="$@"
+    stow --verbose --restow --dir ~/.dotfiles --target ~ "${TYPE}"
+fi
