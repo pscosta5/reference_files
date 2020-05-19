@@ -128,6 +128,7 @@ _`jupyter labextension update` to update extensions_
   ```sh
   jupyter labextension install @jupyterlab/google-drive
   ```
+
 - [Jupyter Book](https://pypi.org/project/jupyter-book/)
 
   ```sh
