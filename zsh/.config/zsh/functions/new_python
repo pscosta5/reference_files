@@ -1,0 +1,25 @@
+# Create a new Python project based on Hypermodern Python
+# Expects cookiecutter to be installed
+_get_latest_release() {
+    # Get the latest tag name of a release
+    # Requires jq to be installed
+    # Args:
+    #     USERNAME: GitHub username
+    #     REPO: Repository name
+    if [ -z "$1" ]; then
+        echo "Usage: get_latest_release [USERNAME] [REPO]"
+        return 0
+    elif [ "$#" -gt "2" ]; then
+        echo "❓ Too many parameters"
+        echo "Expected 2 parameters: GH_USERNAME and REPO"
+        echo
+        echo "Usage: get_latest_release [GH_USERNAME] [REPO]"
+        return 1
+    else
+        local GH_USERNAME="$1"
+        local REPO="$2"
+        curl --silent "https://api.github.com/repos/${GH_USERNAME}/${REPO}/releases/latest" | jq --raw-output ".tag_name"
+    fi
+}
+local LATEST_RELEASE="$(_get_latest_release cjolowicz cookiecutter-hypermodern-python)"
+cookiecutter gh:cjolowicz/cookiecutter-hypermodern-python --checkout=$LATEST_RELEASE
