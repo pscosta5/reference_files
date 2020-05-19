@@ -1,7 +1,12 @@
 # Run a command every second until canceled
 # Args:
 #   COMMAND: The command which will be repeated
-while :; do
-    "$@"
-    sleep 1
-done
+if [ -z "$1" ]; then
+    echo "Usage: loop [COMMAND]"
+    return 0
+else
+    while :; do
+        "$@"
+        sleep 1
+    done
+fi

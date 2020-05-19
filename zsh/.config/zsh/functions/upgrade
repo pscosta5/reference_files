@@ -27,24 +27,33 @@ _status() {
     fi
 }
 
-# Update packages
-_upgrade_announcement "Homebrew" "🍺"
-local BREW="$(_status brew upgrade)"
-_upgrade_announcement "pipx" "🆇"
-local PIPX="$(_status pipx upgrade-all)"
-_upgrade_announcement "poetry" "📝"
-local POETRY="$(_status poetry self update)"
-_upgrade_announcement "pip" "📦"
-local PIP="$(_status pip install --upgrade pip)"
-_upgrade_announcement "conda" "🐍"
-local CONDA="$(_status conda update -y conda)"
-_upgrade_announcement "Oh My Zsh" "🅉"
-local OMZ="$(_status upgrade_oh_my_zsh)"
-echo
-echo
-echo "Status"
-echo "=============================================="
-for output in $BREW $PIPX $POETRY $PIP $CONDA $OMZ; do
+if [ "$#" -gt 0 ]; then
+    echo "❓ Too many parameters"
+    echo "Expected no parameters"
     echo
-    echo "$output"
-done
+    echo "Usage: extract"
+    echo "       upgrade"
+    return 1
+else
+    # Update packages
+    _upgrade_announcement "Homebrew" "🍺"
+    local BREW="$(_status brew upgrade)"
+    _upgrade_announcement "pipx" "🆇"
+    local PIPX="$(_status pipx upgrade-all)"
+    _upgrade_announcement "poetry" "📝"
+    local POETRY="$(_status poetry self update)"
+    _upgrade_announcement "pip" "📦"
+    local PIP="$(_status pip install --upgrade pip)"
+    _upgrade_announcement "conda" "🐍"
+    local CONDA="$(_status conda update -y conda)"
+    _upgrade_announcement "Oh My Zsh" "🅉"
+    local OMZ="$(_status upgrade_oh_my_zsh)"
+    echo
+    echo
+    echo "Status"
+    echo "=============================================="
+    for output in $BREW $PIPX $POETRY $PIP $CONDA $OMZ; do
+        echo
+        echo "$output"
+    done
+fi

@@ -4,17 +4,19 @@
 #    prompt name (optional): By default set to ".venv"
 #    directory name (optional): By default set to ".venv"
 if [ "$#" -gt 2 ]; then
-    echo "❓ Too many paremeters"
+    echo "❓ Too many parameters"
     echo "Expected 2 optional parameters -- the prompt and directory name"
+    echo
+    echo "Usage: make_venv [PROMPT_NAME] [DIRECTORY]"
     return 1
 else
     local PROMPT_NAME="${1:-.venv}"
     local DIRECTORY="${2:-.venv}"
-fi
-if virtualenv --python="$(pyenv which python)" --prompt="${PROMPT_NAME}" "${DIRECTORY}"; then
-    echo "📦 $(python --version) virtual environment created in $(pwd)/${DIRECTORY}"
-    return 0
-else
-    echo "❌ Virtual environment creation failed"
-    return 1
+    if virtualenv --python="$(pyenv which python)" --prompt="${PROMPT_NAME}" "${DIRECTORY}"; then
+        echo "📦 $(python --version) virtual environment created in $(pwd)/${DIRECTORY}"
+        return 0
+    else
+        echo "❌ Virtual environment creation failed"
+        return 1
+    fi
 fi

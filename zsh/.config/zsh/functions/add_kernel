@@ -5,13 +5,16 @@
 if [ "$#" -ne 1 ]; then
     echo "❓ Illegal number of parameters"
     echo "Expected 1 parameter -- the kernel name"
+    echo
+    echo "Usage: activate_venv [KERNEL_NAME]"
     return 1
-fi
-local KERNEL_NAME="$1"
-if python -m ipykernel install --user --name="${KERNEL_NAME}"; then
-    echo "🌽 Kernel ${KERNEL_NAME} created"
-    return 0
 else
-    echo "Kernel creation failed"
-    return 1
+    local KERNEL_NAME="$1"
+    if python -m ipykernel install --user --name="${KERNEL_NAME}"; then
+        echo "🌽 Kernel ${KERNEL_NAME} created"
+        return 0
+    else
+        echo "Kernel creation failed"
+        return 1
+    fi
 fi

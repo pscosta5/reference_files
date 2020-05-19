@@ -1,5 +1,13 @@
 # Run one or more bash commands, pipe to file, and open it
 # Args:
 #   COMMAND: The command whose output will be piped to the file
-"$@" | tee /temp/write.text
-code /tmp/write.txt
+if [ -z "$1" ]; then
+    echo "❓ Illegal number of parameters"
+    echo "Expected 1 parameter -- the command whose output will be written"
+    echo
+    echo "Usage: write [COMMAND]"
+    return 0
+else
+    "$@" | tee /temp/write.text
+    code /tmp/write.txt
+fi

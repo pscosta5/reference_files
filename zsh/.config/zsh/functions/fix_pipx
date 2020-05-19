@@ -1,3 +1,12 @@
 # Fix pipx if it breaks during an upgrade
-rm -rf ~/.local/pipx/shared
-pipx reinstall-all
+
+if [ "$#" -gt 0 ]; then
+    echo "❓ Illegal number of parameters"
+    echo "Expected 0 parameters"
+    echo
+    echo "Usage: fix_pipx"
+    return 1
+else
+    rm -rf ~/.local/pipx/shared
+    pipx reinstall-all
+fi
