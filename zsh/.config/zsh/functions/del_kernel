@@ -1,0 +1,17 @@
+# Remove a kernel from Jupyter
+# Assumes python and jupyterlab is installed
+# Args:
+#    kernel_name: The name of the kernel to be deleted
+if [ "$#" -ne 1 ]; then
+    echo "❓ Illegal number of parameters"
+    echo "Expected 1 parameter -- the kernel name"
+    return 1
+fi
+local KERNEL_NAME="$1"
+if jupyter kernelspec uninstall "${KERNEL_NAME}"; then
+    echo "🗑 Kernel ${KERNEL_NAME} removed"
+    return 0
+else
+    echo "❌ Kernel removal failed"
+    return 1
+fi

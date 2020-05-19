@@ -1,0 +1,7 @@
+# Run a command every second until canceled
+# Args:
+#   COMMAND: The command which will be repeated
+while :; do
+    "$@"
+    sleep 1
+done

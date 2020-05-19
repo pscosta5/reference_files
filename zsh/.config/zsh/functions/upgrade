@@ -1,0 +1,50 @@
+_upgrade_announcement() {
+    # Print out an announcement that the package manager is upgrading
+    # Args:
+    #   NAME: The name of the package manager updating its packages
+    #   ICON (optional): An emoji to symbolize the package manager
+    local NAME="$1"
+    local ICON="$2"
+    echo
+    echo "${ICON} Upgrading ${NAME} packages"
+}
+
+_status() {
+    # Check if command succeeds
+    # Args:
+    #   NAME: The name of the package manager updating its packages
+    #   ICON (optional): An emoji to symbolize the package manager
+    local NAME="$1"
+    echo
+    echo "$NAME"
+    echo "--------"
+    if "$@"; then
+        echo
+        echo "${NAME} PASS"
+    else
+        echo
+        echo "${NAME} FAIL"
+    fi
+}
+
+# Update packages
+_upgrade_announcement "Homebrew" "🍺"
+local BREW="$(_status brew upgrade)"
+_upgrade_announcement "pipx" "🆇"
+local PIPX="$(_status pipx upgrade-all)"
+_upgrade_announcement "poetry" "📝"
+local POETRY="$(_status poetry self update)"
+_upgrade_announcement "pip" "📦"
+local PIP="$(_status pip install --upgrade pip)"
+_upgrade_announcement "conda" "🐍"
+local CONDA="$(_status conda update -y conda)"
+_upgrade_announcement "Oh My Zsh" "🅉"
+local OMZ="$(_status upgrade_oh_my_zsh)"
+echo
+echo
+echo "Status"
+echo "=============================================="
+for output in $BREW $PIPX $POETRY $PIP $CONDA $OMZ; do
+    echo
+    echo "$output"
+done

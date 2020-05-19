@@ -1,0 +1,3 @@
+# Fix pipx if it breaks during an upgrade
+rm -rf ~/.local/pipx/shared
+pipx reinstall-all

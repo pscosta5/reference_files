@@ -127,6 +127,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Uninstall all pip installed packages in current environment
+alias pip_uninstall_all="pip freeze --local | xargs pip uninstall -y"
+
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
 # !! Contents within this block are managed by 'conda init' !!

@@ -1,0 +1,5 @@
+# Run one or more bash commands, pipe to file, and open it
+# Args:
+#   COMMAND: The command whose output will be piped to the file
+"$@" | tee /temp/write.text
+code /tmp/write.txt
