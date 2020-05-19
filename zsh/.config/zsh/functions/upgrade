@@ -36,6 +36,8 @@ if [ "$#" -gt 0 ]; then
     return 1
 else
     # Update packages
+    _upgrade_announcement "tealdeer" "🦌"
+    local TLDR="$(tldr --update)"
     _upgrade_announcement "Homebrew" "🍺"
     local BREW="$(_status brew upgrade)"
     _upgrade_announcement "pipx" "🆇"
@@ -52,7 +54,7 @@ else
     echo
     echo "Status"
     echo "=============================================="
-    for output in $BREW $PIPX $POETRY $PIP $CONDA $OMZ; do
+    for output in $TLDR $BREW $PIPX $POETRY $PIP $CONDA $OMZ; do
         echo
         echo "$output"
     done
