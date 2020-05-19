@@ -37,7 +37,7 @@ if [ "$#" -gt 0 ]; then
 else
     # Update packages
     _upgrade_announcement "tealdeer" "🦌"
-    local TLDR="$(tldr --update)"
+    local TLDR="$(_status tldr --update)"
     _upgrade_announcement "Homebrew" "🍺"
     local BREW="$(_status brew upgrade)"
     _upgrade_announcement "pipx" "🆇"
