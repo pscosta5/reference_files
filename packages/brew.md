@@ -12,6 +12,7 @@
 - git
 - github/gh/gh
 - htop
+- jq
 - make
 - micro
 - nano
