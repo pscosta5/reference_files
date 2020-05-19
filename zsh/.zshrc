@@ -43,10 +43,10 @@ export ZSH=$HOME/.oh-my-zsh
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -129,6 +129,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Uninstall all pip installed packages in current environment
 alias pip_uninstall_all="pip freeze --local | xargs pip uninstall -y"
+# Make a new data science project
+alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-science"
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
