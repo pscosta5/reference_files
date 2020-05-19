@@ -21,14 +21,14 @@ _`jupyter labextension update` to update extensions_
 
 - [collapsible_headings](https://github.com/aquirdTurtle/Collapsible_Headings)
 
-  ```bash
+  ```sh
   jupyter labextension install @aquirdturtle/collapsible_headings
   pip install jupyterlab_github
   ```
 
 - [jupyterlab-jupytext](https://github.com/mwouts/jupyterlab-jupytext)
 
-  ```bash
+  ```sh
   conda install -c conda-forge jupytext
   ```
 
@@ -36,15 +36,15 @@ _`jupyter labextension update` to update extensions_
 
   - Might need to do extension manager install as well as
 
-    ```bash
-    conda install -c conda-forge jupyterlab-git
-    ```
+  ```sh
+  conda install -c conda-forge jupyterlab-git
+  ```
 
 - [@jupyterlab/github](https://github.com/jupyterlab/jupyterlab-github)
 
   A bit involved, see [installation instructions](jupyter labextension install @jupyterlab/github)
 
-  ```bash
+  ```sh
   jupyter labextension install @jupyterlab/github
   ```
 
@@ -52,13 +52,13 @@ _`jupyter labextension update` to update extensions_
 
 - [@jupyerlab/toc](https://github.com/jupyterlab/jupyterlab-toc)
 
-  ```bash
+  ```sh
   jupyter labextension install @jupyterlab/toc
   ```
 
 - [jupyerlab_code_formatter](https://github.com/ryantam626/jupyterlab_code_formatter)
 
-  ```bash
+  ```sh
   conda install -c conda-forge black isort
   jupyter labextension install @ryantam626/jupyterlab_code_formatter
   conda install -c conda-forge jupyterlab_code_formatter
@@ -67,7 +67,7 @@ _`jupyter labextension update` to update extensions_
 
 - [Plotly](https://plot.ly/python/getting-started/)
 
-  ```bash
+  ```sh
   conda install ipywidgets
   jupyter labextension install @jupyter-widgets/jupyterlab-manager --no-build
   jupyter labextension install jupyterlab-plotly --no-build
@@ -77,25 +77,25 @@ _`jupyter labextension update` to update extensions_
 
 - [jupyterlab_go_to_definition](https://github.com/krassowski/jupyterlab-go-to-definition)
 
-  ```bash
+  ```sh
   jupyter labextension install @krassowski/jupyterlab_go_to_definition
   ```
 
 - [jupyterlab_spellchecker](https://github.com/ijmbarr/jupyterlab_spellchecker)
 
-  ```bash
+  ```sh
   jupyter labextension install @ijmbarr/jupyterlab_spellchecker
   ```
 
 - [jupyterlab_variableinspector](https://github.com/lckr/jupyterlab-variableInspector)
 
-  ```bash
+  ```sh
   jupyter labextension install @lckr/jupyterlab_variableinspector
   ```
   
 - [jupyterlab flake8](https://github.com/mlshapiro/jupyterlab-flake8)
 
-  ```bash
+  ```sh
   jupyter labextension install jupyterlab-flake8
   ```
   
@@ -103,7 +103,7 @@ _`jupyter labextension update` to update extensions_
 
   Need to run `conda isntall -c conda-forge ipywidgets` in virtual environment
 
-  ```zsh
+  ```sh
   conda install -c conda-forge widgetsnbextension
   jupyter labextension install @jupyter-widgets/jupyterlab-manager
   ```
@@ -117,10 +117,21 @@ _`jupyter labextension update` to update extensions_
 
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
 
-  ```bash
+  ```sh
   pip install jupyter-lsp
   jupyter labextension install @krassowski/jupyterlab-lsp
   conda install -c conda-forge python-language-server
+  ```
+
+- [jupyterlab-google-drive](https://github.com/jupyterlab/jupyterlab-google-drive)
+
+  ```sh
+  jupyter labextension install @jupyterlab/google-drive
+  ```
+- [Jupyter Book](https://pypi.org/project/jupyter-book/)
+
+  ```sh
+  pip install jupyter-book
   ```
 
 ## Settings
