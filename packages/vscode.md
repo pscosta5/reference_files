@@ -6,6 +6,7 @@ _A list of extensions I use with VS code._
 - Better TOML
 - Code Spell Checker
 - Docker
+- EditorConfig for VS Code
 - Excel Viewer
 - Gist
 - Git Graph
