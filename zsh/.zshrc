@@ -347,6 +347,7 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 # Place colors in ~/.config/colorls/dark_colors.yml
 PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 alias lc='colorls --long --almost-all -t --sort-dirs --git-status'
+alias tc="colorls --tree=2"
 source $(dirname $(gem which colorls))/tab_complete.sh
 
 # fzf
