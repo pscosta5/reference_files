@@ -29,6 +29,7 @@
 - stow
 - tealdeer
 - thefuck
+- trash
 - tree
 - wget
 - zlib
