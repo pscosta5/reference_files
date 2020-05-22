@@ -2,7 +2,7 @@
 # Args:
 #     FILE: File to stage
 #     MESSAGE: Commit message
-#     BRANCH: Branch to push to.
+#     BRANCH: Branch to push to
 if [ -z "$1" ]; then
     echo "Usage: git_add_commit [FILE] [MESSAGE] [PUSH]"
     return 0
