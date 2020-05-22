@@ -1,0 +1,20 @@
+# Add, commit, and push changes in one command
+# Args:
+#     FILE: File to stage
+#     MESSAGE: Commit message
+#     BRANCH: Branch to push to.
+if [ -z "$1" ]; then
+    echo "Usage: git_add_commit [FILE] [MESSAGE] [PUSH]"
+    return 0
+elif [ "$#" -lt "2" ]; then
+    echo "❓ Illegal number of parameters"
+    echo "Expected at least two parameters: FILE and MESSAGE"
+    return 1
+else
+    FILE="$1"
+    MESSAGE="$2"
+    BRANCH="${3:-master}"
+    git add "${FILE}"
+    git commit -m "${MESSAGE}"
+    git push origin "${BRANCH}"
+fi
