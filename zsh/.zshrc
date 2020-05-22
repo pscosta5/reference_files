@@ -365,7 +365,7 @@ alias prev='fzf --preview "bat --style=numbers --color=always {} | head -500"'
 # https://github.com/nvbn/thefuck
 # ``brew install thefuck``
 eval $(thefuck --alias)
-alias f=fuck
+alias fu=fuck
 
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
