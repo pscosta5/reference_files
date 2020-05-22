@@ -131,6 +131,8 @@ source $ZSH/oh-my-zsh.sh
 alias pip_uninstall_all="pip freeze --local | xargs pip uninstall -y"
 # Make a new data science project
 alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-science"
+# Remove formatting from text in 
+alias unformat="pbpaste | pbcopy"
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
