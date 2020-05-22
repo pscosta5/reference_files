@@ -28,6 +28,7 @@
 - stow
 - tealdeer
 - thefuck
+- tree
 - wget
 - zlib
 - zsh-syntax-highlighting
