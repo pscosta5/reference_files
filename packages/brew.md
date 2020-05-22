@@ -11,6 +11,7 @@
 - fzf
 - git
 - github/gh/gh
+- googler
 - htop
 - jq
 - make
