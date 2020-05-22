@@ -34,6 +34,7 @@ _A list of extensions I use with VS code._
 - Rewrap
 - shell-format
 - shellcheck
+- SQL Formatter
 - SQL Server (mssql)
 - SQLTools - Database tools
 - Search Editor: Apply Changes
