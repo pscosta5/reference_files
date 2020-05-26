@@ -14,7 +14,10 @@
     "editor.tabSize": 2
   },
   "[makefile]": { "editor.insertSpaces": false },
-  "[markdown]": { "editor.tabSize": 2 },
+  "[markdown]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   "[restructuredtext]": { "editor.tabSize": 3 },
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
