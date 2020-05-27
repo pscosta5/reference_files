@@ -24,6 +24,7 @@ _A list of extensions I use with VS code._
 - Markdown Preview Mermaid Support
 - Material Theme
 - Material Theme Icons
+- Modelines
 - Path Autocomplete
 - Path Intellisense
 - Prettier - Code formatter
