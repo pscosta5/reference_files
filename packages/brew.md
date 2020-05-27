@@ -33,5 +33,6 @@
 - trash
 - tree
 - wget
+- yq
 - zlib
 - zsh-syntax-highlighting
