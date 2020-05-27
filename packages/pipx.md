@@ -7,6 +7,7 @@
 - flake8
 - dephell[full]
 - git-filter-repo
+- httpie
 - invoke
 - kaggle
 - mypy
