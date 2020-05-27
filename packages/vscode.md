@@ -45,6 +45,7 @@ _A list of extensions I use with VS code._
 - YAML
 - autoDocstring
 - markdownlint
+- pre-commit-vscode
 - python-string-sql
 - reStructuredText
 - tl;dr pages
