@@ -133,6 +133,8 @@ alias pip_uninstall_all="pip freeze --local | xargs pip uninstall -y"
 alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-science"
 # Remove formatting from text in 
 alias unformat="pbpaste | pbcopy"
+# Reload zsh, as if starting a new shell
+alias reload="exec -l zsh"
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
