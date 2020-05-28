@@ -8,7 +8,6 @@ if [ "$#" -ne 1 ]; then
     echo
     echo "Usage: del_kernel [KERNEL_NAME]"
     return 1
-fi
 else
     local KERNEL_NAME="$1"
     if jupyter kernelspec uninstall "${KERNEL_NAME}"; then
