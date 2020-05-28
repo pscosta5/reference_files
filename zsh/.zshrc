@@ -135,6 +135,8 @@ alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-scien
 alias unformat="pbpaste | pbcopy"
 # Reload zsh, as if starting a new shell
 alias reload="exec -l zsh"
+# List Jupyter kernels
+alias list_kernel="jupyter kernelspec list"
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
