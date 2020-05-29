@@ -48,7 +48,7 @@ _`jupyter labextension update` to update extensions_
   jupyter labextension install @jupyterlab/github
   ```
 
-  Add `c.GitHubConfig.access_token = "my-GitHub-token"` to `~/.jupyter/jupyter_notebook_config.py`. 
+  Add `c.GitHubConfig.access_token = "my-GitHub-token"` to `~/.jupyter/jupyter_notebook_config.py`.
 
 - [@jupyerlab/toc](https://github.com/jupyterlab/jupyterlab-toc)
 
@@ -87,18 +87,20 @@ _`jupyter labextension update` to update extensions_
   jupyter labextension install @ijmbarr/jupyterlab_spellchecker
   ```
 
-- [jupyterlab_variableinspector](https://github.com/lckr/jupyterlab-variableInspector)
+- ~~[jupyterlab_variableinspector](https://github.com/lckr/jupyterlab-variableInspector)~~
+
+  ⚠️ **Has major bug that prevents the variable name `tf` from being set. See [#145](https://github.com/lckr/jupyterlab-variableInspector/issues/145)**
 
   ```sh
   jupyter labextension install @lckr/jupyterlab_variableinspector
   ```
-  
+
 - [jupyterlab flake8](https://github.com/mlshapiro/jupyterlab-flake8)
 
   ```sh
   jupyter labextension install jupyterlab-flake8
   ```
-  
+
 - [jupyterlab-widgets](https://ipywidgets.readthedocs.io/en/latest/user_install.html)
 
   Need to run `conda isntall -c conda-forge ipywidgets` in virtual environment
@@ -199,7 +201,7 @@ _Settings -> Advanced Settings Editor_
     "modifier": "Meta"
   }
   ```
-  
+
 - Jupyterlab-Flake8
 
   ```json
@@ -267,11 +269,17 @@ Create colored boxes by using some HTML.
 
 ```html
 <div class="alert alert-block alert-info">
-    <b>Techniques of note</b>
-    <br><br>
-    <li><code>MultiIndex.level</code> for grabbing specific indexes from a MultiIndex</li>
-    <li><code>Index.difference</code> for finding indexes that exist in one set but not the other</li>
-    <li><code>^</code> for symmetric differences</li>
+  <b>Techniques of note</b>
+  <br /><br />
+  <li>
+    <code>MultiIndex.level</code> for grabbing specific indexes from a
+    MultiIndex
+  </li>
+  <li>
+    <code>Index.difference</code> for finding indexes that exist in one set but
+    not the other
+  </li>
+  <li><code>^</code> for symmetric differences</li>
 </div>
 ```
 
