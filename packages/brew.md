@@ -3,13 +3,13 @@
 - bat
 - bfg
 - cmake
-- diff-so-fancy
 - exa
 - fd
 - ffmpeg
 - freetds
 - fzf
 - git
+- git-delta
 - github/gh/gh
 - googler
 - htop
