@@ -45,7 +45,7 @@
   "files.autoSave": "afterDelay",
   "git.autofetch": true,
   "markdown.extension.italic.indicator": "_",
-  "markdown.extension.toc.githubCompatibility": true,
+  "markdown.extension.math.enabled": false,
   "python.dataScience.sendSelectionToInteractiveWindow": true,
   "python.formatting.provider": "black",
   "python.linting.flake8Enabled": true,
