@@ -31,8 +31,7 @@ if [ "$#" -gt 0 ]; then
     echo "❓ Too many parameters"
     echo "Expected no parameters"
     echo
-    echo "Usage: extract"
-    echo "       upgrade"
+    echo "Usage: upgarde"
     return 1
 else
     # Update packages
