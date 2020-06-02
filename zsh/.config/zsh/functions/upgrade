@@ -9,6 +9,23 @@ _upgrade_announcement() {
     echo "${icon} Upgrading ${name} packages"
 }
 
+_upgrade_conda_env() {
+    # Upgrade all dependencies in a conda environment
+    # Requires Python yq to be installed
+    # Args:
+    #     conda_env: The name of the conda environment to upgrade
+    local conda_env="$1"
+    # Update conda installed dependencies
+    conda update --name="${conda_env}" --all --yes
+    # Update pip installed dependencies
+    # Exports conda environment, parses environment for pip
+    # dependencies, strips the versions, and passes on to pip for
+    # upgrading
+    conda run --name="${conda_env}" conda env export | yq -r ".dependencies[-1].pip[]" | sed "s/==.*//" | xargs conda run --name="${conda_env}" python -m pip install --upgrade
+    # Update JupyterLab extensions
+    conda run --name="${conda_env}" jupyter labextension update --all
+}
+
 _status() {
     # Check if command succeeds
     # Args:
@@ -46,7 +63,10 @@ else
     _upgrade_announcement "pip" "📦"
     local PIP="$(_status pip install --upgrade pip)"
     _upgrade_announcement "conda" "🐍"
-    local CONDA="$(_status conda update -y conda)"
+    _upgrade_announcement "notebook" "📓"
+    # shellcheck disable=SC2168
+    local notebook
+    notebook="$(_status _upgrade_conda_env notebook)"
     _upgrade_announcement "Oh My Zsh" "🅉"
     local OMZ="$(_status upgrade_oh_my_zsh)"
     echo
