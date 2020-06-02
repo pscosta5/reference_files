@@ -17,6 +17,7 @@
 - tox
 - virtualenv
 - youtube_dl
+- yq
 
 ## Inject
 

@@ -14,7 +14,6 @@
 - googler
 - htop
 - j2cli
-- jq
 - make
 - micro
 - nano
