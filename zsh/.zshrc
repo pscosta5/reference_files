@@ -129,6 +129,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Uninstall all pip installed packages in current environment
 alias pip_uninstall_all="python -m pip freeze --local | xargs pip uninstall -y"
+# Upgrade all pip packages in an environment
+alias pip_upgrade_all="python -m pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
+# Upgrade all pip installed packages in a conda environment
+alias conda_pip_upgrade_all="conda env export | yq -r '.dependencies[-1].pip[]' | sed 's/==.*//' | xargs python -m pip install --upgrade"
 # Make a new data science project
 alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-science"
 # Remove formatting from text in 
