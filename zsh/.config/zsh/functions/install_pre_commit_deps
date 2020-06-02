@@ -1,0 +1,10 @@
+# Install pre-commit flake8 lint dependencies directly into Poertry
+# environment
+# Black
+yq -r ".repos[2].hooks[0].id" .pre-commit-config.yaml | xargs poetry add --dev
+# flake8
+yq -r ".repos[3].hooks[0].id" .pre-commit-config.yaml | xargs poetry add --dev
+# flake8 additional dependencies
+yq -r ".repos[3].hooks[0].additional_dependencies[]" .pre-commit-config.yaml | xargs poetry add --dev
+# reorder-python-imports
+yq -r ".repos[4].hooks[0].id" .pre-commit-config.yaml | xargs poetry add --dev
