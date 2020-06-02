@@ -380,4 +380,4 @@ alias fu=fuck
 
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
-autoload -U $HOME/.config/zsh/functions/**/*
+autoload -Uz $HOME/.config/zsh/functions/**/*
