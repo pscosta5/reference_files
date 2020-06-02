@@ -3,18 +3,26 @@
 #     FILE: File to stage
 #     MESSAGE: Commit message
 #     BRANCH: Branch to push to
+_usage() {
+    echo "Usage: git_add_commit [FILE] [MESSAGE] [BRANCH]"
+}
 if [ -z "$1" ]; then
-    echo "Usage: git_add_commit [FILE] [MESSAGE] [PUSH]"
+    _usage
     return 0
-elif [ "$#" -lt "2" ]; then
+elif [ "$#" -lt "2" ] | [ "$#" -gt "3" ]; then
     echo "❓ Illegal number of parameters"
     echo "Expected at least two parameters: FILE and MESSAGE"
+    echo
+    _usage
     return 1
 else
-    FILE="$1"
-    MESSAGE="$2"
-    BRANCH="${3:-master}"
-    git add "${FILE}"
-    git commit -m "${MESSAGE}"
-    git push origin "${BRANCH}"
+    # shellcheck disable=SC2168
+    local file="$1"
+    # shellcheck disable=SC2168
+    local message="$2"
+    # shellcheck disable=SC2168
+    local branch="${3:-master}"
+    git add "${file}"
+    git commit -m "${message}"
+    git push origin "${branch}"
 fi
