@@ -1,8 +1,8 @@
 # Make a new Python venv
 # Assumes Python, virtualenv, and pyenv are installed
 # Args:
-#    prompt name (optional): By default set to ".venv"
-#    directory name (optional): By default set to ".venv"
+#    PROMPT (optional): By default set to ".venv"
+#    DIRECTORY (optional): By default set to ".venv"
 if [ "$#" -gt 2 ]; then
     echo "❓ Too many parameters"
     echo "Expected 2 optional parameters -- the prompt and directory name"
@@ -10,10 +10,12 @@ if [ "$#" -gt 2 ]; then
     echo "Usage: make_venv [PROMPT_NAME] [DIRECTORY]"
     return 1
 else
-    local PROMPT_NAME="${1:-.venv}"
-    local DIRECTORY="${2:-.venv}"
-    if virtualenv --python="$(pyenv which python)" --prompt="${PROMPT_NAME}" "${DIRECTORY}"; then
-        echo "📦 $(python --version) virtual environment created in $(pwd)/${DIRECTORY}"
+    # shellcheck disable=SC2168
+    local prompt_name="${1:-.venv}"
+    # shellcheck disable=SC2168
+    local directory="${2:-.venv}"
+    if virtualenv --python="$(pyenv which python)" --prompt="${prompt_name}" "${directory}"; then
+        echo "📦 $(python --version) virtual environment created in $(pwd)/${directory}"
         return 0
     else
         echo "❌ Virtual environment creation failed"

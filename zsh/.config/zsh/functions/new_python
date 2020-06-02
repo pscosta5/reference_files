@@ -16,10 +16,12 @@ _get_latest_release() {
         echo "Usage: get_latest_release [GH_USERNAME] [REPO]"
         return 1
     else
-        local GH_USERNAME="$1"
-        local REPO="$2"
-        curl --silent "https://api.github.com/repos/${GH_USERNAME}/${REPO}/releases/latest" | jq --raw-output ".tag_name"
+        local gh_username="$1"
+        local repo="$2"
+        curl --silent "https://api.github.com/repos/${gh_username}/${repo}/releases/latest" | jq --raw-output ".tag_name"
     fi
 }
-local LATEST_RELEASE="$(_get_latest_release cjolowicz cookiecutter-hypermodern-python)"
-cookiecutter gh:cjolowicz/cookiecutter-hypermodern-python --checkout=$LATEST_RELEASE
+# shellcheck disable=SC2168
+local latest_release
+latest_release="$(_get_latest_release cjolowicz cookiecutter-hypermodern-python)"
+cookiecutter gh:cjolowicz/cookiecutter-hypermodern-python --checkout="$latest_release"

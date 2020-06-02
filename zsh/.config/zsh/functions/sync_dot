@@ -2,12 +2,13 @@
 # Args
 #   TYPE: The package type whose dotfiles will be synched, this should
 #       match one of the top level directories in ~/.dotfiles/
-if [ -z "$1" ]; then
+if [ "$#" -ne "1" ]; then
     echo "Usage: sync_dot [TYPE]"
     echo "       sync_dot git"
     echo "       sync_dot zsh"
     return 0
 else
-    local TYPE="$@"
-    stow --verbose --restow --dir ~/.dotfiles --target ~ "${TYPE}"
+    # shellcheck disable=SC2168
+    local type="$1"
+    stow --verbose --restow --dir ~/.dotfiles --target ~ "${type}"
 fi
