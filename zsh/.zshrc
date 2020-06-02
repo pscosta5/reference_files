@@ -1,4 +1,8 @@
 # Place in ~/.zshrc
+# Place environmental variables in ~/.zshenv and keep private
+# Good summary on what to keep in each of the zsh dotfiles:
+# https://unix.stackexchange.com/a/487889
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
