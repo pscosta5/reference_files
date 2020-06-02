@@ -1,29 +1,29 @@
 _upgrade_announcement() {
     # Print out an announcement that the package manager is upgrading
     # Args:
-    #   NAME: The name of the package manager updating its packages
-    #   ICON (optional): An emoji to symbolize the package manager
-    local NAME="$1"
-    local ICON="$2"
+    #   name: The name of the package manager updating its packages
+    #   icon (optional): An emoji to symbolize the package manager
+    local name="$1"
+    local icon="$2"
     echo
-    echo "${ICON} Upgrading ${NAME} packages"
+    echo "${icon} Upgrading ${name} packages"
 }
 
 _status() {
     # Check if command succeeds
     # Args:
-    #   NAME: The name of the package manager updating its packages
+    #   name: The name of the package manager updating its packages
     #   ICON (optional): An emoji to symbolize the package manager
-    local NAME="$1"
+    local name="$1"
     echo
-    echo "$NAME"
+    echo "$name"
     echo "--------"
     if "$@"; then
         echo
-        echo "${NAME} PASS"
+        echo "✅ ${name} PASS"
     else
         echo
-        echo "${NAME} FAIL"
+        echo "❌ ${name} FAIL"
     fi
 }
 
