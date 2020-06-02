@@ -128,7 +128,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Uninstall all pip installed packages in current environment
-alias pip_uninstall_all="pip freeze --local | xargs pip uninstall -y"
+alias pip_uninstall_all="python -m pip freeze --local | xargs pip uninstall -y"
 # Make a new data science project
 alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-science"
 # Remove formatting from text in 
