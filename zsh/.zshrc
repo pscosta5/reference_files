@@ -132,9 +132,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Uninstall all pip installed packages in current environment
-alias pip_uninstall_all="python -m pip freeze --local | xargs pip uninstall -y"
+alias pip_uninstall_all="python -m pip freeze --local | xargs pip uninstall --yes"
 # Upgrade all pip packages in an environment
-alias pip_upgrade_all="python -m pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U"
+alias pip_upgrade_all="python -m pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install --upgrade"
 # Upgrade all pip installed packages in a conda environment
 alias conda_pip_upgrade_all="conda env export | yq -r '.dependencies[-1].pip[]' | sed 's/==.*//' | xargs python -m pip install --upgrade"
 # Make a new data science project
