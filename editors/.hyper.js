@@ -194,7 +194,6 @@ module.exports = {
     "hyper-search",
     "hyper-statusline",
     "hypercwd",
-    "hyperlinks",
   ],
 
   // in development, you can create a directory under
