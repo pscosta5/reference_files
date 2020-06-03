@@ -24,16 +24,6 @@ module.exports = {
       vibrancy: "dark",
     },
 
-    hyperTabs: {
-      // The height(unit px) of zone over tabs to drag the window
-      navMoveable: 0,
-      // The hotkeys of move tabs
-      hotkeys: {
-        moveLeft: "command+[",
-        moveRight: ["command+]", "r i g h t"],
-      },
-    },
-
     // choose either `'stable'` for receiving highly polished,
     // or `'canary'` for less polished but more frequent updates
     updateChannel: "stable",
@@ -190,7 +180,6 @@ module.exports = {
   plugins: [
     "hyper-alt-click",
     "hyper-material-theme",
-    "hyper-reorderable-tabs",
     "hyper-search",
     "hyper-statusline",
     "hypercwd",
