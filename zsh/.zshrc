@@ -145,6 +145,8 @@ alias unformat="pbpaste | pbcopy"
 alias reload="exec -l zsh"
 # List Jupyter kernels
 alias list_kernels="jupyter kernelspec list"
+# Start Jupyter notebook
+alias notebook="conda activate notebook && jupyter lab"
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
