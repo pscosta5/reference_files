@@ -26,6 +26,15 @@ _upgrade_conda_env() {
     conda run --name="${conda_env}" jupyter labextension update --all
 }
 
+_upgrade_git() {
+    # Run git pull on all package repos
+    for package in $(yq -r 'keys[]' ~/.dotfiles/packages/git.yml); do
+        local directory
+        directory=$(yq -r ".${package}.directory" ~/.dotfiles/packages/git.yml)
+        git -C "${HOME}${directory}" pull
+    done
+}
+
 _status() {
     # Check if command succeeds
     # Args:
@@ -80,6 +89,10 @@ else
     # shellcheck disable=SC2168
     local notebook
     notebook="$(_status _upgrade_conda_env notebook)"
+    _upgrade_announcement "git" "🐱"
+    # shellcheck disable=SC2168
+    local git
+    git="$(_status _upgrade_git)"
     _upgrade_announcement "Oh My Zsh" "🅉"
     # shellcheck disable=SC2168
     local omz
@@ -88,7 +101,7 @@ else
     echo
     echo "Status"
     echo "=============================================="
-    for output in $tldr $brew $pipx $poetry $pip $conda $notebook $omz; do
+    for output in $tldr $brew $pipx $poetry $pip $conda $notebook $git $omz; do
         echo
         echo "$output"
     done
