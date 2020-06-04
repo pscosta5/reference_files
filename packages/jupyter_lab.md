@@ -103,7 +103,7 @@ _`jupyter labextension update` to update extensions_
 
 - [jupyterlab-widgets](https://ipywidgets.readthedocs.io/en/latest/user_install.html)
 
-  Need to run `conda isntall -c conda-forge ipywidgets` in virtual environment
+  Need to run `conda install -c conda-forge ipywidgets` in virtual environment
 
   ```sh
   conda install -c conda-forge widgetsnbextension
@@ -114,7 +114,7 @@ _`jupyter labextension update` to update extensions_
 
   ```sh
   conda install -c conda-forge xeus-python ptvsd
-  jupyter labextension intsall @jupyterlab/debugger
+  jupyter labextension install @jupyterlab/debugger
   ```
 
 - [jupyterlab-lsp](https://github.com/krassowski/jupyterlab-lsp#installation)
