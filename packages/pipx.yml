@@ -1,0 +1,29 @@
+# pipx packages
+
+# Run `pipx install PACKAGE`
+install:
+  - black
+  - cookiecutter
+  - cupper
+  - csvkit
+  - flake8
+  - dephell[full]
+  - git-filter-repo
+  - httpie
+  - invoke
+  - j2cli[yaml]
+  - kaggle
+  - mypy
+  - nox
+  - pre-commit
+  - pytest
+  - tox
+  - virtualenv
+  - youtube_dl
+  - yq
+# Run `pipx inject PACKAGE DEPENDENCY`
+inject:
+  flake8:
+    - flake8-bugbear
+  pytest:
+    - pytest-cov
