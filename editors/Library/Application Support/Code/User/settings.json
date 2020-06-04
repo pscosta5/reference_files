@@ -40,6 +40,7 @@
   "explorer.decorations.badges": false,
   "files.associations": {
     "**/.config/zsh/functions/**/*": "shellscript",
+    "**/.jupyter/lab/user-settings/**/*": "jsonc",
     "flake8": "ini"
   },
   "files.autoSave": "afterDelay",
