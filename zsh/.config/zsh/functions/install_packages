@@ -29,3 +29,15 @@ for package in $(yq -r 'keys[]' ~/.dotfiles/packages/git.yml); do
     directory=$(yq -r ".${package}.directory" ~/.dotfiles/packages/git.yml)
     git clone "${repo}" "${HOME}${directory}"
 done
+
+conda create --name notebook python
+# Install conda packages
+yq -r '.conda[]' ~/.dotfiles/packages/jupyter_lab.yml | xargs conda install --yes --name=notebook
+# Install pip packages
+yq -r '.pip[]' ~/.dotfiles/packages/jupyter_lab.yml | xargs conda run --name=notebook python -m pip install
+# Install JupyterLab extensions
+yq -r '.labextension[]' ~/.dotfiles/packages/jupyter_lab.yml | xargs conda run --name=notebook jupyter labextension install
+# Server extension
+for package in $(yq -r '.serverextension[]' ~/.dotfiles/packages/jupyter_lab.yml); do
+    conda run --name=notebook jupyter serverextension enable --py "${package}"
+done
