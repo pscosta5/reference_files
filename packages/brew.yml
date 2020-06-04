@@ -1,6 +1,6 @@
 # Homebrew packages
 
-# RUn `brew install PACKAGE`
+# Run `brew install PACKAGE`
 install:
   - bat
   - bfg
