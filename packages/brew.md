@@ -13,6 +13,7 @@
 - github/gh/gh
 - googler
 - htop
+- insect
 - j2cli
 - make
 - micro
