@@ -11,3 +11,9 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poet
 ```sh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 ```
+
+## Oh My Zsh
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
