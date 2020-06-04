@@ -69,6 +69,10 @@ else
     # shellcheck disable=SC2168
     local brew
     brew="$(_status brew upgrade)"
+    _upgrade_announcement "gem" "💎"
+    # shellcheck disable=SC2168
+    local gem
+    pipx="$(_status gem update colorls)"
     _upgrade_announcement "pipx" "🆇"
     # shellcheck disable=SC2168
     local pipx
@@ -101,7 +105,7 @@ else
     echo
     echo "Status"
     echo "=============================================="
-    for output in $tldr $brew $pipx $poetry $pip $conda $notebook $git $omz; do
+    for output in $tldr $brew $gem $pipx $poetry $pip $conda $notebook $git $omz; do
         echo
         echo "$output"
     done
