@@ -9,6 +9,7 @@
 - git-filter-repo
 - httpie
 - invoke
+- j2cli
 - kaggle
 - mypy
 - nox
