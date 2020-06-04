@@ -1,0 +1,20 @@
+# Download all packages
+# Mostly used for setting up a new machine
+# Requirements:
+#   Homebrew and pipx are installed
+#   Dotfiles have been added to system
+#   jq and yq are installed (via Homebrew)
+
+# Homebrew packages
+yq -r '.install[]' ~/.dotfiles/packages/brew.yml | xargs brew install
+
+# pipx package
+for package in $(yq -r '.install[]' ~/.dotfiles/packages/pipx.yml); do
+    pipx install "$package"
+done
+
+# pipx inject
+for environment in $(yq -r '.inject | keys[]' ~/.dotfiles/packages/pipx.yml); do
+    # pipx inject $environment "$(yq )"
+    yq -r ".inject.${environment}[]" ~/.dotfiles/packages/pipx.yml | xargs pipx inject "${environment}"
+done
