@@ -1,7 +1,7 @@
 # Homebrew packages
 
-# brew install
-brew:
+# RUn `brew install PACKAGE`
+install:
   - bat
   - bfg
   - cmake
