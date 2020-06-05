@@ -35,5 +35,6 @@ install:
   - trash
   - tree
   - wget
+  - wvanlint/twf/twf
   - zlib
   - zsh-syntax-highlighting

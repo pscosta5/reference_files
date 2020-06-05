@@ -147,6 +147,8 @@ alias reload="exec -l zsh"
 alias list_kernels="jupyter kernelspec list"
 # Activate environment with notebook and start Jupyter Lab
 alias notebook="conda activate notebook && jupyter lab"
+# Interactive tree view
+alias twf="twf --bind=\"up::tree:prev,down::tree:next,right::tree:toggle,left::tree:parent;tree:close\" --previewCmd=\"bat --color=always {}\" --locateCmd='fzf --preview \"bat --style=numbers --color=always {} | head -500\"'"
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
