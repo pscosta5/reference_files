@@ -364,6 +364,7 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
 alias lc='colorls --long --almost-all -t --sort-dirs --git-status'
 source $(dirname $(gem which colorls))/tab_complete.sh
+alias tc='colorls -t --sort-dirs --tree=5'
 
 # fzf
 # https://github.com/junegunn/fzf
