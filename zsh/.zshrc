@@ -180,12 +180,8 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 # ``curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python``
 export PATH="$HOME/.poetry/bin:$PATH"
 
-# Pure theme
-# https://github.com/sindresorhus/pure
-# ``git clone https://github.com/sindresorhus/pure.git "$HOME/.config/zsh/pure"``
-fpath+=("$HOME/.config/zsh/pure")
-autoload -U promptinit; promptinit
-prompt pure
+# Starship theme
+eval "$(starship init zsh)"
 # https://github.com/sindresorhus/pure/issues/501#issuecomment-541693938
 # https://github.com/sindresorhus/pure#colors
 # Numbers are based on this ordering:
@@ -205,21 +201,6 @@ prompt pure
 # 13. lightMagenta
 # 14. lightCyan
 # 15. lightWhite
-zstyle :prompt:pure:execution_time color 11
-zstyle :prompt:pure:git:arrow color 14
-zstyle :prompt:pure:git:stash color 14
-zstyle :prompt:pure:git:branch color 248
-zstyle :prompt:pure:git:branch:cached color 9
-zstyle :prompt:pure:git:action color 248
-zstyle :prompt:pure:git:dirty color 13
-zstyle :prompt:pure:host color 248
-zstyle :prompt:pure:path color 12
-zstyle :prompt:pure:prompt:error color 9
-zstyle :prompt:pure:prompt:success color 13
-zstyle :prompt:pure:prompt:continuation color 248
-zstyle :prompt:pure:user color 248
-zstyle :prompt:pure:virtualenv color 248
-
 # Zsh coloring
 # https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
 typeset -A ZSH_HIGHLIGHT_STYLES

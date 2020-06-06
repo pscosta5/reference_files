@@ -28,6 +28,7 @@ install:
   - pyenv
   - pyenv-virtualenv
   - ripgrep
+  - starship
   - shellcheck
   - stow
   - tealdeer
