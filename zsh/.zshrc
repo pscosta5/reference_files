@@ -346,7 +346,7 @@ fi
 # ``brew install ruby``
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 
-# Colorls
+# lsd
 # https://github.com/athityakumar/colorls
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Bold/complete/Roboto%20Mono%20Bold%20Nerd%20Font%20Complete.ttf
@@ -358,13 +358,9 @@ export PATH="/usr/local/opt/ruby/bin:$PATH"
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Medium/complete/Roboto%20Mono%20Medium%20Nerd%20Font%20Complete.ttf
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Thin-Italic/complete/Roboto%20Mono%20Thin%20Italic%20Nerd%20Font%20Complete.ttf
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Thin/complete/Roboto%20Mono%20Thin%20Nerd%20Font%20Complete.ttf
-# ``gem install colorls``
-# ``mkdir ~/.config/colorls``
-# Place colors in ~/.config/colorls/dark_colors.yml
-PATH="/usr/local/lib/ruby/gems/2.7.0/bin:$PATH"
-alias lc='colorls --long --almost-all -t --sort-dirs --git-status'
-source $(dirname $(gem which colorls))/tab_complete.sh
-alias tc='colorls -t --sort-dirs --tree=5'
+# ``brew install lsd`
+alias ld='lsd --almost-all --long --timesort --group-dirs=first'
+alias td='lsd --timesort --group-dirs=first --tree'
 
 # fzf
 # https://github.com/junegunn/fzf

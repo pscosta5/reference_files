@@ -17,6 +17,7 @@ install:
   - googler
   - htop
   - insect
+  - lsd
   - make
   - micro
   - nano
@@ -27,7 +28,6 @@ install:
   - pyenv
   - pyenv-virtualenv
   - ripgrep
-  - ruby
   - shellcheck
   - stow
   - tealdeer
