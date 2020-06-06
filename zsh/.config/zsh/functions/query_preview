@@ -1,0 +1,13 @@
+# Preview live results of a query
+# Uses fzf
+if [[ "$#" -eq "0" ]]; then
+    echo "Usage: query_preview [QUERY]"
+    echo
+    echo "Parameters"
+    echo "QUERY: A string where {q} is the query"
+    echo
+    echo "Examples"
+    echo "query_preview 'jq {q} file.json'"
+else
+    echo '' | fzf --print-query --preview "$@"
+fi
