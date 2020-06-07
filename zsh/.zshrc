@@ -320,6 +320,7 @@ export CPPFLAGS="-I/usr/local/opt/zlib/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
 
 # lsd
+# https://github.com/Peltoche/lsd
 # ``brew install lsd`
 alias ld='lsd --almost-all --long --timesort --group-dirs=first'
 alias td='lsd --timesort --group-dirs=first --tree'
