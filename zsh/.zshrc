@@ -89,6 +89,14 @@ COMPLETION_WAITING_DOTS="true"
 # https://github.com/zsh-users/zsh-autosuggestions
 # ``git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions``
 
+# pyenv
+# https://github.com/pyenv/pyenv#installation
+# https://github.com/pyenv/pyenv-virtualenv
+# ``brew install pyenv``
+# ``brew install openssl readline sqlite3 zlib
+# ``brew install pyenv-virtualenv
+# This should be last to overide conda paths
+
 plugins=(
     brew
     conda-zsh-completion
@@ -98,6 +106,7 @@ plugins=(
     osx
     pip
     poetry
+    pyenv
     python
     z
     zsh-autosuggestions
@@ -308,20 +317,6 @@ PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig $PKG_CONFIG_PATH"
 export LDFLAGS="-L/usr/local/opt/zlib/lib $LDFLAGS"
 export CPPFLAGS="-I/usr/local/opt/zlib/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
-
-# pyenv
-# https://github.com/pyenv/pyenv#installation
-# https://github.com/pyenv/pyenv-virtualenv
-# ``brew install pyenv``
-# ``brew install openssl readline sqlite3 zlib
-# ``brew install pyenv-virtualenv
-# This should be last to overide conda paths
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
-# if which pyenv-virtualenv-init > /dev/null; then
-#     eval "$(pyenv virtualenv-init -)";
-# fi
 
 # Ruby
 # ``brew install ruby``
