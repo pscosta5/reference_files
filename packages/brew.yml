@@ -28,8 +28,8 @@ install:
   - pyenv
   - pyenv-virtualenv
   - ripgrep
-  - starship
   - shellcheck
+  - starship
   - stow
   - tealdeer
   - thefuck
