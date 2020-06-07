@@ -318,10 +318,6 @@ export LDFLAGS="-L/usr/local/opt/zlib/lib $LDFLAGS"
 export CPPFLAGS="-I/usr/local/opt/zlib/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
 
-# Ruby
-# ``brew install ruby``
-export PATH="/usr/local/opt/ruby/bin:$PATH"
-
 # lsd
 # https://github.com/athityakumar/colorls
 # https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/RobotoMono/Regular/complete/Roboto%20Mono%20Nerd%20Font%20Complete.ttf
