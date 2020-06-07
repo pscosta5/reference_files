@@ -1,0 +1,4 @@
+# Search hidden files and directories.
+--hidden
+# Searches case insensitively if the pattern is all lowercase.
+--smart-case

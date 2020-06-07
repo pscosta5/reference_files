@@ -355,6 +355,11 @@ alias prev='fzf --preview "bat --style=numbers --color=always {} | head -500"'
 eval $(thefuck --alias)
 alias fu=fuck
 
+# ripgrep
+# https://github.com/BurntSushi/ripgrep
+# ``brew install rg```
+export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
+
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
 autoload -Uz $HOME/.config/zsh/functions/**/*
