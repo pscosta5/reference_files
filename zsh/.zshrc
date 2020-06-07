@@ -108,6 +108,7 @@ plugins=(
     poetry
     pyenv
     python
+    virtualenv
     z
     zsh-autosuggestions
 )
