@@ -7,6 +7,8 @@
 
 # Homebrew packages
 yq -r '.install[]' ~/.dotfiles/packages/brew.yml | xargs brew install
+# Brew cask install
+yq -r '.install[]' ~/.dotfiles/packages/brew.yml | xargs brew cask install
 
 # pipx package
 for package in $(yq -r '.install[]' ~/.dotfiles/packages/pipx.yml); do
