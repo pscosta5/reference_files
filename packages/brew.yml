@@ -41,15 +41,15 @@ install:
   - zsh-syntax-highlighting
 # Run ``brew cask install PACKAGE``
 cask:
- - homebrew/cask-fonts/font-roboto-condensed
- - homebrew/cask-fonts/font-roboto-mono
- - homebrew/cask-fonts/font-roboto-slab
- - homebrew/cask-fonts/font-roboto
- - homebrew/cask-fonts/font-robotomono-nerd-font
- - homebrew/cask-fonts/font-space-mono
- - homebrew/cask-fonts/font-firacode-nerd-font
  - homebrew/cask-fonts/font-fira-code
+ - homebrew/cask-fonts/font-firacode-nerd-font
  - homebrew/cask-fonts/font-libre-baskerville
  - homebrew/cask-fonts/font-libre-franklin
  - homebrew/cask-fonts/font-merriweather
  - homebrew/cask-fonts/font-open-sans
+ - homebrew/cask-fonts/font-roboto
+ - homebrew/cask-fonts/font-roboto-condensed
+ - homebrew/cask-fonts/font-roboto-mono
+ - homebrew/cask-fonts/font-roboto-slab
+ - homebrew/cask-fonts/font-robotomono-nerd-font
+ - homebrew/cask-fonts/font-space-mono
