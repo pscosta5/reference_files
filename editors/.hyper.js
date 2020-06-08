@@ -32,6 +32,7 @@ module.exports = {
     fontSize: 12,
 
     // font family with optional fallbacks
+    // ``brew cask install homebrew/cask-fonts/font-robotomono-nerd-font``
     fontFamily:
       '"RobotoMono Nerd Font", "Roboto Mono", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
