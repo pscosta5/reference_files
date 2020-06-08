@@ -20,7 +20,6 @@ install:
   - lsd
   - make
   - micro
-  - nano
   - ncdu
   - pandoc
   - pipx
