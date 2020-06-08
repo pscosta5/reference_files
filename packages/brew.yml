@@ -17,6 +17,7 @@ install:
   - googler
   - hexyl
   - htop
+  - hyperfine
   - insect
   - lsd
   - make
