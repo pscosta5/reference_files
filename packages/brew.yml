@@ -43,6 +43,8 @@ install:
   - zsh-syntax-highlighting
 # Run ``brew cask install PACKAGE``
 cask:
+ - docker
+ - google-chrome
  - homebrew/cask-fonts/font-fira-code
  - homebrew/cask-fonts/font-firacode-nerd-font
  - homebrew/cask-fonts/font-libre-baskerville
@@ -55,3 +57,8 @@ cask:
  - homebrew/cask-fonts/font-roboto-slab
  - homebrew/cask-fonts/font-robotomono-nerd-font
  - homebrew/cask-fonts/font-space-mono
+ - hyper
+ - iina
+ - miniconda
+ - nightowl
+ - visual-studio-code
