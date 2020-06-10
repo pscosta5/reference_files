@@ -1,3 +1,4 @@
+# Upgrade all packages
 _upgrade_announcement() {
     # Print out an announcement that the package manager is upgrading
     # Args:
