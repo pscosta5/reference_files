@@ -114,7 +114,7 @@ plugins=(
     python
     virtualenv
     z
-    zsh-autocomplete
+    # zsh-autocomplete
     zsh-autosuggestions
 )
 
