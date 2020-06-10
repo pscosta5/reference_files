@@ -342,6 +342,7 @@ alias td='lsd --timesort --group-dirs=first --tree'
 # ``$(brew --prefix)/opt/fzf/install``
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # fd integration
+# https://github.com/sharkdp/fd#integration-with-other-programs
 export FZF_DEFAULT_COMMAND='fd --type file --follow --hidden --exclude .git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_COMMAND="fd --type file --color=always"
