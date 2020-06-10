@@ -9,7 +9,7 @@ _usage() {
 if [ -z "$1" ]; then
     _usage
     return 0
-elif [ "$#" -lt "2" ] | [ "$#" -gt "3" ]; then
+elif [ "$#" -lt "2" ] || [ "$#" -gt "3" ]; then
     echo "❓ Illegal number of parameters"
     echo "Expected at least two parameters: FILE and MESSAGE"
     echo
