@@ -1,0 +1,4 @@
+# Process the output when selecting from the results provided by
+# _fzf_complete_git
+# Returns only the file path, ignoring the git status icon
+awk '{print $2}'

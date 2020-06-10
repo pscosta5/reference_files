@@ -1,0 +1,17 @@
+# When typing ``git add ** [TAB]`` use fzf to fuzzy search through
+# changed and unstaged files
+# Works best with _fzf_complete_git_post
+# Requires fzf to be installed
+# shellcheck disable=SC2168
+local args
+args="$@"
+# shellcheck disable=SC2168
+local files
+files=$(git status --short)
+if [[ ${args} == 'git add'* ]]; then
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$files"
+    )
+else
+    eval "zle ${fzf_default_completion:-expand-or-complete}"
+fi
