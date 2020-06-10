@@ -369,12 +369,3 @@ export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
 autoload -Uz $HOME/.config/zsh/functions/**/*
-
-_fzf_complete_doge() {
-  _fzf_complete --multi --reverse --prompt="doge> " -- "$@" < <(
-    echo very
-    echo wow
-    echo such
-    echo doge
-  )
-}
