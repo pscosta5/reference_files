@@ -25,14 +25,18 @@ install:
   - ncdu
   - pandoc
   - pipx
+  - poppler
   - prettyping
   - pyenv
   - pyenv-virtualenv
+  - rga
   - ripgrep
   - shellcheck
+  - sqlite
   - starship
   - stow
   - tealdeer
+  - tesseract
   - thefuck
   - trash
   - tree
