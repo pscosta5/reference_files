@@ -4,10 +4,11 @@ if [[ "$#" -eq "0" ]]; then
     echo "Usage: query_preview [QUERY]"
     echo
     echo "Parameters"
-    echo "QUERY: A string where {q} is the query"
+    echo "QUERY: A string where {q} is the query and {} is the file."
+    echo "       You may specify either."
     echo
     echo "Examples"
-    echo "query_preview 'jq {q} file.json'"
+    echo "query_preview 'jq {q} {}'"
 else
-    echo '' | fzf --print-query --preview "$@"
+    fzf --phony --print-query --preview "$@"
 fi
