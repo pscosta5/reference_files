@@ -20,6 +20,6 @@ else
         query_tool="jq"
     fi
     query="$(echo '' | fzf --print-query --preview "${query_tool} {q} ${filename}")"
-    echo "Query \""${query}"\" has been copied to the clipboard"
+    echo "Query \"${query}\" has been copied to the clipboard"
     echo "${query}" | pbcopy
 fi
