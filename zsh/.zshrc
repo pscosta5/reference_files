@@ -238,6 +238,11 @@ ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=14'
 ZSH_HIGHLIGHT_STYLES[comment]='fg=8,bold'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=10'
 
+# fd
+# https://github.com/sharkdp/fd
+# ``brew install fd``
+alias fd="fd --hidden --follow"
+
 # Bat
 # https://github.com/sharkdp/bat
 # ``brew install bat``
@@ -359,3 +364,12 @@ export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
 autoload -Uz $HOME/.config/zsh/functions/**/*
+
+_fzf_complete_doge() {
+  _fzf_complete --multi --reverse --prompt="doge> " -- "$@" < <(
+    echo very
+    echo wow
+    echo such
+    echo doge
+  )
+}
