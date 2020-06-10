@@ -1,0 +1,25 @@
+# Preview live results of a jq query
+# Finished query will be copied to the clipboard
+# Requires fzf, jq, and rq to be installed
+if [[ "$#" -eq "0" ]]; then
+    echo "Usage: jq_fzf [FILENAME]"
+elif [[ "$#" -gt "1" ]]; then
+    echo "❓ Illegal number of parameters"
+    echo "Expected 1 parameter -- the file name"
+    exit 1
+else
+    # shellcheck disable=SC2168
+    local filename="$1"
+    # shellcheck disable=SC2168
+    local query_tool
+    # shellcheck disable=SC2168
+    local query
+    if [[ "${filename: -3}" == "yml" ]] || [[ "${filename: -4}" == "yaml" ]]; then
+        query_tool="yq"
+    else
+        query_tool="jq"
+    fi
+    query="$(echo '' | fzf --print-query --preview "${query_tool} {q} ${filename}")"
+    echo "Query \""${query}"\" has been copied to the clipboard"
+    echo "${query}" | pbcopy
+fi
