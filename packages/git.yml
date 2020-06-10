@@ -7,3 +7,6 @@ conda_zsh_autocompletion:
 zsh_autosuggestions:
   repo: "https://github.com/zsh-users/zsh-autosuggestions"
   directory: "/.oh-my-zsh/custom/plugins/zsh-autosuggestions"
+zsh_autocomplete:
+  repo: "https://github.com/marlonrichert/zsh-autocomplete.git"
+  directory: "/.oh-my-zsh/custom/plugins/zsh-autocomplete"

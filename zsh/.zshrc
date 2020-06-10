@@ -89,6 +89,10 @@ COMPLETION_WAITING_DOTS="true"
 # https://github.com/zsh-users/zsh-autosuggestions
 # ``git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions``
 
+# zsh-autocomplete
+# https://github.com/marlonrichert/zsh-autocomplete
+# ``git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/.oh-my-zsh/custom/plugins/zsh-autocomplete``
+
 # pyenv
 # https://github.com/pyenv/pyenv#installation
 # https://github.com/pyenv/pyenv-virtualenv
@@ -110,6 +114,7 @@ plugins=(
     python
     virtualenv
     z
+    zsh-autocomplete
     zsh-autosuggestions
 )
 
