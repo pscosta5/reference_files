@@ -15,6 +15,7 @@ install:
   - github/gh/gh
   - glow
   - googler
+  - graphicsmagick
   - hexyl
   - htop
   - hyperfine
