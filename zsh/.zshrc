@@ -353,7 +353,9 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 --color=fg:-1,bg:-1,hl:#c678dd,fg+:#ffffff,bg+:#4b5263,hl+:#d858fe
 --color=info:#98c379,prompt:#61afef,pointer:#be5046,marker:#e5c07b,spinner:#61afef,header:#61afef'
 # bat integration
-alias prev='fzf --preview "bat --style=numbers --color=always {} | head -500"'
+alias prev='fd --type file --follow --hidden --exclude .git | \
+            fzf --preview "bat --style=numbers --color=always {} | \
+            head -500"'
 
 # thefuck
 # https://github.com/nvbn/thefuck
