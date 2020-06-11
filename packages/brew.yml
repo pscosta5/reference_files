@@ -64,6 +64,7 @@ cask:
  - homebrew/cask-fonts/font-space-mono
  - hyper
  - iina
+ - librsvg
  - miniconda
  - nightowl
  - visual-studio-code
