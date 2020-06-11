@@ -163,7 +163,10 @@ alias list_kernels="jupyter kernelspec list"
 # Activate environment with notebook and start Jupyter Lab
 alias notebook="conda activate notebook && jupyter lab"
 # Interactive tree view
-alias twf="twf --bind=\"O::tree:toggleAll,p::tree:parent,q::quit,esc::quit,up::tree:prev,left::tree:parent;tree:close,ctrl-down::preview:down,down::tree:next,shift-up::preview:up,right::tree:toggle,P::tree:parent;tree:close,ctrl-c::quit,enter::tree:selectPath;quit,l::tree:open;tree:next,/::tree:locateExternal\" --previewCmd=\"bat --color=always {}\" --locateCmd='fzf --preview \"bat --style=numbers --color=always {} | head -500\"'"
+alias twf="twf \
+           --bind=\"O::tree:toggleAll,p::tree:parent,q::quit,esc::quit,up::tree:prev,left::tree:parent;tree:close,shift-down::preview:down,down::tree:next,shift-up::preview:up,right::tree:toggle,P::tree:parent;tree:close,ctrl-c::quit,enter::tree:selectPath;quit,l::tree:open;tree:next,/::tree:locateExternal\" \
+           --previewCmd=\"bat --color=always {}\" \
+           --locateCmd='fzf --preview\"bat --style=numbers --color=always {} | head -500\"'"
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
