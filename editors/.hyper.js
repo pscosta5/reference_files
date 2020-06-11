@@ -5,6 +5,8 @@
 
 module.exports = {
   config: {
+    // Use the option hey as Meta
+     modifierKeys: { altIsMeta: true },
     // Material theme options
     MaterialTheme: {
       // Set the theme variant,
