@@ -47,6 +47,7 @@ install:
   - zsh-syntax-highlighting
 # Run ``brew cask install PACKAGE``
 cask:
+ - basictex
  - docker
  - google-chrome
  - homebrew/cask-fonts/font-fira-code
