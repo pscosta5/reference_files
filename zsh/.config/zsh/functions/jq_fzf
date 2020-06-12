@@ -6,7 +6,7 @@ if [[ "$#" -eq "0" ]]; then
 elif [[ "$#" -gt "1" ]]; then
     echo "❓ Illegal number of parameters"
     echo "Expected 1 parameter -- the file name"
-    exit 1
+    return 1
 else
     # shellcheck disable=SC2168
     local filename="$1"
