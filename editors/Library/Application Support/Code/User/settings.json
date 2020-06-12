@@ -59,7 +59,7 @@
   "rewrap.wrappingColumn": 72,
   "sql-formatter.uppercase": true,
   "terminal.integrated.inheritEnv": true, // If issues with conda environments, turn off
-  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
   "workbench.colorTheme": "Material Theme",
   "workbench.iconTheme": "eq-material-theme-icons",
   "workbench.startupEditor": "newUntitledFile" // Don't show welcome screen
