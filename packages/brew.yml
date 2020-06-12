@@ -4,6 +4,7 @@
 install:
   - bat
   - bfg
+  - blueutil
   - cmake
   - fd
   - ffmpeg

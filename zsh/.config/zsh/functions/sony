@@ -1,0 +1,25 @@
+# Pair and unpair my Sony WH-1000XM4
+# Requires blueutil to be installed
+# shellcheck disable=SC2168
+local headphone_id
+headphone_id="cc-98-8b-a8-4a-c5"
+# shellcheck disable=SC2168
+local is_connected
+is_connected="$(blueutil --is-connected ${headphone_id})"
+if [[ is_connected -eq "0" ]]; then
+    if blueutil --connect "${headphone_id}"; then
+        echo "🎧 Sony headphones connected"
+        return 0
+    else
+        echo "❌ Failed to connect Sony headphones"
+        return 1
+    fi
+else
+    if blueutil --disconnect "${headphone_id}"; then
+        echo "🔌 Disconnected from Sony headphones"
+        return 0
+    else
+        echo "❌ Failed to connect Sony headphones"
+        return 1
+    fi
+fi
