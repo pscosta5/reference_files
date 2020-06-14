@@ -376,5 +376,7 @@ alias fu=fuck
 export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
 
 # Functions
+# Override default z behavior with custom fzf search
+unalias z 2> /dev/null
 fpath+=("$HOME/.config/zsh/functions")
 autoload -Uz $HOME/.config/zsh/functions/**/*
