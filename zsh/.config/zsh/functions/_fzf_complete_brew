@@ -1,6 +1,7 @@
 # When typing ``brew install ** [TAB]`` use fzf to fuzzy search through
 # all brew packages
-# Works best with _fzf_complete_git_post
+# When typing ``brew uninstall/upgrade ** [TAB]`` searches through
+# installed packages
 # Requires fzf to be installed
 # shellcheck disable=SC2168
 local args
