@@ -1,0 +1,16 @@
+# When typing ``pip uninstall ** [TAB]`` use fzf to fuzzy search through
+# all installed python packages
+# Requires fzf to be installed
+# shellcheck disable=SC2168
+local args
+args="$@"
+# shellcheck disable=SC2168
+if [[ ${args} == 'pip uninstall'* ]]; then
+    local installed_packages
+    installed_packages=$(python -m pip list)
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$installed_packages"
+    )
+else
+    eval "zle ${fzf_default_completion:-expand-or-complete}"
+fi

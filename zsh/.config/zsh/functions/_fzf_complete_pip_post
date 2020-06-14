@@ -1,0 +1,4 @@
+# Process the output when selecting from the results provided by
+# _fzf_complete_pip
+# Returns only the package, ignoring the version number
+awk '{print $1}'
