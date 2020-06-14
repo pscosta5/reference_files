@@ -1,0 +1,23 @@
+# When typing ``brew install ** [TAB]`` use fzf to fuzzy search through
+# all brew packages
+# Works best with _fzf_complete_git_post
+# Requires fzf to be installed
+# shellcheck disable=SC2168
+local args
+args="$@"
+# shellcheck disable=SC2168
+if [[ ${args} == 'brew install'* ]]; then
+    local all_packages
+    all_packages=$(brew search)
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$all_packages"
+    )
+elif [[ ${args} == 'brew uninstall'* ]] || [[ ${args} == 'brew upgrade'* ]]; then
+    local installed_packages
+    installed_packages=$(brew list)
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$installed_packages"
+    )
+else
+    eval "zle ${fzf_default_completion:-expand-or-complete}"
+fi
