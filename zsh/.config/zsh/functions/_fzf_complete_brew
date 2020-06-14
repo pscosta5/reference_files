@@ -19,6 +19,18 @@ elif [[ ${args} == 'brew uninstall'* ]] || [[ ${args} == 'brew upgrade'* ]]; the
     _fzf_complete --reverse --multi -- "${args}" < <(
         echo "$installed_packages"
     )
+elif [[ ${args} == 'brew install cask'* ]] || [[ ${args} == 'brew cask home'* ]]; then
+    local all_casks
+    all_casks=$(brew search --casks)
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$all_casks"
+    )
+elif [[ ${args} == 'brew cask uninstall'* ]]; then
+    local installed_casks
+    installed_casks=$(brew cask list)
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$installed_casks"
+    )
 else
     eval "zle ${fzf_default_completion:-expand-or-complete}"
 fi
