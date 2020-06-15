@@ -7,7 +7,7 @@ args="$@"
 # shellcheck disable=SC2168
 if [[ ${args} == 'pip uninstall'* ]]; then
     local installed_packages
-    installed_packages=$(python -m pip list)
+    installed_packages=$(python -m pip list | tail -n +3)
     _fzf_complete --reverse --multi -- "${args}" < <(
         echo "$installed_packages"
     )
