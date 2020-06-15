@@ -72,3 +72,4 @@ cask:
  - nightowl
  - visual-studio-code
  - windscribe
+#  - https://raw.githubusercontent.com/popcorn-official/popcorn-desktop/development/casks/popcorn-time.rb
