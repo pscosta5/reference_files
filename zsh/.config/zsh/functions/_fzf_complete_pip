@@ -11,6 +11,12 @@ if [[ ${args} == 'pip uninstall'* ]]; then
     _fzf_complete --reverse --multi -- "${args}" < <(
         echo "$installed_packages"
     )
+elif [[ ${args} == 'pip install'* ]]; then
+    local all_packages
+    all_packages=$(curl -s https://pypi.org/simple/ | tail -n +7 | sed 's/<[^>]*>//g')
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$all_packages"
+    )
 else
     eval "zle ${fzf_default_completion:-expand-or-complete}"
 fi
