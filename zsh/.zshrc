@@ -113,7 +113,6 @@ plugins=(
     pyenv
     python
     virtualenv
-    z
     # zsh-autocomplete
     zsh-autosuggestions
 )
@@ -378,8 +377,11 @@ alias fu=fuck
 # ``brew install rg```
 export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
 
+# zioxide
+# https://github.com/ajeetdsouza/zoxide
+# ``brew install zioxide``
+eval "$(zoxide init zsh)"
+
 # Functions
-# Override default z behavior with custom fzf search
-unalias z 2> /dev/null
 fpath+=("$HOME/.config/zsh/functions")
 autoload -Uz $HOME/.config/zsh/functions/**/*

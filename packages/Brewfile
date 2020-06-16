@@ -1,5 +1,6 @@
 # Brew, cask, and Mac App Store packages
 # Install with `brew bundle install`
+tap "ajeetdsouza/zoxide"
 tap "github/gh"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -65,6 +66,7 @@ brew "tree"
 brew "up"
 brew "wget"
 brew "zlib"
+brew "ajeetdsouza/zoxide/zoxide"
 brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "github/gh/gh"
