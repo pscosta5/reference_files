@@ -114,9 +114,12 @@ plugins=(
     python
     virtualenv
     z
-    # zsh-autocomplete
+    zsh-autocomplete
     zsh-autosuggestions
 )
+
+# Have zsh-autocomplete play nice with fzf
+zstyle ':autocomplete:tab:*' completion fzf
 
 source $ZSH/oh-my-zsh.sh
 
