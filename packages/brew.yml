@@ -2,6 +2,7 @@
 
 # Run `brew install PACKAGE`
 install:
+  - asciinema
   - bat
   - bfg
   - blueutil
