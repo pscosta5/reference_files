@@ -24,6 +24,7 @@ install:
   - lastpass-cli 
   - lsd
   - make
+  - mas
   - micro
   - ncdu
   - pandoc
