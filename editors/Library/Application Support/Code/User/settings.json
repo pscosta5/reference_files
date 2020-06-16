@@ -41,6 +41,7 @@
   "files.associations": {
     "**/.config/zsh/functions/**/*": "shellscript",
     "**/.jupyter/lab/user-settings/**/*": "jsonc",
+    "Brewfile": "ruby",
     "flake8": "ini"
   },
   "files.autoSave": "afterDelay",
