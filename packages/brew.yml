@@ -67,6 +67,7 @@ cask:
  - homebrew/cask-fonts/font-robotomono-nerd-font
  - homebrew/cask-fonts/font-space-mono
  - hyper
+ - keycastr
  - iina
  - librsvg
  - miniconda
