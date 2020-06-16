@@ -166,7 +166,7 @@ alias list_kernels="jupyter kernelspec list"
 alias notebook="conda activate notebook && jupyter lab"
 # Interactive tree view
 alias twf="twf \
-           --bind=\"O::tree:toggleAll,p::tree:parent,q::quit,esc::quit,up::tree:prev,left::tree:parent;tree:close,shift-down::preview:down,down::tree:next,shift-up::preview:up,right::tree:toggle,P::tree:parent;tree:close,ctrl-c::quit,enter::tree:selectPath;quit,l::tree:open;tree:next,/::tree:locateExternal\" \
+           --bind=\"left::tree:parent;tree:close,shift-up::preview:up,up::tree:prev,down::tree:next,shift-down::preview:down,right::tree:open;tree:next\" \
            --previewCmd=\"bat --color=always {}\" \
            --locateCmd='fzf --preview\"bat --style=numbers --color=always {} | head -500\"'"
 
