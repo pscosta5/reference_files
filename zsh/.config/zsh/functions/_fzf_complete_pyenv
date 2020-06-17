@@ -1,0 +1,16 @@
+# When typing ``pyenv install ** [TAB]`` use fzf to fuzzy search through
+# all installed python packages
+# Requires fzf to be installed
+# shellcheck disable=SC2168
+local args
+args="$@"
+# shellcheck disable=SC2168
+if [[ ${args} == 'pyenv install'* ]]; then
+    local available_versions
+    available_versions=$(pyenv install --list)
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$available_versions"
+    )
+else
+    eval "zle ${fzf_default_completion:-expand-or-complete}"
+fi
