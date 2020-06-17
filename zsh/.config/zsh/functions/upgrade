@@ -77,7 +77,7 @@ else
     _upgrade_announcement "poetry" "📝"
     # shellcheck disable=SC2168
     local poetry
-    poetry="$(_status poetry self update)"
+    poetry="$(_status poetry self update && poetry completions zsh >$ZSH/plugins/poetry/_poetry)"
     _upgrade_announcement "pip" "📦"
     # shellcheck disable=SC2168
     local pip
