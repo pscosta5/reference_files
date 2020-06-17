@@ -268,6 +268,7 @@ source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # ``pipx completions``
 autoload -U bashcompinit
 bashcompinit
+eval "$(register-python-argcomplete pipx)"
 
 # Nox
 # https://github.com/theacodes/nox
