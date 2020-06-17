@@ -1,0 +1,22 @@
+# When typing ``poetry add ** [TAB]`` use fzf to fuzzy search through
+# all installed python packages
+# Requires fzf to be installed
+# shellcheck disable=SC2168
+local args
+args="$@"
+# shellcheck disable=SC2168
+if [[ ${args} == 'poetry remove'* ]]; then
+    local installed_packages
+    installed_packages=$(poetry show)
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$installed_packages"
+    )
+elif [[ ${args} == 'poetry add'* ]]; then
+    local all_packages
+    all_packages=$(curl -s https://pypi.org/simple/ | tail -n +7 | sed 's/<[^>]*>//g')
+    _fzf_complete --reverse --multi -- "${args}" < <(
+        echo "$all_packages"
+    )
+else
+    eval "zle ${fzf_default_completion:-expand-or-complete}"
+fi
