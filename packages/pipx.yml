@@ -2,6 +2,7 @@
 
 # Run `pipx install PACKAGE`
 install:
+  - asciinema
   - black
   - cookiecutter
   - cupper
