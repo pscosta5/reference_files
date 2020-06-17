@@ -168,7 +168,10 @@ alias notebook="conda activate notebook && jupyter lab"
 alias twf="twf \
            --bind=\"left::tree:parent;tree:close,shift-up::preview:up,up::tree:prev,down::tree:next,shift-down::preview:down,right::tree:open;tree:next\" \
            --previewCmd=\"bat --color=always {}\" \
-           --locateCmd='fzf --preview\"bat --style=numbers --color=always {} | head -500\"'"
+           --locateCmd='fzf --preview\"bat --style=numbers --color=always {} | head -500\"' \
+           --height=0.5"
+
+
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
