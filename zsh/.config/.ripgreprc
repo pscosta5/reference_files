@@ -2,3 +2,7 @@
 --hidden
 # Searches case insensitively if the pattern is all lowercase.
 --smart-case
+# Ignore files inside .git/
+--glob=!.git/
+# Ignore files inside .DS_Store/
+--glob=!.DS_Store/
