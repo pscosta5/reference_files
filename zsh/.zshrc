@@ -118,6 +118,10 @@ plugins=(
     zsh-autosuggestions
 )
 
+# fast-syntax-highlighting
+# https://github.com/zdharma/fast-syntax-highlighting
+# ``git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting``
+
 # Have zsh-autocomplete play nice with fzf
 # zstyle ':autocomplete:tab:*' completion fzf
 
