@@ -121,6 +121,7 @@ plugins=(
 # fast-syntax-highlighting
 # https://github.com/zdharma/fast-syntax-highlighting
 # ``git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting``
+# Run `fast-theme ~/.config/material_syntax.ini`
 
 # Have zsh-autocomplete play nice with fzf
 # zstyle ':autocomplete:tab:*' completion fzf
