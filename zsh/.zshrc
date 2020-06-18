@@ -106,6 +106,7 @@ plugins=(
     conda-zsh-completion
     docker
     docker-compose
+    fast-syntax-highlighting
     git
     osx
     pip
@@ -205,46 +206,7 @@ export PATH="$HOME/.poetry/bin:$PATH"
 
 # Starship theme
 eval "$(starship init zsh)"
-# https://github.com/sindresorhus/pure/issues/501#issuecomment-541693938
-# https://github.com/sindresorhus/pure#colors
-# Numbers are based on this ordering:
-# 0. black
-# 1. red
-# 2. green
-# 3. yellow
-# 4. blue
-# 5. magenta
-# 6. cyan
-# 7. white
-# 8. lightBlack
-# 9. lightRed
-# 10. lightGreen
-# 11. lightYellow
-# 12. lightBlue
-# 13. lightMagenta
-# 14. lightCyan
-# 15. lightWhite
-# Zsh coloring
-# https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md
-typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=9,bold'
-ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=11'
-ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=10,underline'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=10,underline'
-ZSH_HIGHLIGHT_STYLES[globbing]='fg=12'
-ZSH_HIGHLIGHT_STYLES[history-expansion]='fg=12'
-ZSH_HIGHLIGHT_STYLES[command-substitution-delimiter]='fg=13'
-ZSH_HIGHLIGHT_STYLES[process-substitution-delimiter]='fg=13'
-ZSH_HIGHLIGHT_STYLES[back-quoted-argument-delimiter]='fg=13'
-ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=11'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=11'
-ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=11'
-ZSH_HIGHLIGHT_STYLES[rc-quote]='fg=14'
-ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=14'
-ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=14'
-ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=14'
-ZSH_HIGHLIGHT_STYLES[comment]='fg=8,bold'
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=10'
+
 
 # fd
 # https://github.com/sharkdp/fd
@@ -256,10 +218,6 @@ alias fd="fd --hidden --follow"
 # ``brew install bat``
 export BAT_THEME="OneHalfDark"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
-
-# zsh-syntax-highlighting
-# ``brew install zsh-syntax-highlighting``
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Pipx
 # https://github.com/pipxproject/pipx

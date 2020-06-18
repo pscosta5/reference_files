@@ -10,3 +10,6 @@ zsh_autosuggestions:
 zsh_autocomplete:
   repo: "https://github.com/marlonrichert/zsh-autocomplete.git"
   directory: "/.oh-my-zsh/custom/plugins/zsh-autocomplete"
+fast-syntax-highlighting:
+  repo: "https://github.com/zdharma/fast-syntax-highlighting.git"
+  directory: "/.oh-my-zsh/custom/plugins/fast-syntax-highlighting"

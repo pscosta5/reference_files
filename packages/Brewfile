@@ -67,7 +67,6 @@ brew "wget"
 brew "zlib"
 brew "ajeetdsouza/zoxide/zoxide"
 brew "zsh"
-brew "zsh-syntax-highlighting"
 brew "github/gh/gh"
 brew "wvanlint/twf/twf", args: ["HEAD"]
 cask "basictex"
