@@ -177,7 +177,7 @@ alias twf="twf \
            --locateCmd='fzf --preview\"bat --style=numbers --color=always {} | head -500\"' \
            --height=0.5"
 # Default to color for ncdu
-alias ncdu=ncdu --color=dark 
+alias ncdu="ncdu --color=dark"
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
