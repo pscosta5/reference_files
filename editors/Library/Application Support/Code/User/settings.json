@@ -57,7 +57,6 @@
   "python.testing.pytestArgs": ["--no-cov"], // Avoid debugger conflict with coverage https://code.visualstudio.com/docs/python/testing
   "python.testing.pytestEnabled": true,
   "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs",
-  "rewrap.wrappingColumn": 72,
   "sql-formatter.uppercase": true,
   "terminal.integrated.inheritEnv": true, // If issues with conda environments, turn off
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
