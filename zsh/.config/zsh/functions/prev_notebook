@@ -10,5 +10,7 @@ elif [[ "$#" -gt "2" ]]; then
     echo
     echo "Usage: prev_notebook [FILE]"
 else
-    glow --pager <(jupyter-nbconvert --stdout --to markdown 14_Deep_Computer_Vision_Using_Convolutional_Neural_Networks.ipynb 2>/dev/null)
+    # shellcheck disable=SC2168
+    local file="$1"
+    glow --pager <(jupyter-nbconvert --stdout --to markdown "${file}" 2>/dev/null)
 fi
