@@ -37,6 +37,7 @@
   "editor.formatOnType": true,
   "editor.lineHeight": 24,
   "editor.rulers": [79, 72],
+  "editor.suggestSelection": "first", // Set via Intellicode
   "explorer.decorations.badges": false,
   "files.associations": {
     "**/.config/zsh/functions/**/*": "shellscript",
@@ -50,6 +51,7 @@
   "markdown.extension.math.enabled": false,
   "python.dataScience.sendSelectionToInteractiveWindow": true,
   "python.formatting.provider": "black",
+  "python.languageServer": "Microsoft", // Intellicode
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
   "python.linting.pylintEnabled": false,
@@ -60,6 +62,7 @@
   "sql-formatter.uppercase": true,
   "terminal.integrated.inheritEnv": true, // If issues with conda environments, turn off
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // Set via Intellicode
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme",
   "workbench.iconTheme": "eq-material-theme-icons",
