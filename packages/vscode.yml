@@ -2,6 +2,7 @@
 # Install with ``code --install-extension EXTENSION``
 
 - adpyke.vscode-sql-formatter
+- alefragnani.Bookmarks
 - atlassian.atlascode
 - bierner.markdown-checkbox
 - bierner.markdown-emoji
