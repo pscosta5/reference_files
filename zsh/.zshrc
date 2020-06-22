@@ -182,14 +182,14 @@ alias ncdu="ncdu --color=dark --follow-firmlinks"
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$HOME/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "$HOME/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/opt/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/opt/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="$HOME/opt/miniconda3/bin:$PATH"
+        export PATH="/opt/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
@@ -244,8 +244,7 @@ eval "$(register-python-argcomplete nox)"
 # https://github.com/dephell/dephell
 # ``pipx install "dephell[all]"
 # ``dephell self autocomplete```
-source "$HOME/.local/share/dephell/_dephell_zsh_autocomplete"
-
+source "$HOME/Library/Application Support/dephell/_dephell_zsh_autocomplete" 
 # Invoke
 # http://www.pyinvoke.org/
 # ``pipx install invoke``
