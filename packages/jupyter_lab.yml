@@ -6,7 +6,6 @@ conda:
   - ipympl
   - ipywidgets
   - isort
-  - jupyter-book
   - jupyterlab
   - jupyterlab-git
   - jupyterlab_code_formatter
@@ -17,6 +16,7 @@ conda:
   - widgetsnbextension
   - xeus-python
 pip:
+  - jupyter-book
   - jupyter-lsp
   - jupyterlab_github
 # Run `jupyter labextension install PACKAGE`
