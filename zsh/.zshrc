@@ -202,12 +202,12 @@ autoload -U compinit && compinit
 
 # Add Visual Studio Code (code)
 # https://code.visualstudio.com/
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Poetry
 # https://python-poetry.org/docs/
 # ``curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python``
-export PATH="$HOME/.poetry/bin:$PATH"
+PATH="$HOME/.poetry/bin:$PATH"
 
 # Starship theme
 eval "$(starship init zsh)"
