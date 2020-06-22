@@ -97,6 +97,7 @@ cask "nightowl"
 # cask "popcorn-time"
 cask "rectangle"
 cask "steam"
+cask "visual-studio-code"
 cask "windscribe"
 mas "GIPHY CAPTURE", id: 668208984
 mas "Slack", id: 803453959
