@@ -24,10 +24,10 @@ done
 for package in $(yq -r 'keys[]' ~/.dotfiles/packages/git.yml); do
     # shellcheck disable=SC2168
     local repo
-    repo=$(yq -r ".${package}.repo" ~/.dotfiles/packages/git.yml)
+    repo=$(yq -r \"".${package}.repo"\" ~/.dotfiles/packages/git.yml)
     # shellcheck disable=SC2168
     local directory
-    directory=$(yq -r ".${package}.directory" ~/.dotfiles/packages/git.yml)
+    directory=$(yq -r \"".${package}.directory"\" ~/.dotfiles/packages/git.yml)
     git clone "${repo}" "${HOME}${directory}"
 done
 
