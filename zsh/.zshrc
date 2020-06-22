@@ -229,6 +229,7 @@ export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 # ``brew install pipx``
 # ``pipx ensurepath``
 # ``pipx completions``
+export PATH="$PATH:/Users/paulo/.local/bin"
 autoload -U bashcompinit
 bashcompinit
 eval "$(register-python-argcomplete pipx)"
