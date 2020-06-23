@@ -29,6 +29,7 @@
   },
   "autoDocstring.docstringFormat": "numpy",
   "autoDocstring.startOnNewLine": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.codeActionsOnSave": { "source.organizeImports": false },
   "editor.fontFamily": "FiraCode Nerd Font", // https://www.nerdfonts.com/font-downloads
   "editor.fontLigatures": true,
@@ -66,5 +67,5 @@
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme",
   "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.startupEditor": "newUntitledFile" // Don't show welcome screen
+  "workbench.startupEditor": "newUntitledFile", // Don't show welcome screen
 }
