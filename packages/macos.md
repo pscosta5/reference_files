@@ -8,6 +8,16 @@ If troubles installing psutil:
 ❯ sudo rm -rf /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk
 ```
 
+## General
+
+Default web browser `Google Chrome`
+
+## Displays
+
+### Night Shift
+
+Schedule: `Sunset to Sunrise`
+
 ## Mouse
 
 ### Point & Click
