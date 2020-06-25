@@ -74,6 +74,7 @@ brew "ajeetdsouza/zoxide/zoxide"
 brew "zsh"
 brew "github/gh/gh"
 brew "wvanlint/twf/twf", args: ["HEAD"]
+cask "alfred"
 cask "basictex"
 cask "chromedriver"
 cask "docker"
