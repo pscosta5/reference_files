@@ -5,6 +5,11 @@
 
 module.exports = {
   config: {
+    summon: {
+      hideDock: true,
+      hideOnBlur: true,
+      hotkey: "Ctrl+Space",
+    },
     // Use the option hey as Meta
     modifierKeys: { altIsMeta: true },
     // Material theme options
@@ -175,6 +180,7 @@ module.exports = {
     "hyper-material-theme",
     "hyper-search",
     "hyper-statusline",
+    "hyperterm-summon",
     "hypercwd",
   ],
 
