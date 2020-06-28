@@ -114,7 +114,7 @@ plugins=(
     pyenv
     python
     virtualenv
-    # zsh-autocomplete
+    zsh-autocomplete
     zsh-autosuggestions
 )
 
@@ -124,7 +124,8 @@ plugins=(
 # Run `fast-theme ~/.config/material_syntax.ini`
 
 # Have zsh-autocomplete play nice with fzf
-# zstyle ':autocomplete:tab:*' completion fzf
+zstyle ':autocomplete:tab:*' completion fzf
+zstyle ':autocomplete:*' fuzzy-search off
 
 source $ZSH/oh-my-zsh.sh
 
