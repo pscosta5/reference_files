@@ -31,7 +31,7 @@ _upgrade_git() {
     # Run git pull on all package repos
     for package in $(yq -r 'keys[]' ~/.dotfiles/packages/git.yml); do
         local directory
-        directory=$(yq -r ".${package}.directory" ~/.dotfiles/packages/git.yml)
+        directory=$(yq -r ".\"${package}\".directory" ~/.dotfiles/packages/git.yml)
         git -C "${HOME}${directory}" pull
     done
 }
