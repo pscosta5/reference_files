@@ -8,7 +8,7 @@ module.exports = {
     summon: {
       hideDock: true,
       hideOnBlur: true,
-      hotkey: "Ctrl+Space",
+      hotkey: "Cmd+Shift+Space",
     },
     // Use the option hey as Meta
     modifierKeys: { altIsMeta: true },
