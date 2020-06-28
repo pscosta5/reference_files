@@ -1,6 +1,6 @@
-; Assumes micro and diff-so-fancy are installed (brew is easy way)
+; Assumes micro and delta are installed (brew is the easy way)
 ; https://github.com/zyedidia/micro
-; https://github.com/so-fancy/diff-so-fancy
+; https://github.com/dandavison/delta
 ; Place in ~/.gitconfig
 [credential]
 	helper = osxkeychain
