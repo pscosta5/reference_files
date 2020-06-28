@@ -7,8 +7,6 @@
 [user]
 	name = Paulo S. Costa
 	email = pauloscosta5@gmail.com
-[http]
-	sslVerify = false
 [color]
 	branch = auto
 	diff = auto
