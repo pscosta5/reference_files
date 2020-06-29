@@ -126,6 +126,8 @@ plugins=(
 # Have zsh-autocomplete play nice with fzf
 zstyle ':autocomplete:tab:*' completion fzf
 zstyle ':autocomplete:*' fuzzy-search off
+# Don't automatically correct words
+zstyle ':autocomplete:*' magic off
 
 source $ZSH/oh-my-zsh.sh
 
