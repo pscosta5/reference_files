@@ -123,6 +123,8 @@ plugins=(
 # ``git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting``
 # Run `fast-theme ~/.config/material_syntax.ini`
 
+# zsh-autocomplete
+# ``git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.oh-my-zsh/custom/plugins/zsh-autocomplete``
 # Have zsh-autocomplete play nice with fzf
 zstyle ':autocomplete:tab:*' completion fzf
 zstyle ':autocomplete:*' fuzzy-search off
