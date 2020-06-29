@@ -63,6 +63,7 @@
   "sql-formatter.uppercase": true,
   "terminal.integrated.inheritEnv": true, // If issues with conda environments, turn off
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  "todo-tree.tree.showScanModeButton": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // Set via Intellicode
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme",
