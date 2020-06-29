@@ -13,7 +13,7 @@ if [[ ${args} == 'pip uninstall'* ]]; then
     )
 elif [[ ${args} == 'pip install'* ]]; then
     local all_packages
-    all_packages=$(curl -s https://pypi.org/simple/ | tail -n +7 | sed 's/<[^>]*>//g')
+    all_packages=$(curl --silent https://pypi.org/simple/ | tail -n +7 | sed 's/<[^>]*>//g')
     _fzf_complete --reverse --multi -- "${args}" < <(
         echo "$all_packages"
     )
