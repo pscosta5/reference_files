@@ -31,7 +31,7 @@ for package in $(yq -r 'keys[]' ~/.dotfiles/packages/git.yml); do
     git clone "${repo}" "${HOME}${directory}"
 done
 
-conda create --name notebook python
+conda create --name --yes notebook python
 # Install conda packages
 yq -r '.conda[]' ~/.dotfiles/packages/jupyter_lab.yml | xargs conda install --yes --name=notebook
 # Install pip packages
