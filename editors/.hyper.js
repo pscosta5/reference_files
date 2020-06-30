@@ -6,8 +6,8 @@
 module.exports = {
   config: {
     summon: {
-      hideDock: true,
-      hideOnBlur: true,
+      hideDock: false,
+      hideOnBlur: false,
       hotkey: "Cmd+Shift+Space",
     },
     // Use the option hey as Meta
