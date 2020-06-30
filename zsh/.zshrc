@@ -174,7 +174,7 @@ alias reload="exec -l zsh"
 # List Jupyter kernels
 alias list_kernels="jupyter kernelspec list"
 # Activate environment with notebook and start Jupyter Lab
-alias notebook="conda activate notebook && jupyter lab"
+alias notebook="conda run --name=notebook jupyter lab"
 # Interactive tree view
 alias twf="twf \
            --bind=\"left::tree:parent;tree:close,shift-up::preview:up,up::tree:prev,down::tree:next,shift-down::preview:down,right::tree:open;tree:next\" \
