@@ -51,9 +51,10 @@
   "git.autofetch": true,
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.math.enabled": false,
+  "python.analysis.typeCheckingMode": "basic",
   "python.dataScience.sendSelectionToInteractiveWindow": true,
   "python.formatting.provider": "black",
-  "python.languageServer": "Microsoft", // Intellicode
+  "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": true,
   "python.linting.mypyEnabled": true,
   "python.linting.pylintEnabled": false,
