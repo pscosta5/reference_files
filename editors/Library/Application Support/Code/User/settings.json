@@ -41,6 +41,7 @@
   "editor.suggestSelection": "first", // Set via Intellicode
   "explorer.decorations.badges": false,
   "files.associations": {
+    "**/.config/mypy/config": "ini",
     "**/.config/zsh/functions/**/*": "shellscript",
     "**/.jupyter/lab/user-settings/**/*": "jsonc",
     "Brewfile": "ruby",
