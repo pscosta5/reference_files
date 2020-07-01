@@ -32,6 +32,7 @@
 - johnpapa.vscode-peacock
 - karigari.chat
 - kenhowardpdx.vscode-gist
+- krnik.vscode-jumpy
 - lextudio.restructuredtext
 - MarkLarah.pre-commit-vscode
 - mechatroner.rainbow-csv
@@ -60,5 +61,4 @@
 - timonwong.shellcheck
 - Tyriar.sort-lines
 - VisualStudioExptTeam.vscodeintellicode
-- wmaurer.vscode-jumpy
 - yzhang.markdown-all-in-one
