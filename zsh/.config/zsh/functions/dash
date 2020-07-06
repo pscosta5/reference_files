@@ -1,0 +1,4 @@
+# Query the documentation in Dash
+# Assumes Dash is installed
+local query="$@"
+open dash://"${query}"
