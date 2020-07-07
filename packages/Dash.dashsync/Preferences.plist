@@ -6,6 +6,107 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>Ack</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:55:16Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>terminal</string>
+						<string>shell</string>
+						<string>bash</string>
+						<string>zsh</string>
+					</array>
+					<key>name</key>
+					<string>Ack</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Ack</string>
+				</dict>
+			</dict>
+			<key>Bash_Shortcuts</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:55:13Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>terminal shell bash</string>
+					</array>
+					<key>name</key>
+					<string>Bash Shortcuts</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Bash_Shortcuts</string>
+				</dict>
+			</dict>
+			<key>Bash_Test_Operators</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:55:14Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>terminal shell bash</string>
+					</array>
+					<key>name</key>
+					<string>Bash Test Operators</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Bash_Test_Operators</string>
+				</dict>
+			</dict>
+			<key>Git</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:55:02Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>terminal</string>
+						<string>shell</string>
+						<string>bash</string>
+						<string>zsh</string>
+					</array>
+					<key>name</key>
+					<string>Git</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Git</string>
+				</dict>
+			</dict>
+			<key>Oh-My-Zsh_Git</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:55:08Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>ohmyzsh</string>
+						<string>oh my zsh</string>
+						<string>terminal</string>
+						<string>shell</string>
+						<string>bash</string>
+						<string>zsh</string>
+					</array>
+					<key>name</key>
+					<string>Oh-My-Zsh Git</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>Oh-My-Zsh_Git</string>
+				</dict>
+			</dict>
 			<key>Python_Debugger</key>
 			<dict>
 				<key>date</key>
@@ -84,6 +185,27 @@
 					<string>cheatsheet</string>
 					<key>uniqueIdentifier</key>
 					<string>iPython_Notebook</string>
+				</dict>
+			</dict>
+			<key>tmux</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:55:10Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>terminal</string>
+						<string>shell</string>
+						<string>bash</string>
+						<string>zsh</string>
+					</array>
+					<key>name</key>
+					<string>tmux</string>
+					<key>platform</key>
+					<string>cheatsheet</string>
+					<key>uniqueIdentifier</key>
+					<string>tmux</string>
 				</dict>
 			</dict>
 		</dict>
@@ -263,6 +385,26 @@
 					<string>TensorFlow_2</string>
 				</dict>
 			</dict>
+			<key>Zsh</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:55:40Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Zsh#readme</string>
+					<key>authorLinkText</key>
+					<string>Marcus Adair</string>
+					<key>name</key>
+					<string>Zsh</string>
+					<key>platform</key>
+					<string>usercontribZsh</string>
+					<key>uniqueIdentifier</key>
+					<string>Zsh</string>
+				</dict>
+			</dict>
 			<key>iPython</key>
 			<dict>
 				<key>date</key>
@@ -348,6 +490,11 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>http://kapeli.com/feeds/Bash.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:54:45Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/Flask.xml</key>
 			<dict>
 				<key>date</key>
@@ -368,6 +515,11 @@
 				<key>date</key>
 				<date>2020-07-06T16:32:12Z</date>
 			</dict>
+			<key>http://kapeli.com/feeds/MySQL.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:56:14Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/NumPy.xml</key>
 			<dict>
 				<key>date</key>
@@ -382,6 +534,11 @@
 			<dict>
 				<key>date</key>
 				<date>2020-07-06T16:31:31Z</date>
+			</dict>
+			<key>http://kapeli.com/feeds/SQLite.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2020-07-07T15:56:10Z</date>
 			</dict>
 			<key>http://kapeli.com/feeds/SciPy.xml</key>
 			<dict>
