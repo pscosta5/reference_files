@@ -102,3 +102,7 @@ Tracking speed
 ### Text
 
 - [ ] Add period with double-space
+
+## Dock
+
+- [x] Automatically hide and show the Dock
