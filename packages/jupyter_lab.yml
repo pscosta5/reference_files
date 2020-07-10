@@ -35,6 +35,7 @@ labextension:
   - "@ryantam626/jupyterlab_code_formatter"
   - "jupyterlab-flake8"
   - "jupyterlab-plotly"
+  - "nbgather"
   - "plotlywidget"
 # Run `jupyter serverextension enable --py COMMAND"
 serverextension:
