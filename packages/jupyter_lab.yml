@@ -19,6 +19,7 @@ pip:
   - jupyter-book
   - jupyter-lsp
   - jupyterlab_github
+  - jupyterlab-pullrequests
 # Run `jupyter labextension install PACKAGE`
 labextension:
   # Add `c.GitHubConfig.access_token = "my-GitHub-token"` to ~/.jupyter/jupyter_notebook_config.py
@@ -28,6 +29,7 @@ labextension:
   - "@jupyterlab/debugger"
   - "@jupyterlab/github"
   - "@jupyterlab/google-drive"
+  - "@jupyterlab/pullrequests"
   - "@jupyterlab/toc"
   - "@krassowski/jupyterlab-lsp"
   - "@krassowski/jupyterlab_go_to_definition"
