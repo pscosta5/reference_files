@@ -30,6 +30,7 @@ labextension:
   - "@jupyterlab/github"
   - "@jupyterlab/google-drive"
   - "@jupyterlab/pullrequests"
+  - "@jupyterlab/shortcutui"
   - "@jupyterlab/toc"
   - "@krassowski/jupyterlab-lsp"
   - "@krassowski/jupyterlab_go_to_definition"
