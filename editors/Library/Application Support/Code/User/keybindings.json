@@ -10,20 +10,5 @@
   {
     "key": "cmd+b",
     "command": "workbench.action.toggleSidebarVisibility"
-  },
-  {
-    "key": "Escape",
-    "command": "extension.jumpy-exit",
-    "when": "editorTextFocus && jumpy.isInJumpMode"
-  },
-  {
-    "key": "shift+enter",
-    "command": "extension.jumpy-enter",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "shift+enter",
-    "command": "extension.jumpy-exit",
-    "when": "editorTextFocus && jumpy.isInJumpMode"
   }
 ]
