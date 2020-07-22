@@ -482,3 +482,9 @@ export LS_COLORS='
     136:*requirements.txt=0;38;2;118;151;214:*CONTRIBUTORS.txt=1;38;2;101;194;
     84:*package-lock.json=3;38;2;136;136;136
 '
+
+# Bind keys
+# 0x18 and 0x7f delete everything to the left of the cursor
+bindkey "^X\\x7f" backward-kill-line
+# 0x18 0x1f are redo
+bindkey "^X^_" redo
