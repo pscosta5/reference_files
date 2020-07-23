@@ -14,13 +14,23 @@
   // MetaGo extension overrides default ``alt+backspace`` command.
   // This corrects it.
   {
-    "command": "metaGo.metaJump.deleteToBefore",
     "key": "alt+shift+backspace",
+    "command": "metaGo.metaJump.deleteToBefore",
     "when": "editorTextFocus"
   },
   {
     "key": "alt+backspace",
     "command": "deleteWordLeft",
+    "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+alt+delete",
+    "command": "metaGo.metaJump.deleteToBefore",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+delete",
+    "command": "deleteWordRight",
     "when": "textInputFocus && !editorReadonly"
   }
 ]
