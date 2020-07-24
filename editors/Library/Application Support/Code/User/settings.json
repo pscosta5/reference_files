@@ -49,6 +49,8 @@
   },
   "files.autoSave": "afterDelay",
   "git.autofetch": true,
+  "markdown-preview-enhanced.breakOnSingleNewLine": false,
+  "markdown-preview-enhanced.previewTheme": "atom-material.css",
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.math.enabled": false,
   "python.analysis.typeCheckingMode": "basic",
