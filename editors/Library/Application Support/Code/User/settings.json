@@ -65,6 +65,8 @@
   "python.testing.pytestEnabled": true,
   "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs",
   "sql-formatter.uppercase": true,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.inheritEnv": true, // If issues with conda environments, turn off
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
   "todo-tree.tree.showScanModeButton": false,
