@@ -1,6 +1,7 @@
 # Brew, cask, and Mac App Store packages
 # Install with `brew bundle install`
 tap "ajeetdsouza/zoxide"
+tap "cjbassi/ytop"
 tap "github/gh"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -75,6 +76,7 @@ brew "trash"
 brew "tree"
 brew "up"
 brew "wget"
+brew "cjbassi/ytop/ytop"
 brew "zlib"
 brew "ajeetdsouza/zoxide/zoxide"
 brew "zsh"
