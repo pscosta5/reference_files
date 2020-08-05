@@ -298,6 +298,33 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>dash_keyword_latex</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>dash_action_normal</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>dash_action_cmd</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>dash_action_alt</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>dash_keyword_manpages</key>
 		<array>
 			<dict>
@@ -1089,6 +1116,37 @@ That said, you can edit anything else within this workflow (including adding new
 				<key>argumenttype</key>
 				<integer>0</integer>
 				<key>escaping</key>
+				<integer>0</integer>
+				<key>runningsubtext</key>
+				<string>Please read what's in the "Script:" section below</string>
+				<key>script</key>
+				<string>Dash dynamically updates this workflow with docset and search profile keywords.
+
+Do not try to change the keywords from within Alfred, as Dash will overwrite your changes. If you want to change a keyword, change it from within Dash (in Preferences &gt; Docsets).
+
+That said, you can edit anything else within this workflow (including adding new triggers/actions/hotkeys).</string>
+				<key>subtext</key>
+				<string>Please read what's in the "Script:" section below</string>
+				<key>title</key>
+				<string>PLEASE README</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>dash_note_readme</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
 				<integer>110</integer>
 				<key>keyword</key>
 				<string>ack</string>
@@ -1341,6 +1399,35 @@ That said, you can edit anything else within this workflow (including adding new
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
 			<string>dash_keyword_jinja</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>110</integer>
+				<key>keyword</key>
+				<string>latex</string>
+				<key>runningsubtext</key>
+				<string>Searching for "{query}"</string>
+				<key>script</key>
+				<string>./dashAlfredWorkflow "latex:{query}"</string>
+				<key>subtext</key>
+				<string>Search LaTeX for "{query}"</string>
+				<key>title</key>
+				<string>Search LaTeX</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>dash_keyword_latex</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -2066,115 +2153,120 @@ The keyword is either a docset keyword (defined in Preferences &gt; Docsets) or 
 			<key>ypos</key>
 			<integer>1890</integer>
 		</dict>
-		<key>dash_keyword_manpages</key>
+		<key>dash_keyword_latex</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2010</integer>
 		</dict>
-		<key>dash_keyword_matplotlib</key>
+		<key>dash_keyword_manpages</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2130</integer>
 		</dict>
-		<key>dash_keyword_mysql</key>
+		<key>dash_keyword_matplotlib</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2250</integer>
 		</dict>
-		<key>dash_keyword_numpy</key>
+		<key>dash_keyword_mysql</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2370</integer>
 		</dict>
-		<key>dash_keyword_ohmyzsh</key>
+		<key>dash_keyword_numpy</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2490</integer>
 		</dict>
-		<key>dash_keyword_pandas</key>
+		<key>dash_keyword_ohmyzsh</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2610</integer>
 		</dict>
-		<key>dash_keyword_pdb</key>
+		<key>dash_keyword_pandas</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2730</integer>
 		</dict>
-		<key>dash_keyword_presto</key>
+		<key>dash_keyword_pdb</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2850</integer>
 		</dict>
-		<key>dash_keyword_pyassert</key>
+		<key>dash_keyword_presto</key>
 		<dict>
 			<key>ypos</key>
 			<integer>2970</integer>
 		</dict>
-		<key>dash_keyword_pyexc</key>
+		<key>dash_keyword_pyassert</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3090</integer>
 		</dict>
-		<key>dash_keyword_pyfmt</key>
+		<key>dash_keyword_pyexc</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3210</integer>
 		</dict>
-		<key>dash_keyword_pytest</key>
+		<key>dash_keyword_pyfmt</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3330</integer>
 		</dict>
-		<key>dash_keyword_python3</key>
+		<key>dash_keyword_pytest</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3450</integer>
 		</dict>
-		<key>dash_keyword_scikit-learn</key>
+		<key>dash_keyword_python3</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3570</integer>
 		</dict>
-		<key>dash_keyword_scipy</key>
+		<key>dash_keyword_scikit-learn</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3690</integer>
 		</dict>
-		<key>dash_keyword_seaborn</key>
+		<key>dash_keyword_scipy</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3810</integer>
 		</dict>
-		<key>dash_keyword_sphinx</key>
+		<key>dash_keyword_seaborn</key>
 		<dict>
 			<key>ypos</key>
 			<integer>3930</integer>
 		</dict>
-		<key>dash_keyword_sqlite</key>
+		<key>dash_keyword_sphinx</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4050</integer>
 		</dict>
-		<key>dash_keyword_tensorflow2</key>
+		<key>dash_keyword_sqlite</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4170</integer>
 		</dict>
-		<key>dash_keyword_tmux</key>
+		<key>dash_keyword_tensorflow2</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4290</integer>
 		</dict>
-		<key>dash_keyword_xgboost</key>
+		<key>dash_keyword_tmux</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4410</integer>
 		</dict>
-		<key>dash_keyword_zsh</key>
+		<key>dash_keyword_xgboost</key>
 		<dict>
 			<key>ypos</key>
 			<integer>4530</integer>
+		</dict>
+		<key>dash_keyword_zsh</key>
+		<dict>
+			<key>ypos</key>
+			<integer>4650</integer>
 		</dict>
 		<key>dash_note_readme</key>
 		<dict>
