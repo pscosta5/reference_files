@@ -1,4 +1,4 @@
-# Reference files
+# dotfiles
 
 My collection of dotfiles.
 
