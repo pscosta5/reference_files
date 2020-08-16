@@ -1,4 +1,12 @@
 {
-    "colorscheme": "material-tc",
+    "autosave": 1,
+    "autosu": true,
+    "colorcolumn": 80,
+    "colorscheme": "material-theme-tc",
+    "diffgutter": true,
+    "mkparents": true,
+    "savecursor": true,
+    "saveundo": true,
+    "scrollbar": true,
     "tabstospaces": true
 }
