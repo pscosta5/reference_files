@@ -18,6 +18,8 @@
     "Ctrl-MouseRight": "MouseMultiCursor",
     "Ctrl-d": "SpawnMultiCursor",
     "Ctrl-g": "JumpLine",
+    "Ctrl-b": "lua:filemanager.toggle_tree",
+    "Enter": "InsertNewline|lua:filemanager.try_open_at_cursor",
     "Ctrl-n": "AddTab",
     "Ctrl-p": "CommandMode",
     "Ctrl-w": "Quit",
