@@ -2,7 +2,7 @@
     "autosave": 1,
     "autosu": true,
     "colorcolumn": 80,
-    "colorscheme": "material-theme-tc",
+    "colorscheme": "material-tc",
     "diffgutter": true,
     "mkparents": true,
     "savecursor": true,
