@@ -1,0 +1,8 @@
+# Set/unset PYTHONBREAKPOINT in order to use ipdb on python `breakpoint()` calls
+if [[ "$PYTHONBREAKPOINT" = 'ipdb.set_trace' ]]; then
+    export PYTHONBREAKPOINT=
+    echo 'Python breakpoint reset'
+else
+    export PYTHONBREAKPOINT='ipdb.set_trace'
+    echo "🐞 Python's breakpoint() will use ipdb"
+fi
