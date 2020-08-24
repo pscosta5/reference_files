@@ -15,3 +15,8 @@ Apps that you can't get from a package manager (yet!).
 ## DMG
 
 - [Petit Player](https://getpetit.github.io/)
+
+## Python
+
+- [DeezloaderRemix](https://notabug.org/L33Tech/DeezloaderRemix/)
+- [RemixDev](https://codeberg.org/RemixDev/deemix-pyweb/src/branch/main)
