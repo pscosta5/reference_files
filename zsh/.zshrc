@@ -159,6 +159,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Set ipdb as debugger on pytest
+alias ipytest='pytest --pdbcls=IPython.terminal.debugger:TerminalPdb'
 # Uninstall all pip installed packages in current environment
 alias pip_uninstall_all="python -m pip freeze --local | xargs pip uninstall --yes"
 # Upgrade all pip packages in an environment
