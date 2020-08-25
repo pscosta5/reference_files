@@ -499,3 +499,5 @@ export LS_COLORS='
 bindkey "^X\\x7f" backward-kill-line
 # 0x18 0x1f are redo
 bindkey "^X^_" redo
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
