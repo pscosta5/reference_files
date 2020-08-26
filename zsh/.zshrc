@@ -500,4 +500,6 @@ bindkey "^X\\x7f" backward-kill-line
 # 0x18 0x1f are redo
 bindkey "^X^_" redo
 
+# iTerm integration
+# ``curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash``
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
