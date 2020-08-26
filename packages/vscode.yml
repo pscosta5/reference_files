@@ -8,7 +8,6 @@
 - bierner.markdown-emoji
 - bierner.markdown-mermaid
 - bmuskalla.vscode-tldr
-- bungcip.better-toml
 - chrislajoie.vscode-modelines
 - christian-kohler.path-intellisense
 - DavidAnson.vscode-markdownlint
@@ -63,6 +62,7 @@
 - sleistner.vscode-fileutils
 - stkb.rewrap
 - streetsidesoftware.code-spell-checker
+- tamasfe.even-better-tom
 - tht13.html-preview-vscode
 - timonwong.shellcheck
 - Tyriar.sort-lines
