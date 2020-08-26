@@ -8,6 +8,7 @@ install:
   - cookiecutter
   - cupper
   - csvkit
+  - dvc
   - doc2dash
   - flake8
   - dephell[full]
