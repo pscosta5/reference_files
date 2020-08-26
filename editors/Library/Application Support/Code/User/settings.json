@@ -64,6 +64,7 @@
   "python.testing.pytestArgs": ["--no-cov"], // Avoid debugger conflict with coverage https://code.visualstudio.com/docs/python/testing
   "python.testing.pytestEnabled": true,
   "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs",
+  "remote.SSH.showLoginTerminal": true,
   "sql-formatter.uppercase": true,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
