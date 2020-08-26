@@ -74,6 +74,5 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // Set via Intellicode
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme",
-  "workbench.iconTheme": "eq-material-theme-icons",
-  "workbench.startupEditor": "newUntitledFile" // Don't show welcome screen
+  "workbench.iconTheme": "eq-material-theme-icons"
 }
