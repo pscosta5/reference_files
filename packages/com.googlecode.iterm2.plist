@@ -648,6 +648,8 @@
 	</dict>
 	<key>Default Bookmark Guid</key>
 	<string>E52345F2-C0E0-47C6-9E48-89A82C57DFA8</string>
+	<key>DimInactiveSplitPanes</key>
+	<false/>
 	<key>DisableFullscreenTransparency</key>
 	<true/>
 	<key>GlobalKeyMap</key>
@@ -846,9 +848,13 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.dotfiles/packages</string>
+	<string>~/Downloads</string>
+	<key>NSNavLastUserSetHideExtensionButtonState</key>
+	<false/>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -893,13 +899,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1126 110 728 205 0 0 1920 1057 </string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>560 456 799 448 0 0 1920 1057 </string>
+	<string>322 588 799 448 0 0 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 679 1920 379 0 0 1920 1057 </string>
+	<string>0 701 1920 379 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>253 365 570 438 0 0 1920 1057 </string>
+	<string>614 505 570 438 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>629 208 570 417 0 0 1920 1080 </string>
+	<string>216 484 570 438 0 0 1920 1057 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1672,6 +1678,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
@@ -2636,6 +2644,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<false/>
 			<key>Silence Bell</key>
@@ -3640,6 +3650,8 @@
 			<false/>
 			<key>Shortcut</key>
 			<string></string>
+			<key>Show Mark Indicators</key>
+			<false/>
 			<key>Show Status Bar</key>
 			<true/>
 			<key>Silence Bell</key>
@@ -3844,6 +3856,8 @@
 		<string>RobotoMono Nerd Font</string>
 		<string>Roboto Mono</string>
 	</array>
+	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
+	<true/>
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
@@ -3854,7 +3868,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>AA933C41-973C-4076-BD11-D1D072F618CF</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>8</integer>
+	<integer>12</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -4275,6 +4289,14 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
+				<string>currentTab.currentSession.lastCommand</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
 				<string>currentTab.currentSession</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
@@ -4406,7 +4428,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession</string>
+				<string>currentSession.tmuxStatusRight</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -4414,7 +4436,7 @@
 				<key>isTerminal</key>
 				<true/>
 				<key>name</key>
-				<string>currentSession.tmuxStatusRight</string>
+				<string>tmuxWindow</string>
 				<key>nonterminalContext</key>
 				<integer>0</integer>
 			</dict>
@@ -4644,19 +4666,19 @@
 			</dict>
 			<dict>
 				<key>isTerminal</key>
+				<true/>
+				<key>name</key>
+				<string>currentSession</string>
+				<key>nonterminalContext</key>
+				<integer>0</integer>
+			</dict>
+			<dict>
+				<key>isTerminal</key>
 				<false/>
 				<key>name</key>
 				<string>currentSession</string>
 				<key>nonterminalContext</key>
 				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>isTerminal</key>
-				<true/>
-				<key>name</key>
-				<string>tmuxWindow</string>
-				<key>nonterminalContext</key>
-				<integer>0</integer>
 			</dict>
 		</array>
 		<key>4</key>
@@ -4687,6 +4709,12 @@
 			</dict>
 		</array>
 	</dict>
+	<key>NoSyncSaveDocumentAsPathSet_saveImageAs</key>
+	<true/>
+	<key>NoSyncSuppressDownloadConfirmation</key>
+	<true/>
+	<key>NoSyncSuppressDownloadConfirmation_selection</key>
+	<integer>0</integer>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>616606951.16595304</real>
 	<key>PrefsCustomFolder</key>
@@ -4700,7 +4728,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-07-22T16:15:03Z</date>
+	<date>2020-08-27T15:33:45Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SoundForEsc</key>
