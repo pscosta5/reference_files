@@ -22,6 +22,7 @@ install:
   - nox
   - pre-commit
   - pytest
+  - trash-cli
   - tox
   - virtualenv
   - youtube_dl
