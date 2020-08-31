@@ -111,6 +111,7 @@ cask "pocket-casts"
 # cask "popcorn-time"
 cask "rectangle"
 cask "steam"
+cask "tomighty"
 cask "visual-studio-code"
 cask "windscribe"
 mas "GIPHY CAPTURE", id: 668208984
