@@ -118,6 +118,10 @@ plugins=(
     zsh-autosuggestions
 )
 
+# Completions
+# Must come before compinit line
+fpath+=~/.config/zsh/completions
+
 # fast-syntax-highlighting
 # https://github.com/zdharma/fast-syntax-highlighting
 # ``git clone https://github.com/zdharma/fast-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting``
@@ -204,7 +208,7 @@ unset __conda_setup
 
 # Conda completion
 # https://github.com/esc/conda-zsh-completion/blob/master/_conda
-# Should come after ``source $ZSH/oh-my-zsh.sh`` line
+# Should come after ``source $ZSH/oh-my-zsh.sh`` line and after completions
 autoload -U compinit && compinit
 
 # Add Visual Studio Code (code)
