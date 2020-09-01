@@ -1,9 +1,31 @@
 {
+    "*,rst": {
+        "tabsize": 3
+    },
     "autosave": 1,
     "autosu": true,
     "colorcolumn": 80,
     "colorscheme": "material-tc",
     "diffgutter": true,
+    "ft:html": {
+        "tabsize": 2
+    },
+    "ft:json": {
+        "tabsize": 2
+    },
+    "ft:jsonc": {
+        "tabsize": 2
+    },
+    "ft:markdown": {
+        "softwrap": true,
+        "tabsize": 2
+    },
+    "ft:sql": {
+        "tabsize": 2
+    },
+    "ft:yaml": {
+        "tabsize": 2
+    },
     "mkparents": true,
     "savecursor": true,
     "saveundo": true,
