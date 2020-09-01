@@ -117,5 +117,6 @@ cask "tomighty"
 cask "visual-studio-code"
 cask "windscribe"
 mas "Slack", id: 803453959
+mas "ScreenBrush", id: 1233965871
 mas "The Unarchiver", id: 425424353
 mas "Xcode", id: 497799835
