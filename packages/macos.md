@@ -33,7 +33,7 @@ Schedule: `Sunset to Sunrise`
 
 Tracking speed
 
------------------------⚪️
+-----------------------⬤
 
 ### More Gestures
 
@@ -60,11 +60,11 @@ Tracking speed
 
 Click
 
-⚪️-----------------------
+⬤-----------------------
 
 Tracking speed
 
------------------------⚪️
+-----------------------⬤
 
 - [x] Force Click and haptic feedback
 
@@ -98,6 +98,16 @@ Tracking speed
 - [x] Show Desktop
 
 ## Keyboard
+
+### Keyboard
+
+Key Repeat
+
+-----------------------⬤
+
+Delay Until Repeat
+
+-----------------------⬤
 
 ### Text
 
