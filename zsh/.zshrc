@@ -247,11 +247,6 @@ eval "$(register-python-argcomplete pipx)"
 # Like pipx, needs bashcompinit enabled
 eval "$(register-python-argcomplete nox)"
 
-# Dephell
-# https://github.com/dephell/dephell
-# ``pipx install "dephell[all]"
-# ``dephell self autocomplete```
-source "$HOME/Library/Application Support/dephell/_dephell_zsh_autocomplete" 
 # Invoke
 # http://www.pyinvoke.org/
 # ``pipx install invoke``
