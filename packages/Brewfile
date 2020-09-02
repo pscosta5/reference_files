@@ -116,9 +116,9 @@ cask "pocket-casts"
 # cask "popcorn-time"
 cask "rectangle"
 cask "steam"
-cask "tomighty"
 cask "visual-studio-code"
 cask "windscribe"
+mas "Flow", id: 1423210932
 mas "Slack", id: 803453959
 mas "ScreenBrush", id: 1233965871
 mas "The Unarchiver", id: 425424353
