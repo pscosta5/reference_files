@@ -10,6 +10,10 @@ If troubles installing psutil:
 
 ## General
 
+Appearance: Auto
+
+- [x] Automatically hide and show the menu bar
+
 Default web browser `Google Chrome`
 
 ## Displays
