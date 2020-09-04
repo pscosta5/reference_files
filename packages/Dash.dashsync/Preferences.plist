@@ -526,7 +526,10 @@
 	<key>docsets</key>
 	<dict>
 		<key>keywords</key>
-		<dict/>
+		<dict>
+			<key>~/Library/Application Support/doc2dash/DocSets/html.docset</key>
+			<string>rich:</string>
+		</dict>
 	</dict>
 	<key>feeds</key>
 	<dict>
