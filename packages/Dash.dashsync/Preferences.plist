@@ -468,6 +468,30 @@
 					<string>pytest</string>
 				</dict>
 			</dict>
+			<key>tldr</key>
+			<dict>
+				<key>date</key>
+				<date>2020-09-04T03:53:33Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>tldr</string>
+						<string>tldr;</string>
+						<string>man pages</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/tldr#readme</string>
+					<key>authorLinkText</key>
+					<string>Moddus</string>
+					<key>name</key>
+					<string>tldr pages</string>
+					<key>platform</key>
+					<string>usercontribtldr</string>
+					<key>uniqueIdentifier</key>
+					<string>tldr</string>
+				</dict>
+			</dict>
 			<key>xgboost</key>
 			<dict>
 				<key>date</key>
