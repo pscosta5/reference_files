@@ -1,7 +1,4 @@
 {
-    "*,rst": {
-        "tabsize": 3
-    },
     "autosave": 1,
     "autosu": true,
     "colorcolumn": 80,
@@ -19,6 +16,9 @@
     "ft:markdown": {
         "softwrap": true,
         "tabsize": 2
+    },
+    "ft:rst": {
+        "tabsize": 3
     },
     "ft:sql": {
         "tabsize": 2
