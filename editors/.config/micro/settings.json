@@ -26,6 +26,7 @@
     "ft:yaml": {
         "tabsize": 2
     },
+    "ignorecase": true,
     "mkparents": true,
     "savecursor": true,
     "saveundo": true,
