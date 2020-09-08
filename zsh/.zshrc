@@ -163,6 +163,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Move to project root
+alias root='cd "$(git rev-parse --show-toplevel)"'
 # Set ipdb as debugger on pytest
 alias ipytest='pytest --pdbcls=IPython.terminal.debugger:TerminalPdb'
 # Uninstall all pip installed packages in current environment
