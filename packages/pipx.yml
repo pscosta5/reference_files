@@ -20,6 +20,7 @@ install:
   - mypy
   - nbconvert
   - nox
+  - pandashells[full]
   - pre-commit
   - pytest
   - trash-cli
