@@ -18,6 +18,12 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false,
+      "source.organizeImports.reorder-python-imports": true
+    }
+  },
   "[restructuredtext]": { "editor.tabSize": 3 },
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
@@ -30,7 +36,6 @@
   "autoDocstring.docstringFormat": "numpy",
   "autoDocstring.startOnNewLine": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "editor.codeActionsOnSave": { "source.organizeImports": false },
   "editor.fontFamily": "FiraCode Nerd Font", // https://www.nerdfonts.com/font-downloads
   "editor.fontLigatures": true,
   "editor.formatOnPaste": true,
