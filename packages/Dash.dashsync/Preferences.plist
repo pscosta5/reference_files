@@ -296,7 +296,7 @@
 			<key>Presto</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-28T15:47:31Z</date>
+				<date>2020-09-14T15:18:08Z</date>
 				<key>entry</key>
 				<dict>
 					<key>authorLinkHref</key>
@@ -334,7 +334,7 @@
 			<key>Seaborn</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-06T16:32:48Z</date>
+				<date>2020-09-12T02:45:08Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -495,7 +495,7 @@
 			<key>xgboost</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-06T16:40:55Z</date>
+				<date>2020-09-13T02:54:46Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
