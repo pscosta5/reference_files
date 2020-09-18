@@ -17,6 +17,7 @@ install:
   - invoke
   - j2cli[yaml]
   - kaggle
+  - magic-wormhole
   - mypy
   - nbconvert
   - nox
