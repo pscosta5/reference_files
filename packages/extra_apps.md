@@ -15,6 +15,7 @@ Apps that you can't get from a package manager (yet!).
 
 ## DMG
 
+- [Material Colors](https://github.com/romannurik/MaterialColorsApp/releases/tag/v2.0.1)
 - [Petit Player](https://getpetit.github.io/)
 
 ## Python
