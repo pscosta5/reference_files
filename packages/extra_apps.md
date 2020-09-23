@@ -20,5 +20,6 @@ Apps that you can't get from a package manager (yet!).
 
 ## Python
 
+- [deemix](https://deemix.app/)
 - [DeezloaderRemix](https://notabug.org/L33Tech/DeezloaderRemix/)
 - [RemixDev](https://codeberg.org/RemixDev/deemix-pyweb/src/branch/main)
