@@ -17,6 +17,10 @@ Apps that you can't get from a package manager (yet!).
 
 - [Material Colors](https://github.com/romannurik/MaterialColorsApp/releases/tag/v2.0.1)
 - [Petit Player](https://getpetit.github.io/)
+- [Soundflower](https://github.com/mattingalls/Soundflower/releases/tag/2.0b2)
+
+  To get this to work try to install, it will fail at first.
+  Then go to System Preferences → Security & Privacy → General and enable Matt below.
 
 ## Python
 
