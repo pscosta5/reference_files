@@ -33,5 +33,7 @@ install:
 inject:
   flake8:
     - flake8-bugbear
+  nox:
+    - nox-poetry
   pytest:
     - pytest-cov
