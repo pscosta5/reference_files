@@ -129,11 +129,10 @@ fpath+=~/.config/zsh/completions
 
 # zsh-autocomplete
 # ``git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.oh-my-zsh/custom/plugins/zsh-autocomplete``
+# Have zsh-automplete fill in partial completions
+zstyle ':autocomplete:tab:*' insert-unambiguous yes
 # Have zsh-autocomplete play nice with fzf
-zstyle ':autocomplete:tab:*' completion fzf
-zstyle ':autocomplete:*' fuzzy-search off
-# Don't automatically correct words
-zstyle ':autocomplete:*' magic off
+zstyle ':autocomplete:tab:*' fzf yes
 
 source $ZSH/oh-my-zsh.sh
 
