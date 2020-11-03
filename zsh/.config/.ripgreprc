@@ -6,3 +6,5 @@
 --glob=!.git/
 # Ignore files inside .DS_Store/
 --glob=!.DS_Store/
+# Follow symlinks
+--follow
