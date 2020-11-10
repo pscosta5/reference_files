@@ -26,6 +26,7 @@ install:
   - pytest
   - trash-cli
   - tox
+  - typer-cli
   - virtualenv
   - youtube_dl
   - yq
