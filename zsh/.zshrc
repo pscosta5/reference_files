@@ -313,7 +313,7 @@ export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
 # ``brew install lsd`
 # ``brew cask install homebrew/cask-fonts/font-firacode-nerd-font```
 alias ld='lsd --almost-all --long --timesort --group-dirs=first'
-alias td='lsd --timesort --group-dirs=first --tree'
+alias td='lsd --almost-all --timesort --group-dirs=first --tree'
 
 # fzf
 # https://github.com/junegunn/fzf
@@ -393,3 +393,7 @@ alias nnn='nnn -e -H'
 #export NNN_COLORS='#32323232'
 export NNN_PLUG='b:preview-tui;z:autojump'
 #set --export NNN_FIFO '/tmp/nnn.fifos'
+
+autoload -Uz compinit
+zstyle ':completion:*' menu select
+fpath+=~/.zfunc
