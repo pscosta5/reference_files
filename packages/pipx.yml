@@ -2,6 +2,7 @@
 
 # Run `pipx install PACKAGE`
 install:
+  - argcomplete
   - asciinema
   - black
   - bpytop
