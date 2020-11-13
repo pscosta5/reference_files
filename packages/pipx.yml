@@ -23,6 +23,7 @@ install:
   - nox
   - pandashells[full]
   - pre-commit
+  - pypyp
   - pytest
   - trash-cli
   - tox
