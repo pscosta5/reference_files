@@ -410,6 +410,8 @@ alias nnn='nnn -e -H'
 export NNN_PLUG='b:preview-tui;z:autojump'
 #set --export NNN_FIFO '/tmp/nnn.fifos'
 
+# Typer CLI
+# https://github.com/tiangolo/typer-cli
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
