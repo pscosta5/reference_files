@@ -9,6 +9,7 @@ install:
   - cookiecutter
   - cupper
   - csvkit
+  - deemix
   - dvc
   - doc2dash
   - drive-cli
