@@ -11,6 +11,7 @@ install:
   - csvkit
   - dvc
   - doc2dash
+  - drive-cli
   - flake8
   - dephell[full]
   - git-filter-repo
