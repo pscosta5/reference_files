@@ -19,3 +19,9 @@ poetry completions zsh > $ZSH/plugins/poetry/_poetry
 ```sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
+## iTerm2 integration
+
+```sh
+curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
+```
