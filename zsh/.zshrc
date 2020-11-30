@@ -403,15 +403,28 @@ bindkey "^X^_" redo
 # ``curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash``
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# nnn
-alias nnn='nnn -e -H'
-#export NNN_FCOLORS='C2E43231006033F7CCDDB7C5'
-#export NNN_COLORS='#32323232'
-export NNN_PLUG='b:preview-tui;z:autojump'
-#set --export NNN_FIFO '/tmp/nnn.fifos'
-
 # Typer CLI
 # https://github.com/tiangolo/typer-cli
 autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
+
+# Ranger
+# ``pipx install ranger``
+# Allows Ranger to  change directories on exit
+# Taken from https://github.com/ranger/ranger/wiki/Integration-with-other-programs#changing-directories
+function ranger {
+    local IFS=$'\t\n'
+    local tempfile="$(mktemp -t tmp.XXXXXX)"
+    local ranger_cmd=(
+        command
+        ranger
+        --cmd="map Q chain shell echo %d > "$tempfile"; quitall"
+    )
+    
+    ${ranger_cmd[@]} "$@"
+    if [[ -f "$tempfile" ]] && [[ "$(cat -- "$tempfile")" != "$(echo -n `pwd`)" ]]; then
+        cd -- "$(cat "$tempfile")" || return
+    fi
+    command rm -f -- "$tempfile" 2>/dev/null
+}
