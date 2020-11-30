@@ -29,7 +29,7 @@ install:
   - pre-commit
   - pypyp
   - pytest
-  - ranger
+  - ranger-fm
   - trash-cli
   - tox
   - typer-cli
