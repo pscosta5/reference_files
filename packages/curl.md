@@ -25,3 +25,9 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 ```sh
 curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
 ```
+
+# Rust
+
+```sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```

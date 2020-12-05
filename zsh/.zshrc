@@ -224,6 +224,8 @@ PATH="$HOME/.poetry/bin:$PATH"
 # Starship theme
 eval "$(starship init zsh)"
 
+# Cargo
+PATH="$HOME/.cargo/bin:$PATH"
 
 # fd
 # https://github.com/sharkdp/fd

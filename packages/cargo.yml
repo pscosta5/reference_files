@@ -1,0 +1,5 @@
+# cargo packages
+
+# cargo install PACKAGE
+install:
+  - viu

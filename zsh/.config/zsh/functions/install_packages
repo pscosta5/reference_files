@@ -9,9 +9,14 @@
 cd ~/.dotfiles/packages || exit
 brew bundle install
 
-# pipx package
+# pipx packages
 for package in $(yq -r '.install[]' ~/.dotfiles/packages/pipx.yml); do
     pipx install "$package"
+done
+
+# cargo packages
+for package in $(yq -r '.install[]' ~/.dotfiles/packages/cargo.yml); do
+    cargo install "$package"
 done
 
 # pipx inject
