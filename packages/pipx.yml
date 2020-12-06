@@ -16,6 +16,7 @@ install:
   - flake8
   - dephell[full]
   - git-filter-repo
+  - hiplot
   - httpie
   - invoke
   - j2cli[yaml]
