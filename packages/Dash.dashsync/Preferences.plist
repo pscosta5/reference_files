@@ -423,6 +423,30 @@
 					<string>Zsh</string>
 				</dict>
 			</dict>
+			<key>altair</key>
+			<dict>
+				<key>date</key>
+				<date>2020-12-10T18:37:37Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>altair</string>
+						<string>altair 4.0</string>
+						<string>altair 3.2</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/altair#readme</string>
+					<key>authorLinkText</key>
+					<string>Angelo Varlotta</string>
+					<key>name</key>
+					<string>Altair</string>
+					<key>platform</key>
+					<string>usercontribaltair</string>
+					<key>uniqueIdentifier</key>
+					<string>altair</string>
+				</dict>
+			</dict>
 			<key>iPython</key>
 			<dict>
 				<key>date</key>
