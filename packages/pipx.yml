@@ -30,6 +30,7 @@ install:
   - pre-commit
   - pypyp
   - pytest
+  - Pygments
   - ranger-fm
   - termtosvg
   - trash-cli
