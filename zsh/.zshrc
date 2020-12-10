@@ -179,7 +179,7 @@ alias unformat="pbpaste | pbcopy"
 # Reload zsh, as if starting a new shell
 alias reload="exec -l zsh"
 # List Jupyter kernels
-alias list_kernels="jupyter kernelspec list"
+alias list_kernels="conda run --name=notebook jupyter kernelspec list"
 # Activate environment with notebook and start Jupyter Lab
 alias notebook="conda run --name=notebook jupyter lab"
 # Interactive tree view
