@@ -381,6 +381,31 @@
 					<string>Sphinx</string>
 				</dict>
 			</dict>
+			<key>SymPy</key>
+			<dict>
+				<key>date</key>
+				<date>2020-12-11T16:42:17Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>Python</string>
+						<string>Symbolic Mathematics Python Library</string>
+						<string>alternative for matlab syms</string>
+						<string>computer algebra system (CAS)</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/SymPy#readme</string>
+					<key>authorLinkText</key>
+					<string>Jan Winkler</string>
+					<key>name</key>
+					<string>SymPy</string>
+					<key>platform</key>
+					<string>usercontribSymPy</string>
+					<key>uniqueIdentifier</key>
+					<string>SymPy</string>
+				</dict>
+			</dict>
 			<key>TensorFlow_2</key>
 			<dict>
 				<key>date</key>
@@ -447,6 +472,26 @@
 					<string>altair</string>
 				</dict>
 			</dict>
+			<key>cvxpy</key>
+			<dict>
+				<key>date</key>
+				<date>2020-12-11T16:41:29Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array/>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/cvxpy#readme</string>
+					<key>authorLinkText</key>
+					<string>Ben Dichter</string>
+					<key>name</key>
+					<string>cvxpy</string>
+					<key>platform</key>
+					<string>usercontribcvxpy</string>
+					<key>uniqueIdentifier</key>
+					<string>cvxpy</string>
+				</dict>
+			</dict>
 			<key>iPython</key>
 			<dict>
 				<key>date</key>
@@ -472,6 +517,28 @@
 					<string>iPython</string>
 				</dict>
 			</dict>
+			<key>jax</key>
+			<dict>
+				<key>date</key>
+				<date>2020-12-11T16:42:59Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>jaxlib</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/jax#readme</string>
+					<key>authorLinkText</key>
+					<string>Niru Maheswaranathan</string>
+					<key>name</key>
+					<string>jax</string>
+					<key>platform</key>
+					<string>usercontribjax</string>
+					<key>uniqueIdentifier</key>
+					<string>jax</string>
+				</dict>
+			</dict>
 			<key>pytest</key>
 			<dict>
 				<key>date</key>
@@ -490,6 +557,31 @@
 					<string>usercontribpytest</string>
 					<key>uniqueIdentifier</key>
 					<string>pytest</string>
+				</dict>
+			</dict>
+			<key>statsmodels</key>
+			<dict>
+				<key>date</key>
+				<date>2020-12-11T16:42:07Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>Statsmodels</string>
+						<string>statsmodels</string>
+						<string>Statsmodels 0.12.0</string>
+						<string>statsmodels 0.12.0</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/statsmodels#readme</string>
+					<key>authorLinkText</key>
+					<string>Angelo Varlotta</string>
+					<key>name</key>
+					<string>statsmodels</string>
+					<key>platform</key>
+					<string>usercontribstatsmodels</string>
+					<key>uniqueIdentifier</key>
+					<string>statsmodels</string>
 				</dict>
 			</dict>
 			<key>tldr</key>
