@@ -36,6 +36,7 @@ install:
   - trash-cli
   - tox
   - typer-cli
+  - visidata
   - virtualenv
   - youtube_dl
   - yq
