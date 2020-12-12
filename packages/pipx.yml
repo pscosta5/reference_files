@@ -33,6 +33,7 @@ install:
   - Pygments
   - ranger-fm
   - termtosvg
+  - tqdm
   - trash-cli
   - tox
   - typer-cli
