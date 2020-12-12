@@ -47,7 +47,77 @@
         "keys": [
             "Ctrl W"
         ],
-        "selector": ".jp-Activity"
-     }
+        "selector": "body"
+    },
+    {
+        "command": "terminal:create-new",
+        "keys": [
+            "Ctrl T"
+        ],
+        "selector": "body"
+    },
+    {
+        "command": "notebook:create-new",
+        "keys": [
+            "Ctrl N"
+        ],
+        "selector": "body"
+    },
+    {
+        "command": "inspector:open",
+        "keys": [
+            "Ctrl H"
+        ],
+        "selector": "body"
+    },
+    {
+        "command": "filebrowser:copy",
+        "keys": [
+            "Accel C"
+        ],
+        "selector": ".jp-DirListing"
+    },
+    {
+        "command": "filebrowser:paste",
+        "keys": [
+            "Accel V"
+        ],
+        "selector": ".jp-DirListing"
+    },
+    {
+        "command": "filebrowser:delete",
+        "keys": [
+            "Accel Backspace"
+        ],
+        "selector": ".jp-DirListing"
+    },
+    {
+        "command": "filebrowser:cut",
+        "keys": [
+            "Accel X"
+        ],
+        "selector": ".jp-DirListing"
+    },   
+    {
+        "command": "filebrowser:copy-path",
+        "keys": [
+            "Accel Alt C"
+        ],
+        "selector": ".jp-DirListing"
+    },
+    {
+        "command": "filebrowser:rename",
+        "keys": [
+            "Enter"
+        ],
+        "selector": ".jp-DirListing"
+    },
+    {
+        "command": "filebrowser:open",
+        "keys": [
+            "Ctrl Enter"
+        ],
+        "selector": ".jp-DirListing"
+    }
   ]
 }
