@@ -9,6 +9,7 @@ install:
   - cookiecutter
   - cupper
   - csvkit
+  - datasette
   - deemix
   - dvc
   - doc2dash
