@@ -9,6 +9,7 @@
 - bierner.markdown-emoji
 - bierner.markdown-mermaid
 - bmuskalla.vscode-tldr
+- bpruitt-goddard.mermaid-markdown-syntax-highlighting
 - chrislajoie.vscode-modelines
 - christian-kohler.path-intellisense
 - DavidAnson.vscode-markdownlint
@@ -36,6 +37,7 @@
 - lextudio.restructuredtext
 - MarkLarah.pre-commit-vscode
 - mechatroner.rainbow-csv
+- tomoyukim.vscode-mermaid-editor
 - metaseed.MetaWord
 - metaseed.MetaJump
 - metaseed.metago
