@@ -116,6 +116,7 @@ plugins=(
     virtualenv
     zsh-autocomplete
     zsh-autosuggestions
+    zsh-edit
 )
 
 # Completions
