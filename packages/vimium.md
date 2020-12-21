@@ -8,6 +8,66 @@
 # Insert your preferred key mappings here.
 map <a-/> LinkHints.activateMode
 map <a-?> LinkHints.activateModeToOpenInNewTab
+unmap j
+unmap <c-e>
+unmap k
+unmap <c-y>
+unmap gg
+unmap G
+unmap d
+unmap u
+unmap h
+unmap l
+unmap zH
+unmap zL
+unmap r
+unmap yy
+unmap p
+unmap P
+unmap gu
+unmap gU
+unmap i
+unmap v
+unmap V
+unmap gi
+unmap f
+unmap F
+unmap <a-f>
+unmap yf
+unmap [[
+unmap ]]
+unmap gf
+unmap gF
+unmap m
+unmap `
+unmap o
+unmap O
+unmap b
+unmap B
+unmap T
+unmap ge
+unmap gE
+unmap /
+unmap n
+unmap N
+unmap H
+unmap L
+unmap t
+unmap J, gT
+unmap K, gt
+unmap ^
+unmap g0
+unmap g$
+unmap yt
+unmap <a-p>
+unmap <a-m>
+unmap x
+unmap X
+unmap W
+unmap <<
+unmap >>
+unmap ?
+unmap gs
 ```
 
 ## Advanced options
