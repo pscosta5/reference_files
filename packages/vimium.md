@@ -2,72 +2,20 @@
 
 ## Vimium options
 
+### Excluded URLs and keys
+
+| Patters                     | Keys |
+| --------------------------- | ---- |
+| https?://mail.google.com/\* |
+| https?://localhost:8000/\*  |
+
 ### Custom key mappings
 
 ```txt
 # Insert your preferred key mappings here.
+unmapAll
 map <a-/> LinkHints.activateMode
 map <a-?> LinkHints.activateModeToOpenInNewTab
-unmap j
-unmap <c-e>
-unmap k
-unmap <c-y>
-unmap gg
-unmap G
-unmap d
-unmap u
-unmap h
-unmap l
-unmap zH
-unmap zL
-unmap r
-unmap yy
-unmap p
-unmap P
-unmap gu
-unmap gU
-unmap i
-unmap v
-unmap V
-unmap gi
-unmap f
-unmap F
-unmap <a-f>
-unmap yf
-unmap [[
-unmap ]]
-unmap gf
-unmap gF
-unmap m
-unmap `
-unmap o
-unmap O
-unmap b
-unmap B
-unmap T
-unmap ge
-unmap gE
-unmap /
-unmap n
-unmap N
-unmap H
-unmap L
-unmap t
-unmap J, gT
-unmap K, gt
-unmap ^
-unmap g0
-unmap g$
-unmap yt
-unmap <a-p>
-unmap <a-m>
-unmap x
-unmap X
-unmap W
-unmap <<
-unmap >>
-unmap ?
-unmap gs
 ```
 
 ## Advanced options
@@ -80,14 +28,15 @@ unmap gs
 
 ```css
 div > .vimiumHintMarker {
-/* linkhint boxes */
-  background: #FFFFFF;
-  border-color: #FFFFFF;
-  box-shadow: 0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.20);
+  /* linkhint boxes */
+  background: #ffffff;
+  border-color: #ffffff;
+  box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12),
+    0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
 
 div > .vimiumHintMarker span {
-/* linkhint text */
+  /* linkhint text */
   color: #212121;
   font-size: 16px;
   font-weight: 400;
@@ -95,6 +44,6 @@ div > .vimiumHintMarker span {
 }
 
 div > .vimiumHintMarker > .matchingCharacter {
-  color: #03DAC6;
+  color: #03dac6;
 }
 ```
