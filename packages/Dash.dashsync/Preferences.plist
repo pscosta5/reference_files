@@ -293,6 +293,33 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>Numba</key>
+			<dict>
+				<key>date</key>
+				<date>2020-12-24T16:11:39Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>numba</string>
+						<string>Python</string>
+						<string>LLVM</string>
+						<string>JIT</string>
+						<string>Anaconda</string>
+						<string>high performance</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Numba#readme</string>
+					<key>authorLinkText</key>
+					<string>Alexander Ronald Altman</string>
+					<key>name</key>
+					<string>Numba</string>
+					<key>platform</key>
+					<string>usercontribNumba</string>
+					<key>uniqueIdentifier</key>
+					<string>Numba</string>
+				</dict>
+			</dict>
 			<key>Presto</key>
 			<dict>
 				<key>date</key>
