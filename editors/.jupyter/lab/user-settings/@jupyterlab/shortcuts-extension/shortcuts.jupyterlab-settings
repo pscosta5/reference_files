@@ -22,102 +22,75 @@
     },
     {
       "command": "filebrowser:toggle-main",
-      "keys": [
-        "Accel Shift E"
-      ],
-      "selector": "body",
+      "keys": ["Accel Shift E"],
+      "selector": "body"
     },
     {
       "command": "filebrowser:toggle-main",
-      "keys": [
-        "Accel Shift F"
-      ],
+      "keys": ["Accel Shift F"],
       "selector": "body",
       "disabled": true
     },
     {
-        "command": "notebook:create-console",
-        "keys": [
-            "Ctrl `"
-        ],
-        "selector": ".jp-Notebook:focus"
+      "command": "notebook:create-console",
+      "keys": ["Ctrl `"],
+      "selector": ".jp-Notebook:focus"
     },
     {
-        "command": "application:close",
-        "keys": [
-            "Ctrl W"
-        ],
-        "selector": "body"
+      "command": "application:close",
+      "keys": ["Ctrl W"],
+      "selector": "body"
     },
     {
-        "command": "terminal:create-new",
-        "keys": [
-            "Ctrl T"
-        ],
-        "selector": "body"
+      "command": "terminal:create-new",
+      "keys": ["Ctrl Shift `"],
+      "selector": "body"
     },
     {
-        "command": "notebook:create-new",
-        "keys": [
-            "Ctrl N"
-        ],
-        "selector": "body"
+      "command": "notebook:create-new",
+      "keys": ["Ctrl N"],
+      "selector": "body"
     },
     {
-        "command": "inspector:open",
-        "keys": [
-            "Ctrl H"
-        ],
-        "selector": "body"
+      "command": "inspector:open",
+      "keys": ["Ctrl H"],
+      "selector": "body"
     },
     {
-        "command": "filebrowser:copy",
-        "keys": [
-            "Accel C"
-        ],
-        "selector": ".jp-DirListing"
+      "command": "filebrowser:copy",
+      "keys": ["Accel C"],
+      "selector": ".jp-DirListing"
     },
     {
-        "command": "filebrowser:paste",
-        "keys": [
-            "Accel V"
-        ],
-        "selector": ".jp-DirListing"
+      "command": "filebrowser:paste",
+      "keys": ["Accel V"],
+      "selector": ".jp-DirListing"
     },
     {
-        "command": "filebrowser:delete",
-        "keys": [
-            "Accel Backspace"
-        ],
-        "selector": ".jp-DirListing"
+      "command": "filebrowser:delete",
+      "keys": ["Accel Backspace"],
+      "selector": ".jp-DirListing"
     },
     {
-        "command": "filebrowser:cut",
-        "keys": [
-            "Accel X"
-        ],
-        "selector": ".jp-DirListing"
-    },   
+      "command": "filebrowser:cut",
+      "keys": ["Accel X"],
+      "selector": ".jp-DirListing"
+    },
+
     {
-        "command": "filebrowser:copy-path",
-        "keys": [
-            "Accel Alt C"
-        ],
-        "selector": ".jp-DirListing"
+      "command": "filebrowser:copy-path",
+      "keys": ["Accel Alt C"],
+      "selector": ".jp-DirListing"
     },
     {
-        "command": "filebrowser:rename",
-        "keys": [
-            "Enter"
-        ],
-        "selector": ".jp-DirListing"
+      "command": "filebrowser:rename",
+      "keys": ["Enter"],
+      "selector": ".jp-DirListing"
     },
     {
-        "command": "filebrowser:open",
-        "keys": [
-            "Ctrl Enter"
-        ],
-        "selector": ".jp-DirListing"
+      "command": "filebrowser:open",
+      "keys": ["Ctrl Enter"],
+      "selector": ".jp-DirListing"
     }
   ]
 }
