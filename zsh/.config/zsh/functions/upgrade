@@ -97,7 +97,7 @@ else
     _upgrade_announcement "Oh My Zsh" "🅉"
     # shellcheck disable=SC2168
     local omz
-    omz="$(_status upgrade_oh_my_zsh)"
+    omz="$(_status omz update)"
     echo
     echo
     echo "Status"
