@@ -8,6 +8,10 @@
     {
       "pattern": "https?://localhost:8000/*",
       "passKeys": ""
+    },
+    {
+      "pattern": "https?://localhost:8888/*",
+      "passKeys": ""
     }
   ],
   "filterLinkHints": false,
