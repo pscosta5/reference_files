@@ -19,3 +19,6 @@ alias nl n;;l
 alias sl s;;l
 # Up and list
 alias ul u;;l
+
+# Print the local variables
+alias pl for variable, value in locals().copy().items(): print(f"{variable}:\t{value}") if not any(substring in variable for substring in ("__", "pdb")) else None
