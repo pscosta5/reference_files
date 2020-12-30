@@ -15,7 +15,7 @@ pdb.Pdb.complete = rlcompleter.Completer(locals()).complete
 
 # Next and list
 alias nl n;;l
-# # Step and list
+# Step and list
 alias sl s;;l
-# # Up and list
+# Up and list
 alias ul u;;l
