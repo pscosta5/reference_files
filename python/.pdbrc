@@ -1,16 +1,17 @@
-# Use iPython interactively
-# import IPython
-# from traitlets.config import get_config
-# cfg = get_config()
-# cfg.InteractiveShellEmbed.colors = "Linux"  # syntax highlighting
-# cfg.InteractiveShellEmbed.confirm_exit = False
-# alias interacti IPython.embed(config=cfg)
+import pathlib
 
-# Enable tab completion                                                         
-import rlcompleter                                                              
-import pdb                                                                      
+exec((pathlib.Path.home() / pathlib.Path(".config", ".pdbrc_ipython.py")).read_text())
+alias interacti IPython.embed(config=cfg)
+
+# Enable tab completion
+import pdb
+import rlcompleter
+
 pdb.Pdb.complete = rlcompleter.Completer(locals()).complete
 
-# Next and list, and step and list.
+# Next and list
 alias nl n;;l
+# # Step and list
 alias sl s;;l
+# # Up and list
+alias ul u;;l
