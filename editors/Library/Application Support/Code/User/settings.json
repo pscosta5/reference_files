@@ -49,6 +49,7 @@
     "**/.config/mypy/config": "ini",
     "**/.config/zsh/functions/**/*": "shellscript",
     "**/.jupyter/lab/user-settings/**/*": "jsonc",
+    ".pdbrc": "python",
     "Brewfile": "ruby",
     "flake8": "ini"
   },
