@@ -431,3 +431,5 @@ function ranger {
     fi
     command rm -f -- "$tempfile" 2>/dev/null
 }
+
+export PYTHONSTARTUP=$HOME/.ipython/profile_default/startup/rich_rendering.py
