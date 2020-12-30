@@ -1,5 +1,6 @@
 import pathlib
 
+# IPython alias
 exec((pathlib.Path.home() / pathlib.Path(".config", ".pdbrc_ipython.py")).read_text())
 alias interacti IPython.embed(config=cfg)
 
