@@ -4,6 +4,9 @@ import pathlib
 exec((pathlib.Path.home() / pathlib.Path(".config", ".pdbrc_ipython.py")).read_text())
 alias interacti IPython.embed(config=cfg)
 
+# Rich
+exec((pathlib.Path.home() / pathlib.Path(".ipython", "profile_default", "startup", "rich_rendering.py")).read_text())
+
 # Enable tab completion
 import pdb
 import rlcompleter
