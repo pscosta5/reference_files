@@ -1,4 +1,5 @@
 """Use rich to enable automatic pretty printing and traceback."""
+import os
 import sys
 
 def detect_notebook() -> bool:
