@@ -25,3 +25,7 @@ Apps that you can't get from a package manager (yet!).
 ## Python
 
 - [deemix](https://t.me/s/getdeemix)
+
+## Fonts
+
+- [Google Sans](https://www.cufonfonts.com/font/google-sans)
