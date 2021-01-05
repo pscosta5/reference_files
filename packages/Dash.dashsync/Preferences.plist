@@ -309,6 +309,29 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>GNU_Make</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-05T03:56:02Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>make</string>
+						<string>gmake</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/GNU_Make#readme</string>
+					<key>authorLinkText</key>
+					<string>Benjamin Ragheb</string>
+					<key>name</key>
+					<string>GNU Make</string>
+					<key>platform</key>
+					<string>usercontribGNU_Make</string>
+					<key>uniqueIdentifier</key>
+					<string>GNU_Make</string>
+				</dict>
+			</dict>
 			<key>Numba</key>
 			<dict>
 				<key>date</key>
