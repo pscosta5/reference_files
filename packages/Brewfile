@@ -94,6 +94,7 @@ brew "MisterTea/et/et"
 brew "muesli/tap/duf"
 brew "wvanlint/twf/twf", args: ["HEAD"]
 cask "alfred"
+cask "appcleaner"
 cask "basictex"
 cask "cheatsheet"
 cask "chromedriver"
