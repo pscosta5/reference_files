@@ -130,6 +130,7 @@ cask "steam"
 cask "visual-studio-code"
 cask "windscribe"
 mas "Amphetamine", id: 937984704
+mas "Encrypto", id: 935235287
 mas "Flow", id: 1423210932
 mas "Glance", id:1513574319
 mas "ScreenBrush", id: 1233965871
