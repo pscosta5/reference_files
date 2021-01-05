@@ -124,6 +124,7 @@ cask "rectangle"
 cask "steam"
 cask "visual-studio-code"
 cask "windscribe"
+mas "Amphetamine", id: 937984704
 mas "Flow", id: 1423210932
 mas "Glance", id:1513574319
 mas "Slack", id: 803453959
