@@ -50,3 +50,6 @@ inject:
     - nox-poetry
   pytest:
     - pytest-cov
+  # List from https://www.visidata.org/formats/
+  visidata:
+    - "visidata openpyxl h5py xlrd mapbox-vector-tile pyshp lxml pypng fonttools pandas sas7bdat savReaderWriter xport pandas dpkt dnslib lxml PyYAML datapackage numpy xlrd"
