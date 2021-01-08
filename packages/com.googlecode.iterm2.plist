@@ -2258,6 +2258,15 @@
 					<key>Text</key>
 					<string>0x7f</string>
 				</dict>
+				<key>0x74-0x100000-0x11</key>
+				<dict>
+					<key>Action</key>
+					<integer>27</integer>
+					<key>Label</key>
+					<string></string>
+					<key>Text</key>
+					<string>17E47B31-0608-4488-B483-CD8C88F6BCF5</string>
+				</dict>
 				<key>0x7a-0x100000</key>
 				<dict>
 					<key>Action</key>
