@@ -412,6 +412,10 @@ autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
 
+# dephell autocompletion
+# pipx insall 'dephell[full]'
+source "/Users/pawlu/.local/share/dephell/_dephell_zsh_autocomplete"
+
 # Ranger
 # ``pipx install ranger``
 # Allows Ranger to  change directories on exit
