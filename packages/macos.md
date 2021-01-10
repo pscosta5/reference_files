@@ -117,6 +117,10 @@ Delay Until Repeat
 
 - [ ] Add period with double-space
 
+### Shortcuts
+
+- [x] Use keyboard navigation to move focus between controls
+
 ## Dock
 
 - [x] Automatically hide and show the Dock
