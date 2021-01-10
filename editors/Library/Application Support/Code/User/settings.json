@@ -18,12 +18,12 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[python]": {
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": false,
-      "source.organizeImports.reorder-python-imports": true
-    }
-  },
+  // "[python]": {
+  //   "editor.codeActionsOnSave": {
+  //     "source.organizeImports": false,
+  //     "source.organizeImports.reorder-python-imports": true
+  //   }
+  // },
   "[restructuredtext]": { "editor.tabSize": 3 },
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
@@ -60,7 +60,7 @@
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.math.enabled": false,
   "python.analysis.typeCheckingMode": "basic",
-  "python.dataScience.sendSelectionToInteractiveWindow": true,
+  // "python.dataScience.sendSelectionToInteractiveWindow": true,
   "python.formatting.provider": "black",
   "python.languageServer": "Pylance",
   "python.linting.flake8Enabled": true,
@@ -80,5 +80,28 @@
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // Set via Intellicode
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Material Theme",
-  "workbench.iconTheme": "eq-material-theme-icons"
+  "workbench.iconTheme": "eq-material-theme-icons",
+  // Work specific
+  "interactive-smartlog.pull": "hg pull",
+  "interactive-smartlog.fetch": "jf get and rebase",
+  "intern-tools.showReminderBeforeMeetings": true,
+  "fb.vscode-feedback.lastsurveydate": 1599842140675,
+  "fb.remote-connections.hosts": [
+    {
+      "hostname": "devvm868.ftw0.facebook.com",
+      "folders": [
+        "/data/users/pawlu/",
+        "/data/users/pawlu/fbsource/fbcode/experimental/pawlu/bootcamp-project/",
+        "/data/users/pawlu/Documents/scratch/",
+        "/data/users/pawlu/Documents/kcam/",
+        "/data/users/pawlu/Documents/qps-v-cpu/"
+      ]
+    }
+  ],
+  "[cpp]": {
+    "editor.defaultFormatter": "nuclide.cpp"
+  },
+  "interactive-smartlog.right-drawer-width": 413,
+  "interactive-smartlog.bottom-drawer-height": 500,
+  // End work
 }
