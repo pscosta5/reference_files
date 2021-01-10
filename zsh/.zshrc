@@ -191,6 +191,8 @@ alias twf="twf \
            --height=0.5"
 # Default to color for ncdu
 alias ncdu="ncdu --color=dark --follow-firmlinks"
+# Set pspg theme to simple
+alias pspg="pspg -s 16"
 
 # >>> conda initialize >>>
 # https://docs.conda.io/en/latest/miniconda.html
