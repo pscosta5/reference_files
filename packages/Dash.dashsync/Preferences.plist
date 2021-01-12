@@ -309,6 +309,53 @@
 	<dict>
 		<key>installed</key>
 		<dict>
+			<key>Airflow</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-12T06:19:05Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>Apache Airflow</string>
+						<string>Python Airflow</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Airflow#readme</string>
+					<key>authorLinkText</key>
+					<string>David Hong</string>
+					<key>name</key>
+					<string>Airflow</string>
+					<key>platform</key>
+					<string>usercontribAirflow</string>
+					<key>uniqueIdentifier</key>
+					<string>Airflow</string>
+				</dict>
+			</dict>
+			<key>Beautiful_Soup</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-12T06:17:03Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>bs4</string>
+						<string>Python Library</string>
+						<string>Beautiful Soup</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Beautiful_Soup#readme</string>
+					<key>authorLinkText</key>
+					<string>Aziz Alto</string>
+					<key>name</key>
+					<string>Beautiful Soup</string>
+					<key>platform</key>
+					<string>usercontribBeautiful_Soup</string>
+					<key>uniqueIdentifier</key>
+					<string>Beautiful_Soup</string>
+				</dict>
+			</dict>
 			<key>GNU_Make</key>
 			<dict>
 				<key>date</key>
@@ -377,6 +424,28 @@
 					<string>Presto</string>
 				</dict>
 			</dict>
+			<key>Requests</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-12T06:18:47Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>python requests</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Requests#readme</string>
+					<key>authorLinkText</key>
+					<string>Thiago Medeiros</string>
+					<key>name</key>
+					<string>Requests</string>
+					<key>platform</key>
+					<string>usercontribRequests</string>
+					<key>uniqueIdentifier</key>
+					<string>Requests</string>
+				</dict>
+			</dict>
 			<key>Scikit</key>
 			<dict>
 				<key>date</key>
@@ -395,6 +464,48 @@
 					<string>usercontribScikit</string>
 					<key>uniqueIdentifier</key>
 					<string>Scikit</string>
+				</dict>
+			</dict>
+			<key>Scikit-image</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-12T06:18:43Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>Python Image Processing</string>
+						<string>Scikit-image Library</string>
+						<string>skimage</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Scikit-image#readme</string>
+					<key>authorLinkText</key>
+					<string>Aziz Alto</string>
+					<key>name</key>
+					<string>Scikit-image</string>
+					<key>platform</key>
+					<string>usercontribScikit-image</string>
+					<key>uniqueIdentifier</key>
+					<string>Scikit-image</string>
+				</dict>
+			</dict>
+			<key>Scrapy</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-12T06:19:10Z</date>
+				<key>entry</key>
+				<dict>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/Scrapy#readme</string>
+					<key>authorLinkText</key>
+					<string>Jeffli</string>
+					<key>name</key>
+					<string>Scrapy</string>
+					<key>platform</key>
+					<string>usercontribScrapy</string>
+					<key>uniqueIdentifier</key>
+					<string>Scrapy</string>
 				</dict>
 			</dict>
 			<key>Seaborn</key>
@@ -623,6 +734,30 @@
 					<string>jq</string>
 				</dict>
 			</dict>
+			<key>pyspark</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-12T06:19:16Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>Spark</string>
+						<string>MLlib</string>
+						<string>GraphX</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/pyspark#readme</string>
+					<key>authorLinkText</key>
+					<string>Tomas Kunka</string>
+					<key>name</key>
+					<string>pyspark</string>
+					<key>platform</key>
+					<string>usercontribpyspark</string>
+					<key>uniqueIdentifier</key>
+					<string>pyspark</string>
+				</dict>
+			</dict>
 			<key>pytest</key>
 			<dict>
 				<key>date</key>
@@ -690,6 +825,37 @@
 					<string>usercontribtldr</string>
 					<key>uniqueIdentifier</key>
 					<string>tldr</string>
+				</dict>
+			</dict>
+			<key>transformers</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-12T06:18:49Z</date>
+				<key>entry</key>
+				<dict>
+					<key>aliases</key>
+					<array>
+						<string>pytorch-transformers</string>
+						<string>pytorch-pretrained-bert</string>
+						<string>huggingface</string>
+						<string>bert</string>
+						<string>albert</string>
+						<string>roberta</string>
+						<string>xlnet</string>
+						<string>electra</string>
+						<string>bart</string>
+						<string>gpt</string>
+					</array>
+					<key>authorLinkHref</key>
+					<string>https://github.com/Kapeli/Dash-User-Contributions/tree/master/docsets/transformers#readme</string>
+					<key>authorLinkText</key>
+					<string>Venkat</string>
+					<key>name</key>
+					<string>Transformers</string>
+					<key>platform</key>
+					<string>usercontribtransformers</string>
+					<key>uniqueIdentifier</key>
+					<string>transformers</string>
 				</dict>
 			</dict>
 			<key>xgboost</key>
