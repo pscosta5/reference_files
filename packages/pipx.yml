@@ -47,6 +47,8 @@ install:
 inject:
   flake8:
     - flake8-bugbear
+  nbconvert:
+    - ipython
   nox:
     - nox-poetry
   pytest:
