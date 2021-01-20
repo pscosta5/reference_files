@@ -1,5 +1,12 @@
 {
   "codeCellConfig": {
-    "rulers": [79, 72]
+    "rulers": [79, 72],
+    "fontFamily": "RobotoMono Nerd Font"
+  },
+  "markdownCellConfig": {
+    "fontFamily": "Roboto"
+  },
+  "rawCellConfig": {
+    "fontFamily": "RobotoMono Nerd Font"
   }
 }
