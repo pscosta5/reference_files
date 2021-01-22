@@ -926,6 +926,11 @@
 				<key>date</key>
 				<date>2020-07-06T16:55:58Z</date>
 			</dict>
+			<key>http://kapeli.com/feeds/Markdown.xml</key>
+			<dict>
+				<key>date</key>
+				<date>2021-01-22T01:41:54Z</date>
+			</dict>
 			<key>http://kapeli.com/feeds/MatPlotLib.xml</key>
 			<dict>
 				<key>date</key>
