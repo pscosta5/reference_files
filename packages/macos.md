@@ -42,7 +42,7 @@ Tracking speed
 ### More Gestures
 
 - [x] Swipe between pages
-  
+
   Scroll let or right with one finger
 
 - [x] Swipe between full-screen apps
@@ -53,7 +53,7 @@ Tracking speed
 ### Point & Click
 
 - [x] Look up & data detectors
-  
+
   Force Click with one finger
 
 - [x] Secondary click
@@ -124,3 +124,17 @@ Delay Until Repeat
 ## Dock
 
 - [x] Automatically hide and show the Dock
+
+## Users & Groups
+
+### Login Items
+
+| Item                     | Kind        | Hide |
+| ------------------------ | ----------- | ---- |
+| Itsycal                  | Application | ☑    |
+| CheatSheet               | Application | ☑    |
+| Google Drive File Stream | Application | ☑    |
+| Alfred 4                 | Application | ☑    |
+| Lunar                    | Application | ☑    |
+| Kap                      | Application | ☑    |
+| Dash                     | Application | ☑    |
