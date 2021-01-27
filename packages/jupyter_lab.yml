@@ -1,45 +1,15 @@
 # JupyterLab environment
-
-# Run `conda install -c conda-forge PACKAGE`
-conda:
-  - black
-  - ipympl
-  - ipywidgets
-  - isort
-  - jupyter-lsp
-  - jupyterlab
-  - jupyterlab-git
-  - jupyterlab_code_formatter
-  - jupytext
-  - nodejs
-  - ptvsd
-  - python-language-server
-  - widgetsnbextension
-  - xeus-python
-pip:
-  - jupyter-book
-  - jupyterlab_github
-  - jupyterlab-pullrequests
-# Run `jupyter labextension install PACKAGE`
 labextension:
   # Add `c.GitHubConfig.access_token = "my-GitHub-token"` to ~/.jupyter/jupyter_notebook_config.py
-  - "@aquirdturtle/collapsible_headings"
   - "@ijmbarr/jupyterlab_spellchecker"
-  - "@jupyter-widgets/jupyterlab-manager"
-  - "@jupyterlab/debugger"
+  - "@jupyterlab/pullrequests"
   - "@jupyterlab/github"
   - "@jupyterlab/google-drive"
-  - "@jupyterlab/pullrequests"
   - "@jupyterlab/shortcutui"
-  - "@jupyterlab/toc"
-  - "@krassowski/jupyterlab-lsp"
-  - "@krassowski/jupyterlab_go_to_definition"
-  - "@lckr/jupyterlab_variableinspector"
-  - "@ryantam626/jupyterlab_code_formatter"
-  - "jupyterlab-flake8"
   - "jupyterlab-plotly"
   - "nbgather"
   - "plotlywidget"
 # Run `jupyter serverextension enable --py COMMAND"
 serverextension:
-  - "jupyterlab_code_formatter"
+  - jupyterlab_pullrequests
+  - --sys-prefix ipyvuetify

@@ -20,6 +20,7 @@ install:
   - hiplot
   - httpie
   - invoke
+  - jupyterlab
   - j2cli[yaml]
   - kaggle
   - magic-wormhole
@@ -43,16 +44,63 @@ install:
   - xonsh[full]
   - youtube_dl
   - yq
-# Run `pipx inject PACKAGE DEPENDENCY`
+# Run `pipx inject PACKAGE DEPENDENCIES`
 inject:
-  flake8:
-    - flake8-bugbear
-  nbconvert:
-    - ipython
-  nox:
-    - nox-poetry
-  pytest:
-    - pytest-cov
+  flake8: flake8-bugbear
+  # Add jupyterlab-flake8 when supported
+  jupyterlab: >
+    aquirdturtle_collapsible_headings
+    black
+    ipympl
+    ipyvuetify
+    isort[colors]
+    jupyter-book
+    jupyterlab_code_formatter
+    jupyterlab_github
+    jupyterlab_widgets
+    jupyterlab-git
+    jupyterlab-lsp
+    jupyterlab-pullrequests
+    jupytext
+    lckr-jupyterlab-variableinspector
+    pyqt5
+    python-language-server[all]
+    voila
+  nox: nox-poetry
+  pytest: pytest-cov
   # List from https://www.visidata.org/formats/
-  visidata:
-    - "visidata openpyxl h5py xlrd mapbox-vector-tile pyshp lxml pypng fonttools pandas sas7bdat savReaderWriter xport pandas dpkt dnslib lxml PyYAML datapackage numpy xlrd"
+  visidata: >
+    visidata
+    openpyxl
+    h5py
+    xlrd
+    mapbox-vector-tile
+    pyshp
+    lxml
+    pypng
+    fonttools
+    pandas
+    sas7bdat
+    savReaderWriter
+    xport
+    dpkt
+    dnslib
+    lxml
+    PyYAML
+    datapackage
+    numpy
+    xlrd
+    pyarrow
+    PyTables
+# Run `pipx inject --include-apps PACKAGE DEPENDENCIES`
+add:
+  jupyterlab: >
+    jupyter-client
+    jupyter-console
+    jupyter-core
+    nbconvert
+    nbdime
+    nbformat
+    notebook
+    qtconsole
+  
