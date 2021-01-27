@@ -37,6 +37,7 @@ install:
   - Pygments
   - ranger-fm
   - reorder-python-imports
+  - shell-functools
   - termtosvg
   - tqdm
   - trash-cli
