@@ -35,6 +35,7 @@ install:
   - pytest
   - Pygments
   - ranger-fm
+  - reorder-python-imports
   - termtosvg
   - tqdm
   - trash-cli
