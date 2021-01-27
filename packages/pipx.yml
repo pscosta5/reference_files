@@ -6,6 +6,7 @@ install:
   - asciinema
   - black
   - bpytop
+  - chardet
   - cookiecutter
   - cupper
   - csvkit
