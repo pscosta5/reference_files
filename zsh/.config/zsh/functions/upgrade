@@ -82,14 +82,6 @@ else
     # shellcheck disable=SC2168
     local pip
     pip="$(_status python -m pip install --upgrade pip)"
-    _upgrade_announcement "conda" "🐍"
-    # shellcheck disable=SC2168
-    local conda
-    conda="$(_status conda update -y conda)"
-    _upgrade_announcement "notebook" "📓"
-    # shellcheck disable=SC2168
-    local notebook
-    notebook="$(_status _upgrade_conda_env notebook)"
     _upgrade_announcement "git" "🐱"
     # shellcheck disable=SC2168
     local git
@@ -102,7 +94,7 @@ else
     echo
     echo "Status"
     echo "=============================================="
-    for output in $tldr $brew $pipx $poetry $pip $conda $notebook $git $omz; do
+    for output in $tldr $brew $pipx $poetry $pip $git $omz; do
         echo
         echo "$output"
     done

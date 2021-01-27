@@ -5,10 +5,6 @@
     // *************************
 
     // [missing schema title]
-    // Conda environment to use for flake8 linter
-    "conda_env": "notebook",
-
-    // [missing schema title]
     // Persistent internal terminal name. This is set automatically on each run
     "terminal_name": "1"
 }

@@ -19,10 +19,18 @@ for package in $(yq -r '.install[]' ~/.dotfiles/packages/cargo.yml); do
     cargo install "$package"
 done
 
+
+# pipx inject app
+# mostly used to set up jupyter
+for environment in $(yq -r '.add | keys[]' ~/.dotfiles/packages/pipx.yml); do
+    # pipx inject --include-apps $environment "$(yq )"
+    yq -r ".add.${environment}" ~/.dotfiles/packages/pipx.yml | xargs pipx inject --include-apps "${environment}"
+done
+
 # pipx inject
 for environment in $(yq -r '.inject | keys[]' ~/.dotfiles/packages/pipx.yml); do
     # pipx inject $environment "$(yq )"
-    yq -r ".inject.${environment}[]" ~/.dotfiles/packages/pipx.yml | xargs pipx inject "${environment}"
+    yq -r ".inject.${environment}" ~/.dotfiles/packages/pipx.yml | xargs pipx inject "${environment}"
 done
 
 # git
@@ -36,13 +44,9 @@ for package in $(yq -r 'keys[]' ~/.dotfiles/packages/git.yml); do
     git clone "${repo}" "${HOME}${directory}"
 done
 
-conda create --name --yes notebook python
-# Install conda packages
-yq -r '.conda[]' ~/.dotfiles/packages/jupyter_lab.yml | xargs conda install --yes --name=notebook
-# Install pip packages
-yq -r '.pip[]' ~/.dotfiles/packages/jupyter_lab.yml | xargs conda run --name=notebook python -m pip install
+# Jupyter setup
 # Install JupyterLab extensions
-yq -r '.labextension[]' ~/.dotfiles/packages/jupyter_lab.yml | xargs conda run --name=notebook jupyter labextension install
+yq -r '.labextension[]' ~/.dotfiles/packages/jupyter_lab.yml | xargs jupyter labextension install
 # Server extension
 for package in $(yq -r '.serverextension[]' ~/.dotfiles/packages/jupyter_lab.yml); do
     conda run --name=notebook jupyter serverextension enable --py "${package}"

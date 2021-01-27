@@ -1,9 +1,6 @@
 # git clone packages
 # Run `git clone REPO DIRECTORY`
 # Paths are relative to $HOME
-conda_zsh_autocompletion:
-  repo: "https://github.com/esc/conda-zsh-completion"
-  directory: "/.oh-my-zsh/custom/plugins/conda-zsh-completion"
 zsh_autosuggestions:
   repo: "https://github.com/zsh-users/zsh-autosuggestions"
   directory: "/.oh-my-zsh/custom/plugins/zsh-autosuggestions"

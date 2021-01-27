@@ -80,11 +80,6 @@ COMPLETION_WAITING_DOTS="true"
 # ``mkdir $ZSH/plugins/poetry``
 # ``poetry completions zsh > $ZSH/plugins/poetry/_poetry``
 
-# Conda
-# https://github.com/conda/conda
-# ``git clone https://github.com/esc/conda-zsh-completion ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/conda-zsh-completion``
-# And init step below
-
 # zsh-autosuggestion
 # https://github.com/zsh-users/zsh-autosuggestions
 # ``git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions``
@@ -99,11 +94,9 @@ COMPLETION_WAITING_DOTS="true"
 # ``brew install pyenv``
 # ``brew install openssl readline sqlite3 zlib
 # ``brew install pyenv-virtualenv
-# This should be last to overide conda paths
 
 plugins=(
     brew
-    conda-zsh-completion
     docker
     docker-compose
     fast-syntax-highlighting
@@ -171,8 +164,6 @@ alias ipytest='pytest --pdbcls=IPython.terminal.debugger:TerminalPdb'
 alias pip_uninstall_all="python -m pip freeze --local | xargs pip uninstall --yes"
 # Upgrade all pip packages in an environment
 alias pip_upgrade_all="python -m pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 python -m pip install --upgrade"
-# Upgrade all pip installed packages in a conda environment
-alias conda_pip_upgrade_all="conda env export | yq -r '.dependencies[-1].pip[]' | sed 's/==.*//' | xargs python -m pip install --upgrade"
 # Make a new data science project
 alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-science"
 # Remove formatting from text in 
@@ -180,9 +171,7 @@ alias unformat="pbpaste | pbcopy"
 # Reload zsh, as if starting a new shell
 alias reload="exec -l zsh"
 # List Jupyter kernels
-alias list_kernels="conda run --name=notebook jupyter kernelspec list"
-# Activate environment with notebook and start Jupyter Lab
-alias notebook="conda run --name=notebook jupyter lab"
+alias list_kernels="jupyter kernelspec list"
 # Interactive tree view
 alias twf="twf \
            --bind=\"left::tree:parent;tree:close,shift-up::preview:up,up::tree:prev,down::tree:next,shift-down::preview:down,right::tree:open;tree:next\" \
@@ -193,27 +182,6 @@ alias twf="twf \
 alias ncdu="ncdu --color=dark --follow-firmlinks"
 # Set pspg theme to simple
 alias pspg="pspg -s 16 --vertical-cursor --bold-labels --bold-cursor --force-uniborder"
-
-# >>> conda initialize >>>
-# https://docs.conda.io/en/latest/miniconda.html
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/opt/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/opt/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/opt/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/opt/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-# Conda completion
-# https://github.com/esc/conda-zsh-completion/blob/master/_conda
-# Should come after ``source $ZSH/oh-my-zsh.sh`` line and after completions
-autoload -U compinit && compinit
 
 # Add Visual Studio Code (code)
 # https://code.visualstudio.com/
