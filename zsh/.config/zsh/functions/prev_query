@@ -10,5 +10,5 @@ if [[ "$#" -eq "0" ]]; then
     echo "Examples"
     echo "query_preview 'jq {q} {}'"
 else
-    fzf --phony --print-query --preview "$@"
+    fzf --phony --print-query --preview-window=up:99% --preview "$@"
 fi
