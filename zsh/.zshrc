@@ -334,8 +334,7 @@ alias prev="fd \
 # thefuck
 # https://github.com/nvbn/thefuck
 # ``brew install thefuck``
-eval $(thefuck --alias)
-alias fu=fuck
+eval $(thefuck --alias fu)
 
 # ripgrep
 # https://github.com/BurntSushi/ripgrep
