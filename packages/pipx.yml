@@ -37,6 +37,7 @@ install:
   - pytest
   - Pygments
   - ranger-fm
+  - remarshal
   - reorder-python-imports
   - shell-functools
   - termtosvg
