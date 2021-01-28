@@ -41,6 +41,7 @@ install:
   - reorder-python-imports
   - shell-functools
   - termtosvg
+  - thefuck
   - tqdm
   - trash-cli
   - tox
