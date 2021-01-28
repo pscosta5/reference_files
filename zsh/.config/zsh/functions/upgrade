@@ -73,7 +73,7 @@ else
     _upgrade_announcement "pipx" "🆇"
     # shellcheck disable=SC2168
     local pipx
-    pipx="$(_status pipx upgrade-all)"
+    pipx="$(_status pipx upgrade-all --include-injected)"
     _upgrade_announcement "poetry" "📝"
     # shellcheck disable=SC2168
     local poetry
