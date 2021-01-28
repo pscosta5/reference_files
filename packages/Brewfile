@@ -133,6 +133,7 @@ cask "popcorn-time"
 cask "rectangle"
 cask "steam"
 # cask "transmission"
+cask "unclack"
 cask "visual-studio-code"
 cask "windscribe"
 mas "Amphetamine", id: 937984704
