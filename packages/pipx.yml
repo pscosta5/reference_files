@@ -27,6 +27,7 @@ install:
   - magic-wormhole
   - mypy
   - gallery-dl
+  - interrogate
   - isort[colors]
   - nbconvert
   - nox
@@ -50,7 +51,14 @@ install:
   - yq
 # Run `pipx inject PACKAGE DEPENDENCIES`
 inject:
-  flake8: flake8-bugbear
+  flake8: >
+    darglint
+    flake8-bandit
+    flake8-bugbear
+    flake8-bugbear
+    flake8-docstrings
+    flake8-rst-docstrings
+    pep8-naming
   # Add jupyterlab-flake8 when supported
   jupyterlab: >
     aquirdturtle_collapsible_headings
