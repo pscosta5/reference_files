@@ -27,6 +27,7 @@ install:
   - magic-wormhole
   - mypy
   - gallery-dl
+  - imgp
   - interrogate
   - isort[colors]
   - nbconvert
