@@ -21,53 +21,46 @@ def detect_notebook() -> bool:
     finally:
         return is_notebook
 
+
 if not detect_notebook():
     try:
-        # IPython will try to run all startup files in the default profile in
-        # addition to files in PYTHONSTARTUP
-        # This will cause it to run only once
-        RICH_RENDERING
-    except NameError:
-        try:
-            from rich import inspect
-            from rich.console import Console
-            import rich.console
-            import rich.pretty
-            import rich.syntax
-            import rich.traceback
+        from rich import inspect
+        from rich.console import Console
+        import rich.console
+        import rich.pretty
+        import rich.syntax
+        import rich.traceback
 
-            import textwrap
-        except ImportError:
-            pass
-        else:
+        import textwrap
+    except ImportError:
+        pass
+    else:
 
-            def print_code(statement: str, console: Console) -> None:
-                """Print the import statement when the REPL is run."""
-                console.print(
-                    rich.syntax.Syntax(
-                        statement, lexer_name="python", theme="ansi_dark"
-                    )
+        def print_code(statement: str, console: Console) -> None:
+            """Print the import statement when the REPL is run."""
+            console.print(
+                rich.syntax.Syntax(
+                    statement, lexer_name="python", theme="ansi_dark"
                 )
-
-            console = rich.console.Console()
-            imports = textwrap.dedent(
-                """
-            from rich import inspect
-            from rich.console import Console
-            import rich.console
-            import rich.pretty
-            import rich.syntax
-            import rich.traceback
-
-            import textwrap
-
-            rich.pretty.install()
-            rich.traceback.install(theme="ansi_dark")
-            """
             )
-            print_code(imports, console=console)
 
-            rich.pretty.install()
-            rich.traceback.install(theme="ansi_dark")
-    finally:
-        RICH_RENDERING = True
+        console = rich.console.Console()
+        imports = textwrap.dedent(
+        """
+        from rich import inspect
+        from rich.console import Console
+        import rich.console
+        import rich.pretty
+        import rich.syntax
+        import rich.traceback
+
+        import textwrap
+
+        rich.pretty.install()
+        rich.traceback.install(theme="ansi_dark", show_locals=True)
+        """
+        )
+        print_code(imports, console=console)
+
+        rich.pretty.install()
+        rich.traceback.install(theme="ansi_dark", show_locals=True)
