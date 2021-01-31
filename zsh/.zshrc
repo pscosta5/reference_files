@@ -330,11 +330,6 @@ alias prev="fd \
 # ``brew install thefuck``
 eval $(thefuck --alias fu)
 
-# ripgrep
-# https://github.com/BurntSushi/ripgrep
-# ``brew install rg```
-export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
-
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
 autoload -Uz $HOME/.config/zsh/functions/**/*
