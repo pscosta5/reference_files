@@ -375,8 +375,5 @@ autoload -Uz compinit
 zstyle ':completion:*' menu select
 fpath+=~/.zfunc
 
-# dephell autocompletion
-# pipx insall 'dephell[full]'
-source "/Users/pawlu/.local/share/dephell/_dephell_zsh_autocomplete"
 
 export PYTHONSTARTUP=$HOME/.ipython/profile_default/startup/rich_rendering.py
