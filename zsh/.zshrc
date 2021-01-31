@@ -340,9 +340,6 @@ export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
 # ``brew install zioxide``
 eval "$(zoxide init zsh)"
 
-# Navi
-source <(echo "$(navi widget zsh)")
-
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
 autoload -Uz $HOME/.config/zsh/functions/**/*
