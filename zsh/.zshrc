@@ -198,11 +198,6 @@ eval "$(starship init zsh)"
 # Cargo
 PATH="$HOME/.cargo/bin:$PATH"
 
-# fd
-# https://github.com/sharkdp/fd
-# ``brew install fd``
-alias fd="fd --hidden --follow"
-
 # Pipx
 # https://github.com/pipxproject/pipx
 # ``brew install pipx``
@@ -274,15 +269,6 @@ PKG_CONFIG_PATH="/usr/local/opt/sqlite/lib/pkgconfig $PKG_CONFIG_PATH"
 export LDFLAGS="-L/usr/local/opt/zlib/lib $LDFLAGS"
 export CPPFLAGS="-I/usr/local/opt/zlib/include $CPPFLAGS"
 export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig $PKG_CONFIG_PATH"
-
-# bat integration
-alias prev="fd \
-           --type file \
-           --follow \
-           --hidden \
-           --exclude .git | \
-            fzf \
-            --preview 'bat --style=numbers --color=always {} | head -500'"
 
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
