@@ -335,11 +335,6 @@ eval $(thefuck --alias fu)
 # ``brew install rg```
 export RIPGREP_CONFIG_PATH="$HOME/.config/.ripgreprc"
 
-# zioxide
-# https://github.com/ajeetdsouza/zoxide
-# ``brew install zioxide``
-eval "$(zoxide init zsh)"
-
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
 autoload -Uz $HOME/.config/zsh/functions/**/*
