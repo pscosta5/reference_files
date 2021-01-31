@@ -325,11 +325,6 @@ alias prev="fd \
             fzf \
             --preview 'bat --style=numbers --color=always {} | head -500'"
 
-# thefuck
-# https://github.com/nvbn/thefuck
-# ``brew install thefuck``
-eval $(thefuck --alias fu)
-
 # Functions
 fpath+=("$HOME/.config/zsh/functions")
 autoload -Uz $HOME/.config/zsh/functions/**/*
