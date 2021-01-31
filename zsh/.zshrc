@@ -369,11 +369,5 @@ bindkey "^X^_" redo
 # ``curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash``
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
-# Typer CLI
-# https://github.com/tiangolo/typer-cli
-autoload -Uz compinit
-zstyle ':completion:*' menu select
-fpath+=~/.zfunc
-
 
 export PYTHONSTARTUP=$HOME/.ipython/profile_default/startup/rich_rendering.py
