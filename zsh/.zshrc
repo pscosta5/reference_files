@@ -264,3 +264,4 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 
 export PYTHONSTARTUP=$HOME/.ipython/profile_default/startup/rich_rendering.py
+eval $(pip completion --zsh)
