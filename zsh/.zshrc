@@ -77,8 +77,8 @@ COMPLETION_WAITING_DOTS="true"
 # Poetry
 # https://github.com/python-poetry/poetry
 # ``curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python``
-# ``mkdir $ZSH/plugins/poetry``
-# ``poetry completions zsh > $ZSH/plugins/poetry/_poetry``
+# ``mkdir $ZSH_CUSTOM/plugins/poetry``
+# ``poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry``
 
 # zsh-autosuggestion
 # https://github.com/zsh-users/zsh-autosuggestions
