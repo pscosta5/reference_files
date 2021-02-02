@@ -208,12 +208,6 @@ autoload -U bashcompinit
 bashcompinit
 eval "$(register-python-argcomplete pipx)"
 
-# Nox
-# https://github.com/theacodes/nox
-# ``pipx install nox``
-# Like pipx, needs bashcompinit enabled
-eval "$(register-python-argcomplete nox)"
-
 # Brew build packages for Python
 # openssl
 # ``brew install openssl```
