@@ -11,6 +11,7 @@ Apps that you can't get from a package manager (yet!).
 - [Google Drive](https://drive.google.com/)
 - [Google Photos](https://photos.google.com/)
 - [Messages by Google](https://messages.google.com/)
+- [YouTube](https://www.youtube.com/)
 - [YouTube Music](https://music.youtube.com/)
 
 ## DMG
