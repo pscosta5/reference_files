@@ -196,17 +196,11 @@ PATH="$HOME/.poetry/bin:$PATH"
 eval "$(starship init zsh)"
 
 # Cargo
-PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
-# Pipx
-# https://github.com/pipxproject/pipx
-# ``brew install pipx``
-# ``pipx ensurepath``
-# ``pipx completions``
-export PATH="$PATH:/Users/paulo/.local/bin"
+# Enable completions for nox and pipx
 autoload -U bashcompinit
 bashcompinit
-eval "$(register-python-argcomplete pipx)"
 
 # Brew build packages for Python
 # openssl
