@@ -160,10 +160,6 @@ source $ZSH/oh-my-zsh.sh
 alias root='cd "$(git rev-parse --show-toplevel)"'
 # Set ipdb as debugger on pytest
 alias ipytest='pytest --pdbcls=IPython.terminal.debugger:TerminalPdb'
-# Uninstall all pip installed packages in current environment
-alias pip_uninstall_all="python -m pip freeze --local | xargs pip uninstall --yes"
-# Upgrade all pip packages in an environment
-alias pip_upgrade_all="python -m pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 python -m pip install --upgrade"
 # Make a new data science project
 alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-science"
 # Remove formatting from text in 
@@ -240,4 +236,3 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 
 export PYTHONSTARTUP=$HOME/.ipython/profile_default/startup/rich_rendering.py
-eval $(pip completion --zsh)
