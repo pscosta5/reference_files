@@ -183,11 +183,6 @@ alias pspg="pspg -s 16 --vertical-cursor --bold-labels --bold-cursor --force-uni
 # https://code.visualstudio.com/
 PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# Poetry
-# https://python-poetry.org/docs/
-# ``curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python``
-PATH="$HOME/.poetry/bin:$PATH"
-
 # Starship theme
 eval "$(starship init zsh)"
 
