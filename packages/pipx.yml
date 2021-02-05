@@ -36,6 +36,7 @@ install:
   - pre-commit
   - pypyp
   - pytest
+  - pyupgrade
   - Pygments
   - ranger-fm
   - remarshal
