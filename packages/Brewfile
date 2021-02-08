@@ -101,6 +101,7 @@ brew "wvanlint/twf/twf", args: ["HEAD"]
 cask "alfred"
 cask "appcleaner"
 cask "basictex"
+cask "calibre"
 cask "cheatsheet"
 cask "chromedriver"
 cask "dash"
