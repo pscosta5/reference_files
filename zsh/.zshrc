@@ -208,5 +208,3 @@ autoload -Uz $HOME/.config/zsh/functions/**/*
 bindkey "^X\\x7f" backward-kill-line
 # 0x18 0x1f are redo
 bindkey "^X^_" redo
-
-export PYTHONSTARTUP=$HOME/.ipython/profile_default/startup/rich_rendering.py
