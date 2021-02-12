@@ -168,8 +168,6 @@ alias unformat="pbpaste | pbcopy"
 alias reload="exec -l zsh"
 # List Jupyter kernels
 alias list_kernels="jupyter kernelspec list"
-# Default to color for ncdu
-alias ncdu="ncdu --color=dark --follow-firmlinks"
 
 # Add Visual Studio Code (code)
 # https://code.visualstudio.com/
