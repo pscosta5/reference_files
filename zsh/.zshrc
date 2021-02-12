@@ -181,10 +181,7 @@ alias pspg="pspg -s 16 --vertical-cursor --bold-labels --bold-cursor --force-uni
 
 # Add Visual Studio Code (code)
 # https://code.visualstudio.com/
-PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
-# Cargo
-export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
 # Enable completions for nox and pipx
 autoload -U bashcompinit
