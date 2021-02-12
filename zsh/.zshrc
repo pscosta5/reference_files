@@ -163,7 +163,7 @@ alias unformat="pbpaste | pbcopy"
 # Reload zsh, as if starting a new shell
 alias reload="exec -l zsh"
 
-# Enable completions for nox and pipx
+# Enable completions for packages taht use argcomplete (nox, pipx, pytest)
 autoload -U bashcompinit
 bashcompinit
 
