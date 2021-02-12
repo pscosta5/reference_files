@@ -184,9 +184,6 @@ alias weather="curl wttr.in/Turlock"
 # https://code.visualstudio.com/
 PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
-# Starship theme
-eval "$(starship init zsh)"
-
 # Cargo
 export PATH="$HOME/.cargo/bin:$PATH"
 
