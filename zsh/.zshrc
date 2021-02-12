@@ -178,6 +178,7 @@ alias twf="twf \
 alias ncdu="ncdu --color=dark --follow-firmlinks"
 # Set pspg theme to simple
 alias pspg="pspg -s 16 --vertical-cursor --bold-labels --bold-cursor --force-uniborder"
+alias weather="curl wttr.in/Turlock"
 
 # Add Visual Studio Code (code)
 # https://code.visualstudio.com/
