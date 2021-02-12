@@ -160,8 +160,6 @@ source $ZSH/oh-my-zsh.sh
 alias root='cd "$(git rev-parse --show-toplevel)"'
 # Set ipdb as debugger on pytest
 alias ipytest='pytest --pdbcls=IPython.terminal.debugger:TerminalPdb'
-# Make a new data science project
-alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-science"
 # Remove formatting from text in 
 alias unformat="pbpaste | pbcopy"
 # Reload zsh, as if starting a new shell
