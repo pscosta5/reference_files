@@ -168,12 +168,6 @@ alias unformat="pbpaste | pbcopy"
 alias reload="exec -l zsh"
 # List Jupyter kernels
 alias list_kernels="jupyter kernelspec list"
-# Interactive tree view
-alias twf="twf \
-           --bind=\"left::tree:parent;tree:close,shift-up::preview:up,up::tree:prev,down::tree:next,shift-down::preview:down,right::tree:open;tree:next\" \
-           --previewCmd=\"bat --color=always {}\" \
-           --locateCmd='fzf --preview\"bat --style=numbers --color=always {} | head -500\"' \
-           --height=0.5"
 # Default to color for ncdu
 alias ncdu="ncdu --color=dark --follow-firmlinks"
 # Set pspg theme to simple
