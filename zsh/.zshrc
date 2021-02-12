@@ -169,10 +169,6 @@ alias reload="exec -l zsh"
 # List Jupyter kernels
 alias list_kernels="jupyter kernelspec list"
 
-# Add Visual Studio Code (code)
-# https://code.visualstudio.com/
-export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-
 # Enable completions for nox and pipx
 autoload -U bashcompinit
 bashcompinit
