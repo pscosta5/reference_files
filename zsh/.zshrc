@@ -170,8 +170,6 @@ alias reload="exec -l zsh"
 alias list_kernels="jupyter kernelspec list"
 # Default to color for ncdu
 alias ncdu="ncdu --color=dark --follow-firmlinks"
-# Set pspg theme to simple
-alias pspg="pspg -s 16 --vertical-cursor --bold-labels --bold-cursor --force-uniborder"
 
 # Add Visual Studio Code (code)
 # https://code.visualstudio.com/
