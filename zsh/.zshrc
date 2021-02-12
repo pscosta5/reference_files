@@ -166,8 +166,6 @@ alias new_ds="cookiecutter https://github.com/drivendata/cookiecutter-data-scien
 alias unformat="pbpaste | pbcopy"
 # Reload zsh, as if starting a new shell
 alias reload="exec -l zsh"
-# List Jupyter kernels
-alias list_kernels="jupyter kernelspec list"
 
 # Enable completions for nox and pipx
 autoload -U bashcompinit
