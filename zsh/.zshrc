@@ -161,7 +161,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Move to project root
 alias root='cd "$(git rev-parse --show-toplevel)"'
-# Remove formatting from text in 
+# Remove formatting from text
 alias unformat="pbpaste | pbcopy"
 # Reload zsh, as if starting a new shell
 alias reload="exec -l zsh"
