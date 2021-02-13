@@ -112,9 +112,12 @@ plugins=(
     zsh-edit
 )
 
+# Functions
+fpath+=("$HOME/.config/zsh/functions")
+autoload -Uz $HOME/.config/zsh/functions/*
 # Completions
-# Must come before compinit line
-fpath+=~/.config/zsh/completions
+fpath+=("$HOME/.config/zsh/completions")
+autoload -Uz $HOME/.config/zsh/completions/*
 
 # fast-syntax-highlighting
 # https://github.com/zdharma/fast-syntax-highlighting
@@ -166,10 +169,6 @@ alias reload="exec -l zsh"
 # Enable completions for packages taht use argcomplete (nox, pipx, pytest)
 autoload -U bashcompinit
 bashcompinit
-
-# Functions
-fpath+=("$HOME/.config/zsh/functions")
-autoload -Uz $HOME/.config/zsh/functions/**/*
 
 # Bind keys
 # 0x18 and 0x7f delete everything to the left of the cursor
