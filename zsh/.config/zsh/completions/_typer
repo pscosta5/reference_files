@@ -3,5 +3,4 @@
 # pipx install typer-cli
 
 # Completion
-autoload -Uz compinit
-zstyle ':completion:*' menu select
+eval "$(typer --show-completion)"
