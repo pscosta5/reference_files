@@ -35,6 +35,7 @@ install:
   - nbconvert
   - nox
   - pandashells[full]
+  - pgcli
   - pre-commit
   - pypyp
   - pytest
