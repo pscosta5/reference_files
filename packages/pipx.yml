@@ -10,6 +10,7 @@ install:
   - cookiecutter
   - cupper
   - csvkit
+  - csvs-to-sqlite
   - datasette
   - deemix
   - dvc
