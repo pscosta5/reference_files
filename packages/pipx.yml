@@ -42,6 +42,7 @@ install:
   - remarshal
   - reorder-python-imports
   - shell-functools
+  - sqlite-utils
   - termtosvg
   - thefuck
   - tqdm
