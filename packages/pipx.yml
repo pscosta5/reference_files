@@ -25,6 +25,7 @@ install:
   - jupyterlab
   - j2cli[yaml]
   - kaggle
+  - litecli
   - magic-wormhole
   - mypy
   - gallery-dl
