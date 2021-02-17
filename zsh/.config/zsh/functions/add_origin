@@ -1,0 +1,10 @@
+# Set repo origin to devserver
+if [[ -z "$1" ]]; then
+    echo 'Usage: add_origin [REPO_NAME]'
+    return 0
+else
+    local repo_name
+    repo_name="$1"
+    git remote add origin "${HOME}/local/repos/${repo_name}"
+    git fetch -a
+fi
