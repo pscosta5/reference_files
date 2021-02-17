@@ -1,0 +1,25 @@
+# dnf
+# sudo dnf copr enable [REPO]
+copr:
+  - "atim/zoxide"
+
+# sudo dnf install
+install:
+  - aspell-en
+  - bzip2
+  - bzip2-devel
+  - gcc
+  - google-roboto-fonts
+  - libffi-devel
+  - lzma
+  - openssl-devel
+  - pspg
+  - readline-devel
+  - sqlite
+  - sqlite-devel
+  - stow
+  - tk-devel
+  - xclip
+  - xz-devel
+  - zlib-devel
+  - zoxide
