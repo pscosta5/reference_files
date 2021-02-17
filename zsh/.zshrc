@@ -126,6 +126,7 @@ autoload -Uz $HOME/.config/zsh/completions/*
 
 # zsh-autocomplete
 # ``git clone https://github.com/marlonrichert/zsh-autocomplete.git ~/.oh-my-zsh/custom/plugins/zsh-autocomplete``
+# This should run berfore oh-my-zsh.sh is sourced
 # Have zsh-automplete fill in partial completions
 zstyle ':autocomplete:tab:*' insert-unambiguous yes
 # Have zsh-autocomplete play nice with fzf
@@ -166,7 +167,7 @@ alias unformat="pbpaste | pbcopy"
 # Reload zsh, as if starting a new shell
 alias reload="exec -l zsh"
 
-# Enable completions for packages taht use argcomplete (nox, pipx, pytest)
+# Enable completions for packages that use argcomplete (nox, pipx, pytest)
 autoload -U bashcompinit
 bashcompinit
 
