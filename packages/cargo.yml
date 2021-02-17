@@ -2,5 +2,11 @@
 
 # cargo install PACKAGE
 install:
+  - "--locked bat"
+  - du-dust
+  - fd-find
+  - lsd
   - py-spy
+  - tealdeer
   - viu
+  - vivid
