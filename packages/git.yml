@@ -16,3 +16,9 @@ fast-syntax-highlighting:
 ranger_devicons:
   repo: "https://github.com/alexanderjeurissen/ranger_devicons"
   directory: "/.config/ranger/plugins/ranger_devicons"
+fzf:
+  repo: "--depth 1 https://github.com/junegunn/fzf.git"
+  directory: "/.fzf"
+pyenv:
+  repo: "https://github.com/pyenv/pyenv.git"
+  directory: "/.pyenv"
