@@ -1,0 +1,4 @@
+# go packages
+# go get -u [PACKAGE]
+get:
+  - "github.com/dinedal/textql/..."
