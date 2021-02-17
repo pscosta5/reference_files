@@ -176,3 +176,12 @@ bashcompinit
 bindkey "^X\\x7f" backward-kill-line
 # 0x18 0x1f are redo
 bindkey "^X^_" redo
+
+# If not a tmux session, start one
+# Do not start a tmux session if a terminal is started by vscode
+if [[ -z "$TMUX" ]] && it2check && [[ -z "$TERM_PROGRAM" ]] && { [[ -n "$SSH_CLIENT" ]] || [[ -n "$SSH_TTY" ]]; } ; then
+  tmux -CC
+fi
+
+# Add go packages to path
+export PATH="$PATH:/home/pawlu/go/bin"
