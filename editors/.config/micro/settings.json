@@ -2,7 +2,7 @@
     "autosave": 1,
     "autosu": true,
     "colorcolumn": 80,
-    "colorscheme": "material-tc",
+    "colorscheme": "material",
     "diffgutter": true,
     "ft:html": {
         "tabsize": 2
