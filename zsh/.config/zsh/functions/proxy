@@ -1,0 +1,10 @@
+# Toggle proxy
+if [[ -z "$http_proxy" ]]; then
+    export http_proxy="$FB_PROXY"
+    export https_proxy="$FB_PROXY"
+    echo '🌐 Proxy set'
+else
+    export http_proxy=
+    export https_proxy=
+    echo '🛡 Proxy unset'
+fi
