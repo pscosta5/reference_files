@@ -1,0 +1,10 @@
+# Download files from devserver
+if [[ -z "$1" ]]; then
+    echo 'Usage: download [--all] [FILE]'
+elif [[ "$1" = "-a" ]] || [[ "$1" = "--all" ]]; then
+    scp -r "${DEV}:/home/${FB_USERNAME}/temp/*" ~/Downloads/
+else
+    local file
+    file="$1"
+    scp "${DEV}:/home/${FB_USERNAME}/temp/${file}" ~/Downloads/"${file}"
+fi

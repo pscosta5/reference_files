@@ -1,0 +1,38 @@
+# Manage Cisco VPN connection
+local cisco='/opt/cisco/anyconnect/bin/vpn'
+usage() {
+    # Print out the help statement
+    local bold=$(tput bold)
+    echo "${bold}USAGE"
+    echo '  vpn <command>'
+
+    echo "\n${bold}COMMANDS"
+    echo '  connect:\t\tConnect to VPN'
+    echo '  disconnect:\t\tDisconnect from VPN'
+    echo '  state:\t\tReturn connection state'
+}
+if [[ -z "$1" ]]; then
+    usage
+else
+    case "$1" in
+    'connect')
+        if [[ -z "$2" ]]; then
+            echo '🔑 Missing YubiKey as second argument'
+        else
+            printf "$2" | ${cisco} -s connect "$VPN_HOST"
+        fi
+        ;;
+    'disconnect')
+        $cisco disconnect
+        ;;
+    'state')
+        $cisco state
+        ;;
+    '--help' | '-h')
+        usage
+        ;;
+    *)
+        echo 'Unkown argument'
+        ;;
+    esac
+fi

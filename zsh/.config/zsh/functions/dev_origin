@@ -1,0 +1,10 @@
+# Create remote repo in devserver and assign to origin
+if [[ -z "$1" ]]; then
+    echo 'Usage: dev_origin [REPO_NAME]'
+    return 0
+else
+    local repo_name
+    repo_name="$1"
+    make_origin $repo_name
+    add_origin $repo_name
+fi

@@ -1,0 +1,9 @@
+# Open remotely hosted notebook
+open http://localhost:8000/lab
+if [[ "$1" = "-s" ]]; then
+    # ssh version
+    ssh -N -L 8000:localhost:8888 $DEV
+elif [[ "$1" = "-e" ]] || [[ -z "$1" ]]; then
+    # eternal terminal version    
+    et -N $DEV:8080 --tunnel='8000:8888'
+fi

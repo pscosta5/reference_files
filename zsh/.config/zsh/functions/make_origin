@@ -1,0 +1,17 @@
+# Create origin in devserver
+if [[ -z "$1" ]]; then
+    echo 'Usage: add_origin [REPO_NAME]'
+    return 0
+else
+    local repo_name
+    repo_name="$1"
+    local directory
+    directory="/home/${FB_USERNAME}/local/repos/${repo_name}"
+    ssh dev bash -c "'
+    mkdir $directory
+    cd $directory
+    git init --bare --shared=group
+    sudo chgrp -R engineers $directory
+    sudo chmod -R g+rw $directory
+    '"
+fi
