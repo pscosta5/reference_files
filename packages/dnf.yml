@@ -1,4 +1,8 @@
 # dnf
+# sudo dnf config-manager --add-repo [REPO]
+repo:
+  - "https://cli.github.com/packages/rpm/gh-cli.repo"
+
 # sudo dnf copr enable [REPO]
 copr:
   - "atim/zoxide"
