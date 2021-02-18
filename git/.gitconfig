@@ -2,8 +2,6 @@
 ; https://github.com/zyedidia/micro
 ; https://github.com/dandavison/delta
 ; Place in ~/.gitconfig
-[credential]
-	helper = osxkeychain
 [user]
 	name = Paulo S. Costa
 	email = pauloscosta5@gmail.com
