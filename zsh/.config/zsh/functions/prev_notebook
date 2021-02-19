@@ -12,5 +12,5 @@ elif [[ "$#" -gt "2" ]]; then
 else
     # shellcheck disable=SC2168
     local file="$1"
-    glow --pager <(jupyter-nbconvert --stdout --to markdown "${file}" 2>/dev/null)
+    glow <(jupyter-nbconvert --stdout --to markdown "${file}" 2>/dev/null)
 fi
