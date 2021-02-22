@@ -3,6 +3,7 @@
 # cargo install PACKAGE
 install:
   - "--locked bat"
+  - broot
   - du-dust
   - fd-find
   - lsd
