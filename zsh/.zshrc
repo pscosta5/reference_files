@@ -96,12 +96,10 @@ COMPLETION_WAITING_DOTS="true"
 # ``brew install pyenv-virtualenv
 
 plugins=(
-    brew
     docker
     docker-compose
     fast-syntax-highlighting
     git
-    osx
     pip
     poetry
     pyenv
