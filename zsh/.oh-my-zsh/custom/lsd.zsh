@@ -18,5 +18,5 @@ alias td="
     --ignore-glob=.pytype \
     --ignore-glob=dist \
     --ignore-glob=_build \
-    --ignore-glob=__pycache__
+    --ignore-glob=__pycache__ \
 "
