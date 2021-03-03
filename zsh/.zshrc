@@ -95,6 +95,10 @@ COMPLETION_WAITING_DOTS="true"
 # ``brew install openssl readline sqlite3 zlib
 # ``brew install pyenv-virtualenv
 
+# Do this before pyenv plugin to supersede Facebook pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+
 plugins=(
     docker
     docker-compose
