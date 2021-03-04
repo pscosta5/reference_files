@@ -1,6 +1,7 @@
 {
     "autosave": 1,
     "autosu": true,
+    "clipboard": "terminal",
     "colorcolumn": 80,
     "colorscheme": "material",
     "diffgutter": true,
