@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>ClosingTmuxTabKillsTmuxWindows</key>
 	<true/>
 	<key>ClosingTmuxTabKillsTmuxWindows_selection</key>
@@ -2405,7 +2407,8 @@
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
-					<string>0x1b 0x66</string>
+					<string>
+0x1b 0x66</string>
 				</dict>
 				<key>0xf703-0x2a0000</key>
 				<dict>
@@ -3423,7 +3426,8 @@
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
-					<string>0x1b 0x66</string>
+					<string>
+0x1b 0x66</string>
 				</dict>
 				<key>0xf703-0x2a0000</key>
 				<dict>
