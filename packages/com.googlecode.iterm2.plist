@@ -709,26 +709,12 @@
 			<key>Text</key>
 			<string></string>
 		</dict>
-		<key>0xf702-0x220000</key>
-		<dict>
-			<key>Action</key>
-			<integer>47</integer>
-			<key>Text</key>
-			<string>0</string>
-		</dict>
 		<key>0xf702-0x280000</key>
 		<dict>
 			<key>Action</key>
 			<integer>11</integer>
 			<key>Text</key>
 			<string>0x1b 0x62</string>
-		</dict>
-		<key>0xf702-0x2a0000</key>
-		<dict>
-			<key>Action</key>
-			<integer>47</integer>
-			<key>Text</key>
-			<string>1</string>
 		</dict>
 		<key>0xf702-0x300000</key>
 		<dict>
@@ -744,26 +730,12 @@
 			<key>Text</key>
 			<string>2</string>
 		</dict>
-		<key>0xf703-0x220000</key>
-		<dict>
-			<key>Action</key>
-			<integer>45</integer>
-			<key>Text</key>
-			<string>0</string>
-		</dict>
 		<key>0xf703-0x280000</key>
 		<dict>
 			<key>Action</key>
 			<integer>11</integer>
 			<key>Text</key>
 			<string>0x1b 0x66</string>
-		</dict>
-		<key>0xf703-0x2a0000</key>
-		<dict>
-			<key>Action</key>
-			<integer>46</integer>
-			<key>Text</key>
-			<string>1</string>
 		</dict>
 		<key>0xf703-0x300000</key>
 		<dict>
@@ -1345,13 +1317,6 @@
 					<key>Text</key>
 					<string>0x1b 0x1b 0x5b 0x42</string>
 				</dict>
-				<key>0xf702-0x220000</key>
-				<dict>
-					<key>Action</key>
-					<integer>47</integer>
-					<key>Text</key>
-					<string>0</string>
-				</dict>
 				<key>0xf702-0x240000</key>
 				<dict>
 					<key>Action</key>
@@ -1373,13 +1338,6 @@
 					<key>Text</key>
 					<string>0x1b 0x62</string>
 				</dict>
-				<key>0xf702-0x2a0000</key>
-				<dict>
-					<key>Action</key>
-					<integer>47</integer>
-					<key>Text</key>
-					<string>1</string>
-				</dict>
 				<key>0xf702-0x300000</key>
 				<dict>
 					<key>Action</key>
@@ -1393,13 +1351,6 @@
 					<integer>47</integer>
 					<key>Text</key>
 					<string>2</string>
-				</dict>
-				<key>0xf703-0x220000</key>
-				<dict>
-					<key>Action</key>
-					<integer>46</integer>
-					<key>Text</key>
-					<string>0</string>
 				</dict>
 				<key>0xf703-0x240000</key>
 				<dict>
@@ -1421,13 +1372,6 @@
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1b 0x66</string>
-				</dict>
-				<key>0xf703-0x2a0000</key>
-				<dict>
-					<key>Action</key>
-					<integer>46</integer>
-					<key>Text</key>
-					<string>1</string>
 				</dict>
 				<key>0xf703-0x300000</key>
 				<dict>
@@ -2165,6 +2109,8 @@
 			<string>17E47B31-0608-4488-B483-CD8C88F6BCF5</string>
 			<key>Has Hotkey</key>
 			<true/>
+			<key>Hide After Opening</key>
+			<false/>
 			<key>Horizontal Spacing</key>
 			<real>1</real>
 			<key>HotKey Activated By Modifier</key>
@@ -2184,7 +2130,7 @@
 			<key>HotKey Window Animates</key>
 			<true/>
 			<key>HotKey Window AutoHides</key>
-			<true/>
+			<false/>
 			<key>HotKey Window Dock Click Action</key>
 			<integer>0</integer>
 			<key>HotKey Window Floats</key>
@@ -2332,13 +2278,6 @@
 					<key>Text</key>
 					<string>0x1b 0x1b 0x5b 0x42</string>
 				</dict>
-				<key>0xf702-0x220000</key>
-				<dict>
-					<key>Action</key>
-					<integer>47</integer>
-					<key>Text</key>
-					<string>0</string>
-				</dict>
 				<key>0xf702-0x240000</key>
 				<dict>
 					<key>Action</key>
@@ -2360,13 +2299,6 @@
 					<key>Text</key>
 					<string>0x1b 0x62</string>
 				</dict>
-				<key>0xf702-0x2a0000</key>
-				<dict>
-					<key>Action</key>
-					<integer>47</integer>
-					<key>Text</key>
-					<string>1</string>
-				</dict>
 				<key>0xf702-0x300000</key>
 				<dict>
 					<key>Action</key>
@@ -2380,13 +2312,6 @@
 					<integer>47</integer>
 					<key>Text</key>
 					<string>2</string>
-				</dict>
-				<key>0xf703-0x220000</key>
-				<dict>
-					<key>Action</key>
-					<integer>46</integer>
-					<key>Text</key>
-					<string>0</string>
 				</dict>
 				<key>0xf703-0x240000</key>
 				<dict>
@@ -2407,15 +2332,7 @@
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
-					<string>
-0x1b 0x66</string>
-				</dict>
-				<key>0xf703-0x2a0000</key>
-				<dict>
-					<key>Action</key>
-					<integer>46</integer>
-					<key>Text</key>
-					<string>1</string>
+					<string>0x1b 0x66</string>
 				</dict>
 				<key>0xf703-0x300000</key>
 				<dict>
@@ -3351,13 +3268,6 @@
 					<key>Text</key>
 					<string>0x1b 0x1b 0x5b 0x42</string>
 				</dict>
-				<key>0xf702-0x220000</key>
-				<dict>
-					<key>Action</key>
-					<integer>47</integer>
-					<key>Text</key>
-					<string>0</string>
-				</dict>
 				<key>0xf702-0x240000</key>
 				<dict>
 					<key>Action</key>
@@ -3379,13 +3289,6 @@
 					<key>Text</key>
 					<string>0x1b 0x62</string>
 				</dict>
-				<key>0xf702-0x2a0000</key>
-				<dict>
-					<key>Action</key>
-					<integer>47</integer>
-					<key>Text</key>
-					<string>1</string>
-				</dict>
 				<key>0xf702-0x300000</key>
 				<dict>
 					<key>Action</key>
@@ -3399,13 +3302,6 @@
 					<integer>47</integer>
 					<key>Text</key>
 					<string>2</string>
-				</dict>
-				<key>0xf703-0x220000</key>
-				<dict>
-					<key>Action</key>
-					<integer>46</integer>
-					<key>Text</key>
-					<string>0</string>
 				</dict>
 				<key>0xf703-0x240000</key>
 				<dict>
@@ -3426,15 +3322,7 @@
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
-					<string>
-0x1b 0x66</string>
-				</dict>
-				<key>0xf703-0x2a0000</key>
-				<dict>
-					<key>Action</key>
-					<integer>46</integer>
-					<key>Text</key>
-					<string>1</string>
+					<string>0x1b 0x66</string>
 				</dict>
 				<key>0xf703-0x300000</key>
 				<dict>
@@ -3825,6 +3713,8 @@
 			<string>/Users/pawlu</string>
 		</dict>
 	</array>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
