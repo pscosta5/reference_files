@@ -17,6 +17,7 @@ install:
   - libffi-devel
   - lzma
   - openssl-devel
+  - pandoc
   - pspg
   - readline-devel
   - sqlite
