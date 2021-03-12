@@ -47,6 +47,7 @@
   "explorer.decorations.badges": false,
   "files.associations": {
     "**/.config/mypy/config": "ini",
+    "**/.config/zsh/completions/**/*": "shellscript",
     "**/.config/zsh/functions/**/*": "shellscript",
     "**/.jupyter/lab/user-settings/**/*": "jsonc",
     ".pdbrc": "python",
