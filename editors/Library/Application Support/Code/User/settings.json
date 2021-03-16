@@ -78,6 +78,18 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.inheritEnv": true, // If issues with conda environments, turn off
   "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+  // Auto added by TODO Tree
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  // Auto added by TODO Tree
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "todo-tree.tree.showScanModeButton": false,
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue", // Set via Intellicode
   "window.zoomLevel": 0,
