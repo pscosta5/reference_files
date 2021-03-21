@@ -34,6 +34,7 @@ install:
   - isort[colors]
   - nbconvert
   - nox
+  - outrun
   - pandashells[full]
   - pgcli
   - pre-commit
