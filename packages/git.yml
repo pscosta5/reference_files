@@ -19,6 +19,11 @@ ranger_devicons:
 fzf:
   repo: "--depth 1 https://github.com/junegunn/fzf.git"
   directory: "/.fzf"
+# Might need to chmod /usr/local to install python with pyenv
+# Next time take a look at pyenv installer: https://github.com/pyenv/pyenv-installer
 pyenv:
   repo: "https://github.com/pyenv/pyenv.git"
   directory: "/.pyenv"
+pyenv-update:
+  repo: "https://github.com/pyenv/pyenv-update.git $(pyenv root)/plugins/pyenv-update"
+  directory: "/.pyenv/plugins/pyenv-update"
