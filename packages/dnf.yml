@@ -16,6 +16,7 @@ install:
   - google-roboto-fonts
   - libffi-devel
   - lzma
+  - openblas-devel
   - openssl-devel
   - pandoc
   - pspg
