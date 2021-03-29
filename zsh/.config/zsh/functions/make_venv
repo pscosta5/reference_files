@@ -12,7 +12,9 @@ if [ "$#" -gt 2 ]; then
 else
     python -m pip install --quiet --upgrade pip
     # shellcheck disable=SC2168
-    local prompt_name="${1:-.venv}"
+    local current_directory="${PWD##*/}"
+    # shellcheck disable=SC2168
+    local prompt_name="${1:-$current_directory}"
     # shellcheck disable=SC2168
     local directory="${2:-.venv}"
     if virtualenv --python="$(pyenv which python)" --prompt="${prompt_name}" "${directory}"; then
