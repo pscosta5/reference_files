@@ -33,6 +33,7 @@ install:
   - interrogate
   - isort[colors]
   - nbconvert
+  - nbstripout
   - nox
   - outrun
   - pandashells[full]
