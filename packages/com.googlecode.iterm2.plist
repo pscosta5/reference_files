@@ -1066,6 +1066,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Blink Allowed</key>
+			<true/>
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
@@ -2012,6 +2014,8 @@
 			</dict>
 			<key>Blend</key>
 			<real>0.5</real>
+			<key>Blink Allowed</key>
+			<true/>
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
@@ -3017,6 +3021,8 @@
 				<key>Red Component</key>
 				<real>1</real>
 			</dict>
+			<key>Blink Allowed</key>
+			<true/>
 			<key>Blinking Cursor</key>
 			<true/>
 			<key>Blur</key>
