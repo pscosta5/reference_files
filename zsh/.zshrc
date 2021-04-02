@@ -187,3 +187,5 @@ fi
 
 # Add go packages to path
 export PATH="$PATH:/home/pawlu/go/bin"
+
+export PAGER='less -r'
