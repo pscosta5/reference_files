@@ -55,6 +55,7 @@ install:
   - typer-cli
   - visidata
   - virtualenv
+  - vizex
   - xonsh[full]
   - youtube_dl
   - yq
