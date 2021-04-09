@@ -9,7 +9,7 @@
 			<key>Ack</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-07T15:55:16Z</date>
+				<date>2021-03-01T19:01:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -30,7 +30,7 @@
 			<key>Bash_Shortcuts</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-07T15:55:13Z</date>
+				<date>2021-03-01T19:01:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -48,7 +48,7 @@
 			<key>Bash_Test_Operators</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-07T15:55:14Z</date>
+				<date>2021-03-01T19:01:39Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -66,7 +66,7 @@
 			<key>Conda</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-04T00:19:20Z</date>
+				<date>2021-03-01T19:01:40Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -82,7 +82,7 @@
 			<key>Git</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-24T15:17:12Z</date>
+				<date>2021-03-01T19:01:38Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -103,7 +103,7 @@
 			<key>Oh-My-Zsh_Git</key>
 			<dict>
 				<key>date</key>
-				<date>2021-02-10T22:21:17Z</date>
+				<date>2021-03-01T19:01:38Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -126,7 +126,7 @@
 			<key>Python_Debugger</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-06T16:32:06Z</date>
+				<date>2021-03-01T19:01:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -142,7 +142,7 @@
 			<key>Python_Exceptions</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-06T16:32:06Z</date>
+				<date>2021-03-01T19:01:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -158,7 +158,7 @@
 			<key>Python_Format_Strings</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-06T16:32:07Z</date>
+				<date>2021-03-01T19:01:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -174,7 +174,7 @@
 			<key>Python_unittest_Assertions</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-06T16:32:08Z</date>
+				<date>2021-03-01T19:01:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -190,7 +190,7 @@
 			<key>iPython_Notebook</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-06T16:32:08Z</date>
+				<date>2021-03-01T19:01:37Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -206,7 +206,7 @@
 			<key>tmux</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-07T15:55:10Z</date>
+				<date>2021-03-01T19:01:38Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -449,7 +449,7 @@
 			<key>Scikit</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-06T16:33:08Z</date>
+				<date>2021-02-19T19:49:03Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -608,7 +608,7 @@
 			<key>Zsh</key>
 			<dict>
 				<key>date</key>
-				<date>2020-07-07T15:55:40Z</date>
+				<date>2021-04-06T18:22:13Z</date>
 				<key>entry</key>
 				<dict>
 					<key>aliases</key>
@@ -719,7 +719,7 @@
 			<key>jq</key>
 			<dict>
 				<key>date</key>
-				<date>2021-01-28T16:28:06Z</date>
+				<date>2021-03-16T22:35:44Z</date>
 				<key>entry</key>
 				<dict>
 					<key>authorLinkHref</key>
