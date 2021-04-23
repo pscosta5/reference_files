@@ -1,6 +1,5 @@
 # Brew, cask, and Mac App Store packages
 # Install with `brew bundle install`
-tap "cjbassi/ytop"
 tap "github/gh"
 tap "homebrew/bundle"
 tap "homebrew/cask"
