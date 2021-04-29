@@ -3768,6 +3768,8 @@
 	<integer>20</integer>
 	<key>VisualIndicatorForEsc</key>
 	<false/>
+	<key>WorkAroundBigSurBug</key>
+	<true/>
 	<key>findMode_iTerm</key>
 	<integer>0</integer>
 </dict>
