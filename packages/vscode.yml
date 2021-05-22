@@ -37,7 +37,6 @@
 - jnoortheen.xonsh
 - johnpapa.vscode-peacock
 - karigari.chat
-- kenhowardpdx.vscode-gist
 - lextudio.restructuredtext
 - MarkLarah.pre-commit-vscode
 - mechatroner.rainbow-csv
@@ -76,4 +75,5 @@
 - timonwong.shellcheck
 - Tyriar.sort-lines
 - VisualStudioExptTeam.vscodeintellicode
+- vsls-contrib.gistfs
 - yzhang.markdown-all-in-one
