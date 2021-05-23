@@ -18,12 +18,12 @@
     "editor.tabSize": 2,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  // "[python]": {
-  //   "editor.codeActionsOnSave": {
-  //     "source.organizeImports": false,
-  //     "source.organizeImports.reorder-python-imports": true
-  //   }
-  // },
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": false,
+      "source.organizeImports.reorder-python-imports": true
+    }
+  },
   "[restructuredtext]": { "editor.tabSize": 3 },
   "[sql]": {
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter",
