@@ -5,8 +5,10 @@
 - alefragnani.Bookmarks
 - atlassian.atlascode
 - bierner.docs-view
+- bierner.emojisense
 - bierner.markdown-checkbox
 - bierner.markdown-emoji
+- bierner.markdown-footnote
 - bierner.markdown-mermaid
 - bmuskalla.vscode-tldr
 - bpruitt-goddard.mermaid-markdown-syntax-highlighting
@@ -26,6 +28,7 @@
 - esbenp.prettier-vscode
 - executablebookproject.myst-highlight
 - exiasr.hadolint
+- foam.foam-vscode
 - foxundermoon.shell-format
 - GitHub.vscode-pull-request-github
 - goessner.mdmath
@@ -34,12 +37,15 @@
 - hediet.vscode-drawio
 - ionutvmi.path-autocomplete
 - jakearl.search-editor-apply-changes
+- jebbs.markdown-extended
 - jnoortheen.xonsh
 - johnpapa.vscode-peacock
 - karigari.chat
+- kortina.vscode-markdown-notes
 - lextudio.restructuredtext
 - MarkLarah.pre-commit-vscode
 - mechatroner.rainbow-csv
+- tchayen.markdown-links
 - tomoyukim.vscode-mermaid-editor
 - metaseed.MetaWord
 - metaseed.MetaJump
@@ -74,7 +80,9 @@
 - thebutlah.reorder-python-imports
 - tht13.html-preview-vscode
 - timonwong.shellcheck
+- tomoki1207.pdf
 - Tyriar.sort-lines
 - VisualStudioExptTeam.vscodeintellicode
+- vsls-contrib.gitdoc
 - vsls-contrib.gistfs
 - yzhang.markdown-all-in-one

@@ -60,6 +60,7 @@
   "markdown-preview-enhanced.previewTheme": "atom-material.css",
   "markdown.extension.italic.indicator": "_",
   "markdown.extension.math.enabled": false,
+  "markdownExtended.disabledPlugins": "kbd", // Interferes with markdown-links
   "python.analysis.typeCheckingMode": "basic",
   // "python.dataScience.sendSelectionToInteractiveWindow": true,
   "python.formatting.provider": "black",
