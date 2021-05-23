@@ -1,6 +1,8 @@
 # curl
 
-## Poetry
+## [Poetry](https://python-poetry.org/docs/)
+
+This needs to be updated to a later installation script when Poetry 1.2 releases.
 
 ```sh
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
