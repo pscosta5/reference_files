@@ -28,8 +28,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 curl -L https://iterm2.com/shell_integration/install_shell_integration_and_utilities.sh | bash
 ```
 
-# Rust
+## Rust
 
 ```sh
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+## [OCR](https://github.com/schappim/macOCR)
+
+This is for the Intel, change for Apple Silicon.
+
+```sh
+curl -O https://files.littlebird.com.au/ocr-EPiReQzFJ5Xw9wElWMqbiBayYLVp.zip
+unzip ocr-EPiReQzFJ5Xw9wElWMqbiBayYLVp.zip
+sudo cp ocr /usr/local/bin
 ```
