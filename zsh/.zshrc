@@ -185,7 +185,4 @@ if [[ -z "$TMUX" ]] && it2check && [[ -z "$TERM_PROGRAM" ]] && { [[ -n "$SSH_CLI
   tmux -CC
 fi
 
-# Add go packages to path
-export PATH="$PATH:/home/pawlu/go/bin"
-
 export PAGER='less -r'
