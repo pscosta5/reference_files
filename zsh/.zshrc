@@ -88,17 +88,6 @@ COMPLETION_WAITING_DOTS="true"
 # https://github.com/marlonrichert/zsh-autocomplete
 # ``git clone https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/.oh-my-zsh/custom/plugins/zsh-autocomplete``
 
-# pyenv
-# https://github.com/pyenv/pyenv#installation
-# https://github.com/pyenv/pyenv-virtualenv
-# ``brew install pyenv``
-# ``brew install openssl readline sqlite3 zlib
-# ``brew install pyenv-virtualenv
-
-# Do this before pyenv plugin to supersede Facebook pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-
 plugins=(
     docker
     docker-compose
