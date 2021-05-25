@@ -113,6 +113,8 @@ Delay Until Repeat
 
 -----------------------⬤
 
+- Press Fn key to `Show Emoji & Symbols`
+
 ### Text
 
 - [ ] Add period with double-space
