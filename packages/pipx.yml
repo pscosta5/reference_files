@@ -18,6 +18,7 @@ install:
   - drive-cli
   - flake8
   - dephell[full]
+  - euporie[html-mtable,images-timg]
   - git-filter-repo
   - hiplot
   - httpie
