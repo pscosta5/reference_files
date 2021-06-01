@@ -1,0 +1,7 @@
+# Debug the terminal
+
+# Make a temporary directory and cd into it
+cd $(mktemp -d)
+
+# Restart Zsh without config files or environment variables in this dir
+exec env -i HOME=$PWD PS1='%# ' TERM=$TERM zsh -f
