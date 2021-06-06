@@ -3,4 +3,5 @@
 # cargo install PACKAGE
 install:
   - py-spy
+  - python-launcher
   - viu
