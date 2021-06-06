@@ -50,6 +50,7 @@ install:
   - remarshal
   - reorder-python-imports
   - shell-functools
+  - sqlfluff
   - sqlite-utils
   - termtosvg
   - thefuck
