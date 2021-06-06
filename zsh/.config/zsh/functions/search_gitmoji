@@ -1,2 +1,2 @@
 # Copy
-gitmoji --list | fzf | grep -o ':.*:' | tr -d '\n' | pbcopy
+gitmoji --list | fzf | grep -o ':.*:' | tr -d '\n' | sed -e "s/\(.*\)/git commit --message='\1 '/" | pbcopy
