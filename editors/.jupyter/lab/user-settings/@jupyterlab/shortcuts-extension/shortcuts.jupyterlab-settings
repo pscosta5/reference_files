@@ -48,7 +48,7 @@
     },
     {
       "command": "notebook:create-new",
-      "keys": ["Ctrl N"],
+      "keys": ["Ctrl Shift N"],
       "selector": "body"
     },
     {
