@@ -16,6 +16,8 @@ Appearance: Auto
 
 Default web browser `Google Chrome`
 
+- [ ] Close windows when quitting an app
+
 ## Displays
 
 ### Night Shift
