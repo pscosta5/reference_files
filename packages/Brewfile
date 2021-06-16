@@ -1,6 +1,7 @@
 # Brew, cask, and Mac App Store packages
 # Install with `brew bundle install`
 tap "cantino/mcfly"
+tap "clementtsang/bottom"
 tap "github/gh"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -19,6 +20,7 @@ brew "broot"
 brew "readline"
 brew "xz"
 brew "cantino/mcfly/mcfly"
+brew "clementtsang/bottom/bottom"
 brew "chafa"
 brew "cmake"
 brew "dust"
