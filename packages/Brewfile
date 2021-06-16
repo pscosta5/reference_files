@@ -1,5 +1,6 @@
 # Brew, cask, and Mac App Store packages
 # Install with `brew bundle install`
+tap "cantino/mcfly"
 tap "github/gh"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -17,6 +18,7 @@ brew "blueutil"
 brew "broot"
 brew "readline"
 brew "xz"
+brew "cantino/mcfly/mcfly"
 brew "chafa"
 brew "cmake"
 brew "dust"
