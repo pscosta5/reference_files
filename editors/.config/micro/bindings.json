@@ -30,5 +30,8 @@
     "Ctrl-n": "CursorDown",
     "Ctrl-f": "CursorRight",
     "Ctrl-b": "CursorLeft",
-    "Alt-F": "Find"
+    "Alt-F": "Find",
+    "Alt-A": "SelectAll",
+    "Ctrl-a": "StartOfLine",
+    "Ctrl-e": "EndOfLine"
 }
