@@ -79,6 +79,7 @@
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.inheritEnv": true, // If issues with conda environments, turn off
   "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.integrated.macOptionIsMeta": true,
   // Auto added by TODO Tree
   "todo-tree.general.tags": [
     "BUG",
