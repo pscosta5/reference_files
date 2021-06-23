@@ -5,6 +5,7 @@ install:
   - "--locked bat"
   - "--locked bottom"
   - broot
+  - choose
   - du-dust
   - fd-find
   - lsd
