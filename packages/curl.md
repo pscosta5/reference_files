@@ -59,3 +59,11 @@ wget https://github.com/lunaryorn/mdcat/releases/download/mdcat-0.21.0/mdcat-0.2
 tar -xvf mdcat-0.21.0-x86_64-unknown-linux-musl.tar.gz
 mv mdcat ~/.local/bin
 ```
+
+## mcfly
+
+```sh
+wget https://github.com/cantino/mcfly/releases/download/v0.5.6/mcfly-v0.5.6-x86_64-unknown-linux-gnu.tar.gz
+tar -xvf mvfly mcfly-v0.5.6-x86_64-unknown-linux-gnu.tar.gz
+mv mcfly ~/.local/bin
+```
