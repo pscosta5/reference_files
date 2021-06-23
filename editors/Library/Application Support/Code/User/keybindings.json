@@ -32,5 +32,15 @@
     "key": "alt+delete",
     "command": "deleteWordRight",
     "when": "textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+f",
+    "command": "cursorWordEndRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+b",
+    "command": "cursorWordLeft",
+    "when": "editorTextFocus"
   }
 ]
