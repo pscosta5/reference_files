@@ -1,0 +1,5 @@
+# Launch remote VS Code session
+# Taken from https://gist.github.com/noelbundick/ab2dd9fc5dada84795be2ea0321444ca
+local project_dir="${1}"
+local full_dir="/data/users/pawlu/Documents/${project_dir}"
+code --folder-uri "vscode-remote://ssh-remote+${DEV}${full_dir}"
