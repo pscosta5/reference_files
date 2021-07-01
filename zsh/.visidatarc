@@ -1,4 +1,4 @@
-options.use_default_colors = True
+options.color_default = ""
 options.color_default_hdr = "bold blue"
 options.color_bottom_hdr = "underline blue"
 options.color_column_sep = "bold blue"
