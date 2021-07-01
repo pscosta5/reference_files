@@ -54,6 +54,7 @@ symbol = " "
 
 [python]
 symbol = " "
+pyenv_version_name = true
 
 [ruby]
 symbol = " "
@@ -63,6 +64,9 @@ symbol = " "
 
 [scala]
 symbol = " "
+
+[shlvl]
+symbol = " "
 
 [swift]
 symbol = "ﯣ "
