@@ -42,5 +42,15 @@
     "key": "alt+b",
     "command": "cursorWordLeft",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "markdownExtended.toggleBold",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-markdownExtended.toggleBold",
+    "when": "editorTextFocus && editorLangId == 'markdown'"
   }
 ]
