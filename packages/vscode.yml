@@ -19,6 +19,7 @@
 - DavidAnson.vscode-markdownlint
 - deerawan.vscode-dash
 - dkundel.vscode-new-file
+- donjayamanne.vscode-jupytext
 - donjayamanne.githistory
 - dorzey.vscode-sqlfluff
 - eamodio.gitlens
@@ -31,6 +32,7 @@
 - exiasr.hadolint
 - foam.foam-vscode
 - foxundermoon.shell-format
+- github.remotehub
 - GitHub.vscode-pull-request-github
 - goessner.mdmath
 - GrapeCity.gc-excelviewer
@@ -67,8 +69,10 @@
 - ms-vsliveshare.vsliveshare-pack
 - mtxr.sqltools
 - njpwerner.autodocstring
+- OrangeX4.latex-sympy-calculator
 - ptweir.python-string-sql
 - redhat.vscode-yaml
+- rangav.vscode-thunder-client
 - ryanluker.vscode-coverage-gutters
 - samuelcolvin.jinjahtml
 - shd101wyy.markdown-preview-enhanced
@@ -78,6 +82,7 @@
 - stkb.rewrap
 - streetsidesoftware.code-spell-checker
 - tamasfe.even-better-tom
+- TakumiI.markdowntable
 - thebutlah.reorder-python-imports
 - tht13.html-preview-vscode
 - timonwong.shellcheck
@@ -87,3 +92,4 @@
 - vsls-contrib.gitdoc
 - vsls-contrib.gistfs
 - yzhang.markdown-all-in-one
+- zalo.symplex
