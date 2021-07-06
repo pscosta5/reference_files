@@ -13,13 +13,17 @@ install:
   - bzip2
   - bzip2-devel
   - gcc
+  - gcc-gfortran
   - google-roboto-fonts
   - libffi-devel
   - lzma
   - blas
   - blas-devel
+  - lapack-devel
+  - openblas-devel
   - openssl-devel
   - pandoc
+  - python3-devel
   - pspg
   - readline-devel
   - sqlite
