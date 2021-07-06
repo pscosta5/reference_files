@@ -78,6 +78,12 @@ inject:
   jupyterlab: >
     aquirdturtle_collapsible_headings
     black
+    darglint
+    flake8-bandit
+    flake8-bugbear
+    flake8-bugbear
+    flake8-docstrings
+    flake8-rst-docstrings
     ipympl
     ipyvuetify
     isort[colors]
@@ -90,8 +96,15 @@ inject:
     jupyterlab-pullrequests
     jupytext
     lckr-jupyterlab-variableinspector
+    mccabe
+    pep8-naming
     pyqt5
-    python-language-server[all]
+    python-lsp-black
+    pyls-flake8
+    pyls-isort
+    pylsp-mypy
+    python-lsp-server
+    rope
     voila
   nox: nox-poetry
   pytest: pytest-cov
