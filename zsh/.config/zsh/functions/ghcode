@@ -1,0 +1,7 @@
+# Open up a GitHub repository via Visual Studio Code
+if [[ -z "$1" ]]; then
+    echo "Usage: ghcode paw-lu/nbpreview"
+else
+    local repo="$1"
+    open -a 'Visual Studio Code' "vscode://GitHub.remotehub/open?url=https://github.com/${repo}"
+fi
