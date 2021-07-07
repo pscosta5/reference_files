@@ -131,7 +131,7 @@ inject:
     numpy
     xlrd
     pyarrow
-    PyTables
+    tables
 # Run `pipx inject --include-apps PACKAGE DEPENDENCIES`
 add:
   jupyterlab: >
