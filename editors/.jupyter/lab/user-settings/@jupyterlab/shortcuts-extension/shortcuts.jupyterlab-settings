@@ -91,6 +91,20 @@
       "command": "filebrowser:open",
       "keys": ["Ctrl Enter"],
       "selector": ".jp-DirListing"
+    },
+    {
+        "command": "notebook:move-cursor-down",
+        "keys": [
+            "Ctrl N"
+        ],
+        "selector": ".jp-Notebook:focus"
+    },
+    {
+        "command": "notebook:move-cursor-up",
+        "keys": [
+            "Ctrl P"
+        ],
+        "selector": ".jp-Notebook:focus"
     }
   ]
 }
