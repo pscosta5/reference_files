@@ -133,12 +133,19 @@ Delay Until Repeat
 
 ### Login Items
 
-| Item                     | Kind        | Hide |
-| ------------------------ | ----------- | ---- |
-| Itsycal                  | Application | ☑    |
-| CheatSheet               | Application | ☑    |
-| Google Drive File Stream | Application | ☑    |
-| Alfred 4                 | Application | ☑    |
-| Lunar                    | Application | ☑    |
-| Kap                      | Application | ☑    |
-| Dash                     | Application | ☑    |
+| Item          | Kind        | Hide |
+| ------------- | ----------- | ---- |
+| Flow          | Application | ☑   |
+| Dash          | Application | ☑   |
+| Numi          | Application | ☑   |
+| CheatSheet    | Application | ☑   |
+| Google Chrome | Application | ☑   |
+| Rectangle     | Application | ☑   |
+| Alfred 4      | Application | ☑   |
+| Itsycal       | Application | ☑   |
+| SnippetsLab   | Application | ☑   |
+| Hidden Bar    | Application | ☑   |
+| ScreenBrush   | Application | ☑   |
+| Lunar         | Application | ☑   |
+| iTerm         | Application | ☑   |
+| Kap           | Application | ☑   |
