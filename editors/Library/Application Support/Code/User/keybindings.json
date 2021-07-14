@@ -44,11 +44,6 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+shift+b",
-    "command": "markdownExtended.toggleBold",
-    "when": "editorTextFocus && editorLangId == 'markdown'"
-  },
-  {
     "key": "ctrl+b",
     "command": "-markdownExtended.toggleBold",
     "when": "editorTextFocus && editorLangId == 'markdown'"
@@ -62,5 +57,25 @@
     "key": "tab",
     "command": "-markdown.extension.onTabKey",
     "when": "editorTextFocus && !editorReadonly && !editorTabMovesFocus && !hasOtherSuggestions && !hasSnippetCompletions && !inSnippetMode && !suggestWidgetVisible && editorLangId == 'markdown'"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "cursorDownSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "cursorUpSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "cursorRightSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "ctrl+shift+b",
+    "command": "cursorLeftSelect",
+    "when": "textInputFocus"
   }
 ]
