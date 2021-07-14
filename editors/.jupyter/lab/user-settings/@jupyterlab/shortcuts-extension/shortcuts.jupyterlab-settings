@@ -48,7 +48,12 @@
     },
     {
       "command": "notebook:create-new",
-      "keys": ["Ctrl Shift N"],
+      "keys": ["Alt Accel Shift N"],
+      "selector": "body"
+    },
+    {
+      "command": "fileeditor:create-new",
+      "keys": ["Alt Accel Shift T"],
       "selector": "body"
     },
     {
